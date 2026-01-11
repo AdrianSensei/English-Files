@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Like / Love / Hate + ing</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Like / Love / Hate + ing</h1>
+<p class="jp-note">「〜することが好き／大好き／嫌い」を表すときに使います。</p>
+
+<h2>What does this structure mean?</h2>
+<p>We use “like / love / hate + verb-ing” to talk about general preferences.</p>
+<p class="jp-note">「like / love / hate + 動詞 ing」は一般的な好みを表します。</p>
+
+<h2>Form</h2>
+<p>Use the -ing form after like, love, and hate.</p>
+<p class="jp-note">like・love・hate の後は動詞の ing 形を使います。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Verb</th>
+      <th>Structure</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>like</td>
+      <td>like + ing</td>
+      <td>I like reading.</td>
+    </tr>
+    <tr>
+      <td>love</td>
+      <td>love + ing</td>
+      <td>She loves cooking.</td>
+    </tr>
+    <tr>
+      <td>hate</td>
+      <td>hate + ing</td>
+      <td>They hate running.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<p>
+  <strong>I like studying English.</strong><br>
+  <span class="toggle" onclick="toggle('ex1')">日本語を見る / 隠す</span>
+  <span id="ex1" class="hidden">私は英語を勉強することが好きです。</span>
+</p>
+
+<p>
+  <strong>She loves playing the piano.</strong><br>
+  <span class="toggle" onclick="toggle('ex2')">日本語を見る / 隠す</span>
+  <span id="ex2" class="hidden">彼女はピアノを弾くのが大好きです。</span>
+</p>
+
+<p>
+  <strong>He hates waking up early.</strong><br>
+  <span class="toggle" onclick="toggle('ex3')">日本語を見る / 隠す</span>
+  <span id="ex3" class="hidden">彼は早起きが嫌いです。</span>
+</p>
+
+<h2>Notes</h2>
+<p>We use the -ing form because the action is treated like a noun (a general activity).</p>
+<p class="jp-note">動作を名詞のように扱うため、ing 形を使います。</p>
+
+<h2>Exercises</h2>
+
+<div class="exercise-block">
+  <h3>1. Complete the sentences</h3>
+  <p class="jp-note">like / love / hate + ing を入れましょう。</p>
+
+  <p>
+    a) I like ___ (read).  
+    <span class="toggle" onclick="toggle('a1')">答えを見る</span>
+    <span id="a1" class="hidden">reading</span>
+  </p>
+
+  <p>
+    b) She loves ___ (dance).  
+    <span class="toggle" onclick="toggle('a2')">答えを見る</span>
+    <span id="a2" class="hidden">dancing</span>
+  </p>
+
+  <p>
+    c) They hate ___ (clean).  
+    <span class="toggle" onclick="toggle('a3')">答えを見る</span>
+    <span id="a3" class="hidden">cleaning</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Translate into English</h3>
+  <p class="jp-note">英語にしましょう。</p>
+
+  <p>
+    a) 私は料理をするのが好きです。  
+    <span class="toggle" onclick="toggle('b1')">答えを見る</span>
+    <span id="b1" class="hidden">I like cooking.</span>
+  </p>
+
+  <p>
+    b) 彼は走るのが嫌いです。  
+    <span class="toggle" onclick="toggle('b2')">答えを見る</span>
+    <span id="b2" class="hidden">He hates running.</span>
+  </p>
+</div>
+
+<h2>Mini‑Quiz</h2>
+
+<div class="exercise-block">
+  <h3>1) 「私は音楽を聴くのが大好きです。」</h3>
+
+  <p>
+    a) I love listening to music.<br>
+    b) I love listen to music.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">a) I love listening to music.</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) 「彼女は勉強するのが好きではありません。」</h3>
+
+  <p>
+    a) She hates studying.<br>
+    b) She love studying.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">a) She hates studying.</span>
+  </p>
+</div>
+
+</body>
+</html>

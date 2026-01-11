@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Comparative Adjectives</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+<a href="index.html" class="button">Home</a>
+<h1>Comparative Adjectives</h1>
+<p class="jp-note">比較級。「〜より〜です」を表します。</p>
+
+<h2>What are comparatives?</h2>
+<p>Comparatives compare two things.</p>
+<p class="jp-note">比較級は2つのものを比べるときに使います。</p>
+
+<h2>Form</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adjective Type</th>
+      <th>Rule</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Short adjectives (1 syllable)</td>
+      <td>add -er</td>
+      <td>tall → taller</td>
+    </tr>
+    <tr>
+      <td>Adjectives ending in e</td>
+      <td>add -r</td>
+      <td>nice → nicer</td>
+    </tr>
+    <tr>
+      <td>Short adj. ending CVC</td>
+      <td>double last consonant + er</td>
+      <td>big → bigger</td>
+    </tr>
+    <tr>
+      <td>Long adjectives (2+ syllables)</td>
+      <td>use “more + adjective”</td>
+      <td>beautiful → more beautiful</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<p>
+  <strong>My house is bigger than yours.</strong><br>
+  <span class="toggle" onclick="toggle('ex1')">日本語を見る / 隠す</span>
+  <span id="ex1" class="hidden">私の家はあなたの家より大きいです。</span>
+</p>
+
+<p>
+  <strong>She is more intelligent than him.</strong><br>
+  <span class="toggle" onclick="toggle('ex2')">日本語を見る / 隠す</span>
+  <span id="ex2" class="hidden">彼女は彼より頭がいいです。</span>
+</p>
+
+<p>
+  <strong>This test is easier than the last one.</strong><br>
+  <span class="toggle" onclick="toggle('ex3')">日本語を見る / 隠す</span>
+  <span id="ex3" class="hidden">このテストは前のテストより簡単です。</span>
+</p>
+
+<h2>Important</h2>
+<p>Use **than** after the comparative.</p>
+<p class="jp-note">比較級の後には **than** を使います。</p>
+
+<h2>Irregular Comparatives</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adjective</th>
+      <th>Comparative</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>good</td>
+      <td>better</td>
+      <td>より良い</td>
+    </tr>
+    <tr>
+      <td>bad</td>
+      <td>worse</td>
+      <td>より悪い</td>
+    </tr>
+    <tr>
+      <td>far</td>
+      <td>farther / further</td>
+      <td>より遠い</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Exercises</h2>
+
+<div class="exercise-block">
+  <h3>1. Complete the sentences</h3>
+  <p class="jp-note">比較級を入れましょう。</p>
+
+  <p>
+    a) This book is ___ (interesting) than that one.  
+    <span class="toggle" onclick="toggle('a1')">答えを見る</span>
+    <span id="a1" class="hidden">more interesting</span>
+  </p>
+
+  <p>
+    b) He is ___ (tall) than me.  
+    <span class="toggle" onclick="toggle('a2')">答えを見る</span>
+    <span id="a2" class="hidden">taller</span>
+  </p>
+
+  <p>
+    c) Today is ___ (bad) than yesterday.  
+    <span class="toggle" onclick="toggle('a3')">答えを見る</span>
+    <span id="a3" class="hidden">worse</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Translate into English</h3>
+  <p class="jp-note">英語にしましょう。</p>
+
+  <p>
+    a) この部屋はあの部屋より広いです。  
+    <span class="toggle" onclick="toggle('b1')">答えを見る</span>
+    <span id="b1" class="hidden">This room is bigger than that room.</span>
+  </p>
+
+  <p>
+    b) 彼女は私より忙しいです。  
+    <span class="toggle" onclick="toggle('b2')">答えを見る</span>
+    <span id="b2" class="hidden">She is busier than me.</span>
+  </p>
+</div>
+
+<h2>Mini‑Quiz</h2>
+
+<div class="exercise-block">
+  <h3>1) 「この問題はあの問題より簡単です。」</h3>
+
+  <p>
+    a) This question is easier than that one.<br>
+    b) This question is more easy than that one.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">a) This question is easier than that one.</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) 「私はあなたより背が高いです。」</h3>
+
+  <p>
+    a) I am taller than you.<br>
+    b) I am more tall than you.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">a) I am taller than you.</span>
+  </p>
+</div>
+
+</body>
+
+</html>

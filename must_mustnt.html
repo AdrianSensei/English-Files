@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Must / Mustn't</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Must / Mustn't</h1>
+<p class="jp-note">義務・禁止を表す表現。「〜しなければならない／〜してはいけない」。</p>
+
+<h2>What do “must” and “mustn’t” mean?</h2>
+<p>“Must” expresses obligation. “Mustn’t” expresses prohibition.</p>
+<p class="jp-note">「must」は義務、「mustn’t」は禁止を表します。</p>
+
+<h2>Form</h2>
+<p>Use “must + verb” and “mustn’t + verb.”</p>
+<p class="jp-note">「must + 動詞の原形」「mustn’t + 動詞の原形」を使います。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Form</th>
+      <th>Meaning</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>must + verb</td>
+      <td>obligation</td>
+      <td>You must study.</td>
+    </tr>
+    <tr>
+      <td>mustn’t + verb</td>
+      <td>prohibition</td>
+      <td>You mustn’t run here.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<p>
+  <strong>You must do your homework.</strong><br>
+  <span class="toggle" onclick="toggle('ex1')">日本語を見る / 隠す</span>
+  <span id="ex1" class="hidden">あなたは宿題をしなければなりません。</span>
+</p>
+
+<p>
+  <strong>You mustn’t touch that.</strong><br>
+  <span class="toggle" onclick="toggle('ex2')">日本語を見る / 隠す</span>
+  <span id="ex2" class="hidden">それに触ってはいけません。</span>
+</p>
+
+<p>
+  <strong>Students must be quiet in the library.</strong><br>
+  <span class="toggle" onclick="toggle('ex3')">日本語を見る / 隠す</span>
+  <span id="ex3" class="hidden">生徒は図書館では静かにしなければなりません。</span>
+</p>
+
+<h2>Notes</h2>
+<p>“Must” is strong. It expresses rules or personal obligation.</p>
+<p class="jp-note">「must」は強い義務を表し、ルールや個人的な必要性に使われます。</p>
+
+<h2>Exercises</h2>
+
+<div class="exercise-block">
+  <h3>1. Complete the sentences</h3>
+  <p class="jp-note">must / mustn’t を入れましょう。</p>
+
+  <p>
+    a) You ___ be late. (禁止)  
+    <span class="toggle" onclick="toggle('a1')">答えを見る</span>
+    <span id="a1" class="hidden">mustn’t</span>
+  </p>
+
+  <p>
+    b) I ___ finish this today. (義務)  
+    <span class="toggle" onclick="toggle('a2')">答えを見る</span>
+    <span id="a2" class="hidden">must</span>
+  </p>
+
+  <p>
+    c) Students ___ wear uniforms. (義務)  
+    <span class="toggle" onclick="toggle('a3')">答えを見る</span>
+    <span id="a3" class="hidden">must</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Translate into English</h3>
+  <p class="jp-note">英語にしましょう。</p>
+
+  <p>
+    a) あなたはここで走ってはいけません。  
+    <span class="toggle" onclick="toggle('b1')">答えを見る</span>
+    <span id="b1" class="hidden">You mustn’t run here.</span>
+  </p>
+
+  <p>
+    b) 私は早く起きなければなりません。  
+    <span class="toggle" onclick="toggle('b2')">答えを見る</span>
+    <span id="b2" class="hidden">I must get up early.</span>
+  </p>
+</div>
+
+<h2>Mini‑Quiz</h2>
+
+<div class="exercise-block">
+  <h3>1) 「あなたは宿題をしなければなりません。」</h3>
+
+  <p>
+    a) You must do your homework.<br>
+    b) You mustn’t do your homework.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">a) You must do your homework.</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) 「ここで食べてはいけません。」</h3>
+
+  <p>
+    a) You must eat here.<br>
+    b) You mustn’t eat here.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">b) You mustn’t eat here.</span>
+  </p>
+</div>
+
+</body>
+</html>

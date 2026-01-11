@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Articles (a / an / the)</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Articles — a / an / the</h1>
+<p class="jp-note">英語の冠詞。「a / an」は不特定、「the」は特定のものに使います。</p>
+
+<h2>What are articles?</h2>
+<p>Articles show whether a noun is general or specific.</p>
+<p class="jp-note">冠詞は、名詞が「一般的」か「特定」かを示します。</p>
+
+<h2>a / an</h2>
+<p>Use “a” before consonant sounds and “an” before vowel sounds.</p>
+<p class="jp-note">「a」は子音の音の前、「an」は母音の音の前に使います。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Article</th>
+      <th>Rule</th>
+      <th>Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a</td>
+      <td>Before consonant sounds</td>
+      <td>a book / a teacher</td>
+    </tr>
+    <tr>
+      <td>an</td>
+      <td>Before vowel sounds</td>
+      <td>an apple / an umbrella</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>the</h2>
+<p>Use “the” when both the speaker and listener know which specific thing is meant.</p>
+<p class="jp-note">話し手と聞き手が「どれのことか分かっている」特定のものに使います。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Article</th>
+      <th>Meaning</th>
+      <th>Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>the</td>
+      <td>Specific item</td>
+      <td>the sun / the teacher / the book on the table</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<p>
+  <strong>I have a dog.</strong><br>
+  <span class="toggle" onclick="toggle('ex1')">日本語を見る / 隠す</span>
+  <span id="ex1" class="hidden">私は犬を1匹飼っています。</span>
+</p>
+
+<p>
+  <strong>She is an artist.</strong><br>
+  <span class="toggle" onclick="toggle('ex2')">日本語を見る / 隠す</span>
+  <span id="ex2" class="hidden">彼女はアーティストです。</span>
+</p>
+
+<p>
+  <strong>Open the door.</strong><br>
+  <span class="toggle" onclick="toggle('ex3')">日本語を見る / 隠す</span>
+  <span id="ex3" class="hidden">そのドアを開けてください。（どのドアか分かっている）</span>
+</p>
+
+<h2>Exercises</h2>
+
+<div class="exercise-block">
+  <h3>1. Choose a / an</h3>
+  <p class="jp-note">a か an を入れましょう。</p>
+
+  <p>
+    a) ___ apple  
+    <span class="toggle" onclick="toggle('a1')">答えを見る</span>
+    <span id="a1" class="hidden">an</span>
+  </p>
+
+  <p>
+    b) ___ book  
+    <span class="toggle" onclick="toggle('a2')">答えを見る</span>
+    <span id="a2" class="hidden">a</span>
+  </p>
+
+  <p>
+    c) ___ umbrella  
+    <span class="toggle" onclick="toggle('a3')">答えを見る</span>
+    <span id="a3" class="hidden">an</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Fill in a / an / the</h3>
+  <p class="jp-note">a / an / the を入れましょう。</p>
+
+  <p>
+    a) I want ___ orange.  
+    <span class="toggle" onclick="toggle('b1')">答えを見る</span>
+    <span id="b1" class="hidden">an</span>
+  </p>
+
+  <p>
+    b) Please close ___ window.  
+    <span class="toggle" onclick="toggle('b2')">答えを見る</span>
+    <span id="b2" class="hidden">the</span>
+  </p>
+
+  <p>
+    c) She is ___ teacher.  
+    <span class="toggle" onclick="toggle('b3')">答えを見る</span>
+    <span id="b3" class="hidden">a</span>
+  </p>
+</div>
+
+<h2>Mini‑Quiz</h2>
+
+<div class="exercise-block">
+  <h3>1) 「私はリンゴを1つ食べました。」</h3>
+
+  <p>
+    a) I ate a apple.<br>
+    b) I ate an apple.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">b) I ate an apple.</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) 「その本は面白いです。」</h3>
+
+  <p>
+    a) The book is interesting.<br>
+    b) A book is interesting.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">a) The book is interesting.</span>
+  </p>
+</div>
+
+</body>
+</html>
