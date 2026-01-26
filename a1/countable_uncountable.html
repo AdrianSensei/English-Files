@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Countable & Uncountable Nouns</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Countable & Uncountable Nouns</h1>
+<p class="jp-note">可算名詞と不可算名詞の違いを学びます。</p>
+
+<h2>What are countable and uncountable nouns?</h2>
+<p>Countable nouns can be counted. Uncountable nouns cannot be counted individually.</p>
+<p class="jp-note">可算名詞は数えられます。不可算名詞は個別には数えられません。</p>
+
+<h2>Countable Nouns</h2>
+<p>Countable nouns have singular and plural forms.</p>
+<p class="jp-note">可算名詞には単数形と複数形があります。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Singular</th>
+      <th>Plural</th>
+      <th>意味</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a book</td>
+      <td>books</td>
+      <td>本</td>
+    </tr>
+    <tr>
+      <td>an apple</td>
+      <td>apples</td>
+      <td>りんご</td>
+    </tr>
+    <tr>
+      <td>a chair</td>
+      <td>chairs</td>
+      <td>いす</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Uncountable Nouns</h2>
+<p>Uncountable nouns do not have plural forms.</p>
+<p class="jp-note">不可算名詞には複数形がありません。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Noun</th>
+      <th>Meaning</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>water</td>
+      <td>水</td>
+      <td>✖ waters (通常不可算)</td>
+    </tr>
+    <tr>
+      <td>rice</td>
+      <td>米 / ご飯</td>
+      <td>✖ rices</td>
+    </tr>
+    <tr>
+      <td>milk</td>
+      <td>牛乳</td>
+      <td>✖ milks</td>
+    </tr>
+    <tr>
+      <td>information</td>
+      <td>情報</td>
+      <td>✖ informations</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>How to quantify uncountable nouns</h2>
+<p>Use expressions like “a cup of,” “a bottle of,” “a piece of,” etc.</p>
+<p class="jp-note">「a cup of」「a bottle of」「a piece of」などを使って量を表します。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Expression</th>
+      <th>Example</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a cup of</td>
+      <td>a cup of tea</td>
+      <td>1杯の紅茶</td>
+    </tr>
+    <tr>
+      <td>a bottle of</td>
+      <td>a bottle of water</td>
+      <td>1本の水</td>
+    </tr>
+    <tr>
+      <td>a piece of</td>
+      <td>a piece of information</td>
+      <td>1つの情報</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<p>
+  <strong>I have two books.</strong><br>
+  <span class="toggle" onclick="toggle('ex1')">日本語を見る / 隠す</span>
+  <span id="ex1" class="hidden">私は本を2冊持っています。</span>
+</p>
+
+<p>
+  <strong>She needs some water.</strong><br>
+  <span class="toggle" onclick="toggle('ex2')">日本語を見る / 隠す</span>
+  <span id="ex2" class="hidden">彼女は水が必要です。</span>
+</p>
+
+<p>
+  <strong>We bought a bag of rice.</strong><br>
+  <span class="toggle" onclick="toggle('ex3')">日本語を見る / 隠す</span>
+  <span id="ex3" class="hidden">私たちは米を1袋買いました。</span>
+</p>
+
+<h2>Exercises</h2>
+
+<div class="exercise-block">
+  <h3>1. Countable or uncountable?</h3>
+  <p class="jp-note">可算名詞か不可算名詞か答えましょう。</p>
+
+  <p>
+    a) milk  
+    <span class="toggle" onclick="toggle('a1')">答えを見る</span>
+    <span id="a1" class="hidden">Uncountable</span>
+  </p>
+
+  <p>
+    b) apple  
+    <span class="toggle" onclick="toggle('a2')">答えを見る</span>
+    <span id="a2" class="hidden">Countable</span>
+  </p>
+
+  <p>
+    c) information  
+    <span class="toggle" onclick="toggle('a3')">答えを見る</span>
+    <span id="a3" class="hidden">Uncountable</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Translate into English</h3>
+  <p class="jp-note">英語にしましょう。</p>
+
+  <p>
+    a) 私は水を少し必要です。  
+    <span class="toggle" onclick="toggle('b1')">答えを見る</span>
+    <span id="b1" class="hidden">I need some water.</span>
+  </p>
+
+  <p>
+    b) 彼らは3つのりんごを持っています。  
+    <span class="toggle" onclick="toggle('b2')">答えを見る</span>
+    <span id="b2" class="hidden">They have three apples.</span>
+  </p>
+</div>
+
+<h2>Mini‑Quiz</h2>
+
+<div class="exercise-block">
+  <h3>1) 「私は1杯の牛乳が欲しいです。」</h3>
+
+  <p>
+    a) I want a milk.<br>
+    b) I want a cup of milk.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">b) I want a cup of milk.</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) 「情報が必要です。」</h3>
+
+  <p>
+    a) I need an information.<br>
+    b) I need some information.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">b) I need some information.</span>
+  </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Plurals (Regular & Irregular)</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Plurals — Regular & Irregular</h1>
+<p class="jp-note">英語の複数形。規則変化と不規則変化があります。</p>
+
+<h2>What are plurals?</h2>
+<p>Plurals show that there is more than one of something.</p>
+<p class="jp-note">複数形は「1つ以上ある」ことを表します。</p>
+
+<h2>Regular Plurals</h2>
+<p>Most nouns add “-s” or “-es” to form the plural.</p>
+<p class="jp-note">多くの名詞は「-s」または「-es」をつけて複数形になります。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Example</th>
+      <th>Plural</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add -s</td>
+      <td>book</td>
+      <td>books</td>
+    </tr>
+    <tr>
+      <td>Add -es (after s, sh, ch, x)</td>
+      <td>bus</td>
+      <td>buses</td>
+    </tr>
+    <tr>
+      <td>Words ending in consonant + y → ies</td>
+      <td>city</td>
+      <td>cities</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Irregular Plurals</h2>
+<p>Some nouns change completely or stay the same.</p>
+<p class="jp-note">不規則な名詞は形が変わったり、変わらなかったりします。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Singular</th>
+      <th>Plural</th>
+      <th>意味</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>child</td>
+      <td>children</td>
+      <td>子ども</td>
+    </tr>
+    <tr>
+      <td>man</td>
+      <td>men</td>
+      <td>男性</td>
+    </tr>
+    <tr>
+      <td>woman</td>
+      <td>women</td>
+      <td>女性</td>
+    </tr>
+    <tr>
+      <td>foot</td>
+      <td>feet</td>
+      <td>足</td>
+    </tr>
+    <tr>
+      <td>tooth</td>
+      <td>teeth</td>
+      <td>歯</td>
+    </tr>
+    <tr>
+      <td>sheep</td>
+      <td>sheep</td>
+      <td>羊（変化なし）</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<p>
+  <strong>I have two books.</strong><br>
+  <span class="toggle" onclick="toggle('ex1')">日本語を見る / 隠す</span>
+  <span id="ex1" class="hidden">私は本を2冊持っています。</span>
+</p>
+
+<p>
+  <strong>There are many children in the park.</strong><br>
+  <span class="toggle" onclick="toggle('ex2')">日本語を見る / 隠す</span>
+  <span id="ex2" class="hidden">公園にはたくさんの子どもがいます。</span>
+</p>
+
+<p>
+  <strong>My feet are cold.</strong><br>
+  <span class="toggle" onclick="toggle('ex3')">日本語を見る / 隠す</span>
+  <span id="ex3" class="hidden">私の足は冷たいです。</span>
+</p>
+
+<h2>Exercises</h2>
+
+<div class="exercise-block">
+  <h3>1. Make the plural</h3>
+  <p class="jp-note">複数形にしましょう。</p>
+
+  <p>
+    a) bus →  
+    <span class="toggle" onclick="toggle('a1')">答えを見る</span>
+    <span id="a1" class="hidden">buses</span>
+  </p>
+
+  <p>
+    b) city →  
+    <span class="toggle" onclick="toggle('a2')">答えを見る</span>
+    <span id="a2" class="hidden">cities</span>
+  </p>
+
+  <p>
+    c) woman →  
+    <span class="toggle" onclick="toggle('a3')">答えを見る</span>
+    <span id="a3" class="hidden">women</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Translate into English</h3>
+  <p class="jp-note">英語にしましょう。</p>
+
+  <p>
+    a) 彼らは子どもです。  
+    <span class="toggle" onclick="toggle('b1')">答えを見る</span>
+    <span id="b1" class="hidden">They are children.</span>
+  </p>
+
+  <p>
+    b) その男性たちは先生です。  
+    <span class="toggle" onclick="toggle('b2')">答えを見る</span>
+    <span id="b2" class="hidden">The men are teachers.</span>
+  </p>
+</div>
+
+<h2>Mini‑Quiz</h2>
+
+<div class="exercise-block">
+  <h3>1) 「私は3冊の本を持っています。」</h3>
+
+  <p>
+    a) I have three book.<br>
+    b) I have three books.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">b) I have three books.</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) 「彼らは子どもです。」</h3>
+
+  <p>
+    a) They are child.<br>
+    b) They are children.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">b) They are children.</span>
+  </p>
+</div>
+
+</body>
+</html>

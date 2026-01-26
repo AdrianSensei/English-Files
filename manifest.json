@@ -1,0 +1,13 @@
+{
+  "background_color": "#e3eef3",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Adrian Sensei – English Grammar Sheets",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Adrian Sensei",
+  "start_url": "/",
+  "theme_color": "#e3eef3",
+  "id": "com.adriansensei.english",
+  "description": "Clear, structured grammar sheets for independent English learners."
+}

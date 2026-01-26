@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Superlative Adjectives</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Superlative Adjectives</h1>
+<p class="jp-note">最上級。「一番〜です」を表します。</p>
+
+<h2>What are superlatives?</h2>
+<p>Superlatives compare one thing with all others.</p>
+<p class="jp-note">最上級は「他のすべてと比べて一番〜」を表します。</p>
+
+<h2>Form</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adjective Type</th>
+      <th>Rule</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Short adjectives (1 syllable)</td>
+      <td>add **-est**</td>
+      <td>tall → the tallest</td>
+    </tr>
+    <tr>
+      <td>Adjectives ending in e</td>
+      <td>add **-st**</td>
+      <td>nice → the nicest</td>
+    </tr>
+    <tr>
+      <td>Short adj. ending CVC</td>
+      <td>double last consonant + est</td>
+      <td>big → the biggest</td>
+    </tr>
+    <tr>
+      <td>Long adjectives (2+ syllables)</td>
+      <td>use **the most + adjective**</td>
+      <td>beautiful → the most beautiful</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<p>
+  <strong>Mount Fuji is the highest mountain in Japan.</strong><br>
+  <span class="toggle" onclick="toggle('ex1')">日本語を見る / 隠す</span>
+  <span id="ex1" class="hidden">富士山は日本で一番高い山です。</span>
+</p>
+
+<p>
+  <strong>This is the most interesting book.</strong><br>
+  <span class="toggle" onclick="toggle('ex2')">日本語を見る / 隠す</span>
+  <span id="ex2" class="hidden">これは一番おもしろい本です。</span>
+</p>
+
+<p>
+  <strong>He is the fastest runner.</strong><br>
+  <span class="toggle" onclick="toggle('ex3')">日本語を見る / 隠す</span>
+  <span id="ex3" class="hidden">彼は一番速い走者です。</span>
+</p>
+
+<h2>Irregular Superlatives</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adjective</th>
+      <th>Superlative</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>good</td>
+      <td>the best</td>
+      <td>一番良い</td>
+    </tr>
+    <tr>
+      <td>bad</td>
+      <td>the worst</td>
+      <td>一番悪い</td>
+    </tr>
+    <tr>
+      <td>far</td>
+      <td>the farthest / the furthest</td>
+      <td>一番遠い</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Important</h2>
+<p>Always use **the** before a superlative.</p>
+<p class="jp-note">最上級の前には必ず **the** をつけます。</p>
+
+<h2>Exercises</h2>
+
+<div class="exercise-block">
+  <h3>1. Complete the sentences</h3>
+  <p class="jp-note">最上級を入れましょう。</p>
+
+  <p>
+    a) This is ___ (easy) question.  
+    <span class="toggle" onclick="toggle('a1')">答えを見る</span>
+    <span id="a1" class="hidden">the easiest</span>
+  </p>
+
+  <p>
+    b) She is ___ (beautiful) girl in the class.  
+    <span class="toggle" onclick="toggle('a2')">答えを見る</span>
+    <span id="a2" class="hidden">the most beautiful</span>
+  </p>
+
+  <p>
+    c) He is ___ (good) player on the team.  
+    <span class="toggle" onclick="toggle('a3')">答えを見る</span>
+    <span id="a3" class="hidden">the best</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Translate into English</h3>
+  <p class="jp-note">英語にしましょう。</p>
+
+  <p>
+    a) これは一番高いビルです。  
+    <span class="toggle" onclick="toggle('b1')">答えを見る</span>
+    <span id="b1" class="hidden">This is the tallest building.</span>
+  </p>
+
+  <p>
+    b) 彼女は一番若いです。  
+    <span class="toggle" onclick="toggle('b2')">答えを見る</span>
+    <span id="b2" class="hidden">She is the youngest.</span>
+  </p>
+</div>
+
+<h2>Mini‑Quiz</h2>
+
+<div class="exercise-block">
+  <h3>1) 「これは一番おもしろい映画です。」</h3>
+
+  <p>
+    a) This is the most interesting movie.<br>
+    b) This is the interestingest movie.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">a) This is the most interesting movie.</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) 「彼はクラスで一番背が高いです。」</h3>
+
+  <p>
+    a) He is the tallest in the class.<br>
+    b) He is the most tall in the class.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">a) He is the tallest in the class.</span>
+  </p>
+</div>
+
+</body>
+</html>

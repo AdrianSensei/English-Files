@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Simple Present (Negative)</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Simple Present — Negative</h1>
+<p class="jp-note">一般動詞の現在形（否定文）。「〜しません」を表します。</p>
+
+<h2>What is the negative form?</h2>
+<p>The negative form uses “do not” or “does not” + base verb.</p>
+<p class="jp-note">否定文は「do not / does not」＋ 動詞の原形を使います。</p>
+
+<h2>Form</h2>
+<p>Use “do not” for I / you / we / they. Use “does not” for he / she / it.</p>
+<p class="jp-note">I / you / we / they は「do not」、he / she / it は「does not」を使います。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Negative</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I / you / we / they</td>
+      <td>do not + verb</td>
+      <td>I do not play tennis.</td>
+    </tr>
+    <tr>
+      <td>he / she / it</td>
+      <td>does not + verb</td>
+      <td>She does not play tennis.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<p>
+  <strong>I do not eat meat.</strong><br>
+  <span class="toggle" onclick="toggle('ex1')">日本語を見る / 隠す</span>
+  <span id="ex1" class="hidden">私は肉を食べません。</span>
+</p>
+
+<p>
+  <strong>He does not watch TV.</strong><br>
+  <span class="toggle" onclick="toggle('ex2')">日本語を見る / 隠す</span>
+  <span id="ex2" class="hidden">彼はテレビを見ません。</span>
+</p>
+
+<p>
+  <strong>They do not go to school on Sunday.</strong><br>
+  <span class="toggle" onclick="toggle('ex3')">日本語を見る / 隠す</span>
+  <span id="ex3" class="hidden">彼らは日曜日に学校へ行きません。</span>
+</p>
+
+<h2>Important Rule</h2>
+<p>After “does not,” the verb returns to the base form (no -s).</p>
+<p class="jp-note">「does not」の後は動詞の原形に戻ります（-s をつけません）。</p>
+
+<h2>Exercises</h2>
+
+<div class="exercise-block">
+  <h3>1. Complete the sentences</h3>
+  <p class="jp-note">正しい形にしましょう。</p>
+
+  <p>
+    a) She ___ (not like) apples.  
+    <span class="toggle" onclick="toggle('a1')">答えを見る</span>
+    <span id="a1" class="hidden">does not like</span>
+  </p>
+
+  <p>
+    b) They ___ (not study) English.  
+    <span class="toggle" onclick="toggle('a2')">答えを見る</span>
+    <span id="a2" class="hidden">do not study</span>
+  </p>
+
+  <p>
+    c) He ___ (not go) to bed early.  
+    <span class="toggle" onclick="toggle('a3')">答えを見る</span>
+    <span id="a3" class="hidden">does not go</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Translate into English</h3>
+  <p class="jp-note">英語にしましょう。</p>
+
+  <p>
+    a) 私はコーヒーを飲みません。  
+    <span class="toggle" onclick="toggle('b1')">答えを見る</span>
+    <span id="b1" class="hidden">I do not drink coffee.</span>
+  </p>
+
+  <p>
+    b) 彼女は犬が好きではありません。  
+    <span class="toggle" onclick="toggle('b2')">答えを見る</span>
+    <span id="b2" class="hidden">She does not like dogs.</span>
+  </p>
+</div>
+
+<h2>Mini‑Quiz</h2>
+
+<div class="exercise-block">
+  <h3>1) 「彼は英語を話しません。」</h3>
+
+  <p>
+    a) He does not speak English.<br>
+    b) He do not speak English.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">a) He does not speak English.</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) 「私は毎日学校に行きません。」</h3>
+
+  <p>
+    a) I do not go to school every day.<br>
+    b) I does not go to school every day.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">a) I do not go to school every day.</span>
+  </p>
+</div>
+
+</body>
+</html>

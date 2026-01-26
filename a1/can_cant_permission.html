@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Can / Can't (Permission)</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Can / Can't — Permission</h1>
+<p class="jp-note">許可を表す「〜してもいい／いけない」です。</p>
+
+<h2>What does “can” mean in permission?</h2>
+<p>We use “can” to ask for or give permission.</p>
+<p class="jp-note">「can」は許可を求めたり、与えたりするときに使います。</p>
+
+<h2>Form</h2>
+<p>Use “Can I…?” to ask for permission. Use “You can…” to give permission.</p>
+<p class="jp-note">許可を求めるときは「Can I…?」、許可を与えるときは「You can…」を使います。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Use</th>
+      <th>Form</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Asking</td>
+      <td>Can I + verb?</td>
+      <td>Can I go home?</td>
+    </tr>
+    <tr>
+      <td>Giving</td>
+      <td>You can + verb</td>
+      <td>You can go home.</td>
+    </tr>
+    <tr>
+      <td>Denying</td>
+      <td>You can’t + verb</td>
+      <td>You can’t go home.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<p>
+  <strong>Can I open the window?</strong><br>
+  <span class="toggle" onclick="toggle('ex1')">日本語を見る / 隠す</span>
+  <span id="ex1" class="hidden">窓を開けてもいいですか。</span>
+</p>
+
+<p>
+  <strong>You can use my pen.</strong><br>
+  <span class="toggle" onclick="toggle('ex2')">日本語を見る / 隠す</span>
+  <span id="ex2" class="hidden">私のペンを使ってもいいですよ。</span>
+</p>
+
+<p>
+  <strong>You can’t eat here.</strong><br>
+  <span class="toggle" onclick="toggle('ex3')">日本語を見る / 隠す</span>
+  <span id="ex3" class="hidden">ここで食べてはいけません。</span>
+</p>
+
+<h2>Short Answers</h2>
+<p>Yes, you can. / No, you can’t.</p>
+<p class="jp-note">短い答えは「Yes, you can. / No, you can’t.」を使います。</p>
+
+<h2>Exercises</h2>
+
+<div class="exercise-block">
+  <h3>1. Complete the sentences</h3>
+  <p class="jp-note">can / can’t を入れましょう。</p>
+
+  <p>
+    a) You ___ use your phone here. (許可)  
+    <span class="toggle" onclick="toggle('a1')">答えを見る</span>
+    <span id="a1" class="hidden">can</span>
+  </p>
+
+  <p>
+    b) You ___ park here. (禁止)  
+    <span class="toggle" onclick="toggle('a2')">答えを見る</span>
+    <span id="a2" class="hidden">can’t</span>
+  </p>
+
+  <p>
+    c) ___ I go to the bathroom?  
+    <span class="toggle" onclick="toggle('a3')">答えを見る</span>
+    <span id="a3" class="hidden">Can</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Translate into English</h3>
+  <p class="jp-note">英語にしましょう。</p>
+
+  <p>
+    a) ここで写真を撮ってもいいですか。  
+    <span class="toggle" onclick="toggle('b1')">答えを見る</span>
+    <span id="b1" class="hidden">Can I take pictures here?</span>
+  </p>
+
+  <p>
+    b) あなたはこの部屋に入ってはいけません。  
+    <span class="toggle" onclick="toggle('b2')">答えを見る</span>
+    <span id="b2" class="hidden">You can’t enter this room.</span>
+  </p>
+</div>
+
+<h2>Mini‑Quiz</h2>
+
+<div class="exercise-block">
+  <h3>1) 「私はここに座ってもいいですか。」</h3>
+
+  <p>
+    a) Can I sit here?<br>
+    b) Can I sits here?<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">a) Can I sit here?</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) 「あなたはこの本を読んでもいいですよ。」</h3>
+
+  <p>
+    a) You can read this book.<br>
+    b) You can reads this book.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">a) You can read this book.</span>
+  </p>
+</div>
+
+</body>
+</html>

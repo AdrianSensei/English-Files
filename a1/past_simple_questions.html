@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Past Simple (Questions)</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Past Simple — Questions</h1>
+<p class="jp-note">過去の疑問文。「〜しましたか？」を表します。</p>
+
+<h2>How do we make questions?</h2>
+<p>Use **Did + subject + base verb?**</p>
+<p class="jp-note">疑問文は **Did + 主語 + 動詞の原形** を使います。</p>
+
+<h2>Form</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Positive</th>
+      <th>Question</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>You watched a movie.</td>
+      <td>Did you watch a movie?</td>
+      <td>あなたは映画を見ましたか。</td>
+    </tr>
+    <tr>
+      <td>She went to school.</td>
+      <td>Did she go to school?</td>
+      <td>彼女は学校へ行きましたか。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Important</h2>
+<p>Use the **base verb** after “Did.”</p>
+<p class="jp-note">“Did” の後は必ず動詞の原形。</p>
+
+<p><strong>✖ Did you went?</strong><br>→ <strong>✔ Did you go?</strong></p>
+
+<h2>Examples</h2>
+
+<p>
+  <strong>Did you study yesterday?</strong><br>
+  <span class="toggle" onclick="toggle('ex1')">日本語を見る / 隠す</span>
+  <span id="ex1" class="hidden">あなたは昨日勉強しましたか。</span>
+</p>
+
+<p>
+  <strong>Did he eat breakfast?</strong><br>
+  <span class="toggle" onclick="toggle('ex2')">日本語を見る / 隠す</span>
+  <span id="ex2" class="hidden">彼は朝ごはんを食べましたか。</span>
+</p>
+
+<p>
+  <strong>Did they see the movie?</strong><br>
+  <span class="toggle" onclick="toggle('ex3')">日本語を見る / 隠す</span>
+  <span id="ex3" class="hidden">彼らはその映画を見ましたか。</span>
+</p>
+
+<h2>Short Answers</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Yes</th>
+      <th>No</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Did you go?</td>
+      <td>Yes, I did.</td>
+      <td>No, I didn’t.</td>
+    </tr>
+    <tr>
+      <td>Did she study?</td>
+      <td>Yes, she did.</td>
+      <td>No, she didn’t.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Exercises</h2>
+
+<div class="exercise-block">
+  <h3>1. Make questions</h3>
+  <p class="jp-note">疑問文にしましょう。</p>
+
+  <p>
+    a) You played soccer.  
+    <span class="toggle" onclick="toggle('a1')">答えを見る</span>
+    <span id="a1" class="hidden">Did you play soccer?</span>
+  </p>
+
+  <p>
+    b) She ate sushi.  
+    <span class="toggle" onclick="toggle('a2')">答えを見る</span>
+    <span id="a2" class="hidden">Did she eat sushi?</span>
+  </p>
+
+  <p>
+    c) They went to Kyoto.  
+    <span class="toggle" onclick="toggle('a3')">答えを見る</span>
+    <span id="a3" class="hidden">Did they go to Kyoto?</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Translate into English</h3>
+  <p class="jp-note">英語にしましょう。</p>
+
+  <p>
+    a) あなたは昨日映画を見ましたか。  
+    <span class="toggle" onclick="toggle('b1')">答えを見る</span>
+    <span id="b1" class="hidden">Did you watch a movie yesterday?</span>
+  </p>
+
+  <p>
+    b) 彼女は宿題をしましたか。  
+    <span class="toggle" onclick="toggle('b2')">答えを見る</span>
+    <span id="b2" class="hidden">Did she do her homework?</span>
+  </p>
+</div>
+
+<h2>Mini‑Quiz</h2>
+
+<div class="exercise-block">
+  <h3>1) 「彼らは昨日学校へ行きましたか。」</h3>
+
+  <p>
+    a) Did they go to school yesterday.<br>
+    b) Did they went to school yesterday.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">a) Did they go to school yesterday.</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) 「あなたは朝ごはんを食べましたか。」</h3>
+
+  <p>
+    a) Did you eat breakfast.<br>
+    b) Did you ate breakfast.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">a) Did you eat breakfast.</span>
+  </p>
+</div>
+
+</body>
+</html>

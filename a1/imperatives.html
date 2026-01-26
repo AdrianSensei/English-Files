@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Imperatives</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Imperatives</h1>
+<p class="jp-note">命令文。「〜しなさい／〜しないで」を表します。</p>
+
+<h2>What are imperatives?</h2>
+<p>Imperatives are used to give orders, instructions, or advice.</p>
+<p class="jp-note">命令文は、指示・命令・アドバイスをするときに使います。</p>
+
+<h2>Form</h2>
+<p>Use the base verb (no subject).</p>
+<p class="jp-note">主語なしで動詞の原形を使います。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Form</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Positive</td>
+      <td>Verb...</td>
+      <td>Open the door.</td>
+    </tr>
+    <tr>
+      <td>Negative</td>
+      <td>Don’t + verb...</td>
+      <td>Don’t run.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<p>
+  <strong>Listen carefully.</strong><br>
+  <span class="toggle" onclick="toggle('ex1')">日本語を見る / 隠す</span>
+  <span id="ex1" class="hidden">よく聞きなさい。</span>
+</p>
+
+<p>
+  <strong>Don’t touch that.</strong><br>
+  <span class="toggle" onclick="toggle('ex2')">日本語を見る / 隠す</span>
+  <span id="ex2" class="hidden">それに触らないで。</span>
+</p>
+
+<p>
+  <strong>Turn left at the corner.</strong><br>
+  <span class="toggle" onclick="toggle('ex3')">日本語を見る / 隠す</span>
+  <span id="ex3" class="hidden">角を左に曲がってください。</span>
+</p>
+
+<h2>Common Uses</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Use</th>
+      <th>Example</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Instructions</td>
+      <td>Press the button.</td>
+      <td>操作の指示</td>
+    </tr>
+    <tr>
+      <td>Commands</td>
+      <td>Stop!</td>
+      <td>命令</td>
+    </tr>
+    <tr>
+      <td>Advice</td>
+      <td>Be careful.</td>
+      <td>アドバイス</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Exercises</h2>
+
+<div class="exercise-block">
+  <h3>1. Make the sentences imperative</h3>
+  <p class="jp-note">命令文にしましょう。</p>
+
+  <p>
+    a) You open the window.  
+    <span class="toggle" onclick="toggle('a1')">答えを見る</span>
+    <span id="a1" class="hidden">Open the window.</span>
+  </p>
+
+  <p>
+    b) You don’t eat here.  
+    <span class="toggle" onclick="toggle('a2')">答えを見る</span>
+    <span id="a2" class="hidden">Don’t eat here.</span>
+  </p>
+
+  <p>
+    c) You listen to the teacher.  
+    <span class="toggle" onclick="toggle('a3')">答えを見る</span>
+    <span id="a3" class="hidden">Listen to the teacher.</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Translate into English</h3>
+  <p class="jp-note">英語にしましょう。</p>
+
+  <p>
+    a) 静かにしてください。  
+    <span class="toggle" onclick="toggle('b1')">答えを見る</span>
+    <span id="b1" class="hidden">Be quiet.</span>
+  </p>
+
+  <p>
+    b) 走らないでください。  
+    <span class="toggle" onclick="toggle('b2')">答えを見る</span>
+    <span id="b2" class="hidden">Don’t run.</span>
+  </p>
+</div>
+
+<h2>Mini‑Quiz</h2>
+
+<div class="exercise-block">
+  <h3>1) 「ここに座ってください。」</h3>
+
+  <p>
+    a) Sit here.<br>
+    b) You sit here.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">a) Sit here.</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) 「急がないで。」</h3>
+
+  <p>
+    a) Don’t hurry.<br>
+    b) Not hurry.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">a) Don’t hurry.</span>
+  </p>
+</div>
+
+</body>
+</html>
