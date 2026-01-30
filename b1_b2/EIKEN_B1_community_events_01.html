@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EIKEN B1 – Community & Local Events</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f7fa;
+        padding: 40px;
+        max-width: 900px;
+        margin: auto;
+        line-height: 1.7;
+        color: #333;
+    }
+
+    h1 { text-align: center; margin-bottom: 10px; }
+    h2 { margin-top: 40px; color: #222; }
+    h3 { margin-top: 25px; color: #444; }
+
+    .section-box {
+        background: #ffffff;
+        border: 1px solid #d0d7de;
+        padding: 25px;
+        border-radius: 12px;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th {
+        background: #E3EEF3;
+        padding: 10px;
+        border-bottom: 2px solid #d0d7de;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .exercise-item { margin-bottom: 15px; }
+
+    .answer {
+        display: none;
+        margin-top: 8px;
+        padding: 8px;
+        background: #f0f0f0;
+        border-left: 3px solid #999;
+    }
+
+    button {
+        margin-top: 5px;
+        padding: 6px 10px;
+        cursor: pointer;
+        background: #e0e0e0;
+        color: #333;
+        border: 1px solid #c8c8c8;
+        border-radius: 6px;
+    }
+
+    button:hover { background: #d5d5d5; }
+
+    ul { margin-left: 20px; }
+</style>
+
+<script>
+function toggleAnswer(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>EIKEN B1 – Community & Local Events</h1>
+
+<!-- 📚 1. GRAMMAR / READING SKILL EXPLANATION -->
+<h2>📚 1. Reading Skills（読解スキル）</h2>
+<div class="section-box">
+
+<h3>1. True / False（正誤問題）</h3>
+<p>
+Read the passage carefully and check if the statements match the information.  
+→ 文をよく読み、内容と一致するか判断します。
+</p>
+
+<h3>2. Inference（推測）</h3>
+<p>
+Sometimes the answer is not written directly.  
+You must understand the situation and guess logically.  
+→ 直接書かれていない情報を状況から推測します。
+</p>
+
+<h3>3. Vocabulary in Context（文脈から語彙を理解）</h3>
+<p>
+Use the sentence around the word to understand its meaning.  
+→ 前後の文から意味をつかみます。
+</p>
+
+</div>
+
+<!-- ✏️ 2. SHORT EXAMPLE SENTENCES -->
+<h2>✏️ 2. Short Example Sentences（短い例文）</h2>
+<div class="section-box">
+<ul>
+<li>Our town holds a clean-up event every spring. → 町では毎年春に清掃イベントがあります。</li>
+<li>Many students volunteer at the community center. → 多くの学生が地域センターでボランティアをします。</li>
+<li>The festival attracts visitors from nearby cities. → 祭りは近くの市からの来客を引きつけます。</li>
+<li>Local events help people connect with each other. → 地域イベントは人々のつながりを強めます。</li>
+<li>Volunteers support the event by giving directions. → ボランティアは案内をしてイベントを支えます。</li>
+<li>Some residents donate food for charity events. → 住民の中にはチャリティーイベントに食べ物を寄付する人もいます。</li>
+<li>The community center offers free workshops. → 地域センターは無料のワークショップを提供します。</li>
+</ul>
+</div>
+
+<!-- 📝 3. LONGER EXAMPLE SENTENCES -->
+<h2>📝 3. Longer Example Sentences（長い例文）</h2>
+<div class="section-box">
+<ul>
+<li>Many people join local events because they want to meet new neighbors and support the community.  
+→ 新しい近所の人と出会い、地域を支えたいので多くの人が地域イベントに参加します。</li>
+
+<li>The community center organizes workshops that teach useful skills, such as cooking or first aid.  
+→ 地域センターは料理や応急処置などの役立つスキルを教えるワークショップを開催します。</li>
+
+<li>Although the weather was bad, volunteers continued helping at the charity run.  
+→ 天気が悪かったにもかかわらず、ボランティアはチャリティーランを手伝い続けました。</li>
+
+<li>Local festivals often include food stands, performances, and games for children.  
+→ 地域の祭りには食べ物の屋台、パフォーマンス、子ども向けのゲームがよくあります。</li>
+
+<li>Some people join clean-up events to make the town a better place for everyone.  
+→ 町をより良い場所にしたいので清掃イベントに参加する人もいます。</li>
+</ul>
+</div>
+
+<!-- 🧩 4. PRACTICE EXERCISES -->
+<h2>🧩 4. Practice Exercises（練習問題）</h2>
+<div class="section-box">
+
+<h3>Exercise A – True / False（正誤問題）</h3>
+
+<div class="exercise-item">
+1. The community center offers free workshops.  
+<button onclick="toggleAnswer('ea1')">Show Answer</button>
+<div id="ea1" class="answer">True</div>
+</div>
+
+<div class="exercise-item">
+2. Local festivals never include food stands.  
+<button onclick="toggleAnswer('ea2')">Show Answer</button>
+<div id="ea2" class="answer">False</div>
+</div>
+
+<div class="exercise-item">
+3. Many people join events to meet new neighbors.  
+<button onclick="toggleAnswer('ea3')">Show Answer</button>
+<div id="ea3" class="answer">True</div>
+</div>
+
+<div class="exercise-item">
+4. Volunteers stopped helping because of bad weather.  
+<button onclick="toggleAnswer('ea4')">Show Answer</button>
+<div id="ea4" class="answer">False</div>
+</div>
+
+<div class="exercise-item">
+5. Clean-up events help improve the town.  
+<button onclick="toggleAnswer('ea5')">Show Answer</button>
+<div id="ea5" class="answer">True</div>
+</div>
+
+<h3>Exercise B – Vocabulary in Context（文脈から語彙を理解）</h3>
+
+<div class="exercise-item">
+1. “Residents” most likely means…  
+<button onclick="toggleAnswer('eb1')">Show Answer</button>
+<div id="eb1" class="answer">People who live in the area.</div>
+</div>
+
+<div class="exercise-item">
+2. “Support the community” means…  
+<button onclick="toggleAnswer('eb2')">Show Answer</button>
+<div id="eb2" class="answer">Help the people in the town.</div>
+</div>
+
+<div class="exercise-item">
+3. “Attracts visitors” means…  
+<button onclick="toggleAnswer('eb3')">Show Answer</button>
+<div id="eb3" class="answer">Brings people to the event.</div>
+</div>
+
+<div class="exercise-item">
+4. “Organizes workshops” means…  
+<button onclick="toggleAnswer('eb4')">Show Answer</button>
+<div id="eb4" class="answer">Plans and prepares classes.</div>
+</div>
+
+<div class="exercise-item">
+5. “Charity run” is probably…  
+<button onclick="toggleAnswer('eb5')">Show Answer</button>
+<div id="eb5" class="answer">A running event to raise money.</div>
+</div>
+
+</div>
+
+<!-- 📖 5. SHORT READING TEXT -->
+<h2>📖 5. Short Reading Text（リーディング）</h2>
+<div class="section-box">
+
+<p>
+Last weekend, our town held a community clean-up event near the river.  
+Many families joined, and some students came with their school clubs.  
+Although the weather was cloudy, everyone worked hard to pick up trash and separate recyclables.  
+The community center provided gloves and bags, and volunteers explained how to sort the waste correctly.
+</p>
+
+<p style="margin-top: 22px;">
+After the clean-up, a small festival was held in the park.  
+There were food stands, music performances, and games for children.  
+The event helped people meet new neighbors and learn more about local activities.  
+Many participants said they wanted to join again next year because the event made them feel more connected to the community.
+</p>
+
+</div>
+
+<!-- ❓ 6. READING COMPREHENSION QUESTIONS -->
+<h2>❓ 6. Reading Comprehension Questions（読解問題）</h2>
+<div class="section-box">
+
+<div class="exercise-item">
+1. Where did the clean-up event take place?  
+<button onclick="toggleAnswer('rq1')">Show Answer</button>
+<div id="rq1" class="answer">Near the river.</div>
+</div>
+
+<div class="exercise-item">
+2. Who provided gloves and bags?  
+<button onclick="toggleAnswer('rq2')">Show Answer</button>
+<div id="rq2" class="answer">The community center.</div>
+</div>
+
+<div class="exercise-item">
+3. What happened after the clean-up?  
+<button onclick="toggleAnswer('rq3')">Show Answer</button>
+<div id="rq3" class="answer">A small festival was held in the park.</div>
+</div>
+
+<div class="exercise-item">
+4. Why did many people want to join again next year?  
+<button onclick="toggleAnswer('rq4')">Show Answer</button>
+<div id="rq4" class="answer">Because they felt more connected to the community.</div>
+</div>
+
+<div class="exercise-item">
+5. What can we infer about the event?  
+<button onclick="toggleAnswer('rq5')">Show Answer</button>
+<div id="rq5" class="answer">It was successful and enjoyed by many people.</div>
+</div>
+
+</div>
+
+<!-- 🎯 7. SUMMARY -->
+<h2>🎯 7. Summary（まとめ）</h2>
+<div class="section-box">
+<ul>
+<li>Community events help people connect. → 地域イベントは人々をつなげます。</li>
+<li>Volunteers play an important role. → ボランティアは重要な役割を果たします。</li>
+<li>Reading skills include inference and true/false. → 読解には推測・正誤判断が必要です。</li>
+<li>Vocabulary can be understood from context. → 語彙は文脈から理解できます。</li>
+</ul>
+</div>
+
+</body>
+</html>
