@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Future with will</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: #f5f7fa;
+  }
+
+  .section-box {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    padding: 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  th {
+    background: #E3EEF3;
+  }
+
+  button {
+    margin-top: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+  }
+
+  button:hover {
+    background: #d5d5d5;
+  }
+
+  .answer {
+    display: none;
+    margin-top: 8px;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+  }
+
+  .jp-note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
+
+</head>
+<body>
+
+<h1>Future with will</h1>
+<p><strong>Level: A1</strong></p>
+
+<!-- 📚 Grammar Explanation -->
+<h2>📚 1. Grammar Explanation</h2>
+<div class="section-box">
+
+<p>We use “will” to talk about the future.</p>
+<p class="jp-note">「will」は未来のことを話すときに使います。</p>
+
+<p><strong>Form:</strong> will + base verb.</p>
+<p class="jp-note">形：<strong>will + 動詞の原形</strong> を使います。</p>
+
+<table>
+  <tr><th>Form</th><th>Example</th><th>Meaning</th></tr>
+  <tr><td>Positive</td><td>I will study.</td><td>私は勉強します。</td></tr>
+  <tr><td>Negative</td><td>I will not (won’t) study.</td><td>私は勉強しません。</td></tr>
+  <tr><td>Question</td><td>Will you study?</td><td>あなたは勉強しますか。</td></tr>
+</table>
+
+<p><strong>Use 1:</strong> decisions now.</p>
+<p class="jp-note">使い方1：今その場で決めたこと。</p>
+
+<p><strong>Use 2:</strong> simple predictions.</p>
+<p class="jp-note">使い方2：簡単な未来の予想。</p>
+
+</div>
+
+<!-- ✏️ Short Example Sentences -->
+<h2>✏️ 2. Short Example Sentences</h2>
+<div class="section-box">
+
+<p><strong>I will study tonight.</strong><br>
+<span class="jp-note">私は今夜勉強します。</span></p>
+
+<p><strong>She will come tomorrow.</strong><br>
+<span class="jp-note">彼女は明日来るでしょう。</span></p>
+
+<p><strong>They will play soccer after school.</strong><br>
+<span class="jp-note">彼らは放課後サッカーをするでしょう。</span></p>
+
+<p><strong>It will rain tomorrow.</strong><br>
+<span class="jp-note">明日は雨が降るでしょう。</span></p>
+
+<p><strong>I won’t watch TV today.</strong><br>
+<span class="jp-note">今日はテレビを見ません。</span></p>
+
+<p><strong>He won’t be late.</strong><br>
+<span class="jp-note">彼は遅れないでしょう。</span></p>
+
+<p><strong>Will you help me?</strong><br>
+<span class="jp-note">手伝ってくれますか。</span></p>
+
+</div>
+
+<!-- 📝 Longer Example Sentences -->
+<h2>📝 3. Longer Example Sentences</h2>
+<div class="section-box">
+
+<p><strong>I am tired, so I will go to bed early tonight.</strong><br>
+<span class="jp-note">疲れているので、今夜は早く寝ます。</span></p>
+
+<p><strong>It is very cloudy; I think it will rain this afternoon.</strong><br>
+<span class="jp-note">とても曇っているので、午後は雨が降ると思います。</span></p>
+
+<p><strong>My friends will come to my house, and we will play games.</strong><br>
+<span class="jp-note">友だちが家に来て、一緒にゲームをするでしょう。</span></p>
+
+<p><strong>She will study English after dinner and then read a book.</strong><br>
+<span class="jp-note">彼女は夕食のあと英語を勉強して、それから本を読むでしょう。</span></p>
+
+<p><strong>We will not go to the park if it rains tomorrow.</strong><br>
+<span class="jp-note">明日雨なら、公園には行きません。</span></p>
+
+</div>
+
+<!-- 🧩 Practice Exercises -->
+<h2>🧩 4. Practice Exercises</h2>
+<div class="section-box">
+
+<h3>Exercise A – Choose the correct option</h3>
+<p class="jp-note">正しい文を選びましょう。</p>
+
+<p>1) I ______ study tomorrow.</p>
+<p>a) will　b) won’t</p>
+<button onclick="toggleAnswer('ea1')">Show Answer</button>
+<div id="ea1" class="answer">a) will</div>
+
+<p>2) She ______ come to school today.（来ないでしょう）</p>
+<p>a) will　b) won’t</p>
+<button onclick="toggleAnswer('ea2')">Show Answer</button>
+<div id="ea2" class="answer">b) won’t</div>
+
+<p>3) ______ you help me with my homework?</p>
+<p>a) Will　b) Won’t</p>
+<button onclick="toggleAnswer('ea3')">Show Answer</button>
+<div id="ea3" class="answer">a) Will</div>
+
+<p>4) It ______ be sunny tomorrow.</p>
+<p>a) will　b) won’t</p>
+<button onclick="toggleAnswer('ea4')">Show Answer</button>
+<div id="ea4" class="answer">a) will</div>
+
+<p>5) They ______ play soccer if it rains.（雨ならしない）</p>
+<p>a) will　b) won’t</p>
+<button onclick="toggleAnswer('ea5')">Show Answer</button>
+<div id="ea5" class="answer">b) won’t</div>
+
+<h3>Exercise B – Complete the sentence</h3>
+<p class="jp-note">英語の文を完成させましょう。（自分で書きましょう）</p>
+
+<p>1) （私は明日宿題をします。）<br>
+<button onclick="toggleAnswer('eb1')">Show Answer</button>
+<div id="eb1" class="answer">I will do my homework tomorrow.</div></p>
+
+<p>2) （彼らは来ないでしょう。）<br>
+<button onclick="toggleAnswer('eb2')">Show Answer</button>
+<div id="eb2" class="answer">They won’t come.</div></p>
+
+<p>3) （あなたは私を手伝ってくれますか。）<br>
+<button onclick="toggleAnswer('eb3')">Show Answer</button>
+<div id="eb3" class="answer">Will you help me?</div></p>
+
+<p>4) （明日は雪が降るでしょう。）<br>
+<button onclick="toggleAnswer('eb4')">Show Answer</button>
+<div id="eb4" class="answer">It will snow tomorrow.</div></p>
+
+<p>5) （私は今夜テレビを見ません。）<br>
+<button onclick="toggleAnswer('eb5')">Show Answer</button>
+<div id="eb5" class="answer">I won’t watch TV tonight.</div></p>
+
+</div>
+
+<!-- 📖 Reading -->
+<h2>📖 5. Short Reading Text</h2>
+<div class="section-box">
+
+<h3>The Weather Tomorrow</h3>
+
+<p>
+Tomorrow will be an interesting day. In the morning, it will be sunny and warm.  
+Many people will go outside and enjoy the nice weather.  
+In the afternoon, it will get cloudy, and the wind will be strong.  
+Some people will say, “It will rain soon.”  
+In the evening, it will rain a little, but it will not be very cold.  
+I will stay at home, drink hot tea, and watch the rain from my window.
+</p>
+
+<p class="jp-note">
+明日はおもしろい天気になりそうです。朝は晴れて暖かいでしょう。  
+多くの人が外に出て、よい天気を楽しむでしょう。  
+午後になると曇ってきて、風が強くなるでしょう。  
+「もうすぐ雨が降るだろう」と言う人もいるでしょう。  
+夕方には少し雨が降りますが、とても寒くはないでしょう。  
+私は家にいて、温かいお茶を飲み、窓から雨をながめるつもりです。
+</p>
+
+</div>
+
+<!-- ❓ Questions -->
+<h2>❓ 6. Reading Comprehension Questions</h2>
+<div class="section-box">
+
+<p>1) What will the weather be like in the morning?<br>
+<button onclick="toggleAnswer('rq1')">Show Answer</button>
+<div id="rq1" class="answer">It will be sunny and warm.</div></p>
+
+<p>2) What will many people do in the morning?<br>
+<button onclick="toggleAnswer('rq2')">Show Answer</button>
+<div id="rq2" class="answer">They will go outside and enjoy the weather.</div></p>
+
+<p>3) What will the weather be like in the afternoon?<br>
+<button onclick="toggleAnswer('rq3')">Show Answer</button>
+<div id="rq3" class="answer">It will get cloudy and windy.</div></p>
+
+<p>4) Will it rain in the evening?<br>
+<button onclick="toggleAnswer('rq4')">Show Answer</button>
+<div id="rq4" class="answer">Yes, it will rain a little.</div></p>
+
+<p>5) What will the writer do in the evening?<br>
+<button onclick="toggleAnswer('rq5')">Show Answer</button>
+<div id="rq5" class="answer">The writer will stay at home, drink tea, and watch the rain.</div></p>
+
+</div>
+
+<!-- 🎯 Summary -->
+<h2>🎯 Summary（まとめ）</h2>
+<div class="section-box">
+
+<ul>
+  <li><strong>will + base verb</strong>（未来を表す形）</li>
+  <li><strong>won’t</strong>（否定の未来）</li>
+  <li><strong>Will + subject</strong>（疑問文の形）</li>
+  <li><strong>short & simple</strong>（短くシンプルに言う）</li>
+</ul>
+
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Back to Index</a>
+</div>
+
+</body>
+</html>

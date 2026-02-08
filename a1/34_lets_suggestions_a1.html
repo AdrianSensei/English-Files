@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Let’s (Suggestions)</title>
+
+<style>
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: #f5f7fa;
+}
+
+.section-box {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    padding: 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background: #E3EEF3;
+}
+
+button {
+    margin-top: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #d5d5d5;
+}
+
+.answer {
+    display: none;
+    margin-top: 8px;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+}
+
+.jp-note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+</style>
+
+<script>
+function toggleAnswer(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
+
+</head>
+<body>
+
+<h1>Let’s (Suggestions)</h1>
+<p><strong>Level: A1</strong></p>
+
+<!-- 📚 Grammar Explanation -->
+<h2>📚 1. Grammar Explanation</h2>
+<div class="section-box">
+
+<p><strong>Let’s + verb</strong> is used to make a suggestion to do something together.</p>
+<p class="jp-note">「Let’s + 動詞の原形」で「一緒に〜しよう」と提案します。</p>
+
+<p><strong>Let’s not + verb</strong> is used to suggest not doing something.</p>
+<p class="jp-note">「Let’s not + 動詞の原形」で「〜しないようにしよう」と言います。</p>
+
+<table>
+<tr><th>Form</th><th>Example</th><th>Meaning</th></tr>
+<tr><td>Let’s + verb</td><td>Let’s go.</td><td>行こう。</td></tr>
+<tr><td>Let’s not + verb</td><td>Let’s not run.</td><td>走らないようにしよう。</td></tr>
+<tr><td>Response</td><td>Yes, let’s.</td><td>うん、そうしよう。</td></tr>
+</table>
+
+</div>
+
+<!-- ✏️ Short Example Sentences -->
+<h2>✏️ 2. Short Example Sentences</h2>
+<div class="section-box">
+
+<p><strong>Let’s eat lunch.</strong><br>
+<span class="jp-note">昼ごはんを食べよう。</span></p>
+
+<p><strong>Let’s play soccer.</strong><br>
+<span class="jp-note">サッカーをしよう。</span></p>
+
+<p><strong>Let’s study English.</strong><br>
+<span class="jp-note">英語を勉強しよう。</span></p>
+
+<p><strong>Let’s not be late.</strong><br>
+<span class="jp-note">遅れないようにしよう。</span></p>
+
+<p><strong>Let’s sit here.</strong><br>
+<span class="jp-note">ここに座ろう。</span></p>
+
+<p><strong>Let’s go to the park.</strong><br>
+<span class="jp-note">公園に行こう。</span></p>
+
+<p><strong>Let’s not make noise.</strong><br>
+<span class="jp-note">うるさくしないようにしよう。</span></p>
+
+</div>
+
+<!-- 📝 Longer Example Sentences -->
+<h2>📝 3. Longer Example Sentences</h2>
+<div class="section-box">
+
+<p><strong>Let’s do our homework before dinner.</strong><br>
+<span class="jp-note">夕ごはんの前に宿題をしよう。</span></p>
+
+<p><strong>Let’s not watch TV for a long time.</strong><br>
+<span class="jp-note">長い時間テレビを見ないようにしよう。</span></p>
+
+<p><strong>Let’s play a board game with our family.</strong><br>
+<span class="jp-note">家族とボードゲームをしよう。</span></p>
+
+<p><strong>Let’s meet at the station at four o’clock.</strong><br>
+<span class="jp-note">4時に駅で会おう。</span></p>
+
+<p><strong>Let’s not eat too many sweets today.</strong><br>
+<span class="jp-note">今日はお菓子を食べすぎないようにしよう。</span></p>
+
+</div>
+
+<!-- 🧩 Practice Exercises -->
+<h2>🧩 4. Practice Exercises</h2>
+<div class="section-box">
+
+<h3>Exercise A – Choose the correct option</h3>
+<p class="jp-note">正しい文を選びましょう。</p>
+
+<p>1) ______ go to the library.<br>a) Let’s not to b) Let’s</p>
+<button onclick="toggleAnswer('ea1')">Show Answer</button>
+<div id="ea1" class="answer">b) Let’s</div>
+
+<p>2) ______ play basketball.<br>a) Let’s b) Let’s not to</p>
+<button onclick="toggleAnswer('ea2')">Show Answer</button>
+<div id="ea2" class="answer">a) Let’s</div>
+
+<p>3) ______ be noisy in class.<br>a) Let’s not b) Let’s be not</p>
+<button onclick="toggleAnswer('ea3')">Show Answer</button>
+<div id="ea3" class="answer">a) Let’s not</div>
+
+<p>4) “Let’s go to the park.” – “______.”<br>a) Yes, let’s. b) Yes, I am.</p>
+<button onclick="toggleAnswer('ea4')">Show Answer</button>
+<div id="ea4" class="answer">a) Yes, let’s.</div>
+
+<p>5) “Let’s watch a movie.” – “______ , I can’t.”<br>a) Yes b) Sorry</p>
+<button onclick="toggleAnswer('ea5')">Show Answer</button>
+<div id="ea5" class="answer">b) Sorry</div>
+
+<h3>Exercise B – Complete the sentence</h3>
+<p class="jp-note">文を完成させましょう。（選択肢なし）</p>
+
+<p>1) （一緒に本を読もう。）<br>
+<button onclick="toggleAnswer('eb1')">Show Answer</button>
+<div id="eb1" class="answer">Let’s read a book.</div></p>
+
+<p>2) （走らないようにしよう。）<br>
+<button onclick="toggleAnswer('eb2')">Show Answer</button>
+<div id="eb2" class="answer">Let’s not run.</div></p>
+
+<p>3) （一緒に英語を勉強しよう。）<br>
+<button onclick="toggleAnswer('eb3')">Show Answer</button>
+<div id="eb3" class="answer">Let’s study English together.</div></p>
+
+<p>4) （外で遊ぼう。）<br>
+<button onclick="toggleAnswer('eb4')">Show Answer</button>
+<div id="eb4" class="answer">Let’s play outside.</div></p>
+
+<p>5) （お菓子を食べすぎないようにしよう。）<br>
+<button onclick="toggleAnswer('eb5')">Show Answer</button>
+<div id="eb5" class="answer">Let’s not eat too many sweets.</div></p>
+
+</div>
+
+<!-- 📖 Reading -->
+<h2>📖 5. Short Reading Text</h2>
+<div class="section-box">
+
+<h3>Let’s Try Something New</h3>
+
+<p>
+Today is Saturday. I am at home with my friend Yuki. We feel a little bored.  
+I say, “Let’s try something new.” Yuki smiles and says, “Yes, let’s.”  
+First, we cook simple pancakes in the kitchen. Then we say, “Let’s draw pictures.”  
+We sit at the table and draw our favorite animals.  
+After that, we say, “Let’s not play games on our phones today.”  
+We talk, laugh, and listen to music together. It becomes a fun and happy day.
+</p>
+
+<p class="jp-note">
+今日は土曜日です。私は友だちのユキと家にいます。少し退屈です。  
+私は「新しいことをしてみよう」と言います。ユキは笑って「うん、そうしよう」と言います。  
+まず、キッチンで簡単なパンケーキを作ります。次に「絵を描こう」と言います。  
+私たちはテーブルに座って、好きな動物の絵を描きます。  
+そのあと「今日はスマホでゲームをしないようにしよう」と言います。  
+私たちは話して、笑って、一緒に音楽を聞きます。とても楽しい一日になります。
+</p>
+
+</div>
+
+<!-- ❓ Questions -->
+<h2>❓ 6. Reading Comprehension Questions</h2>
+<div class="section-box">
+
+<p>1) What day is it?<br>
+<button onclick="toggleAnswer('rq1')">Show Answer</button>
+<div id="rq1" class="answer">It is Saturday.</div></p>
+
+<p>2) Who is with the writer?<br>
+<button onclick="toggleAnswer('rq2')">Show Answer</button>
+<div id="rq2" class="answer">The writer is with Yuki.</div></p>
+
+<p>3) What do they cook first?<br>
+<button onclick="toggleAnswer('rq3')">Show Answer</button>
+<div id="rq3" class="answer">They cook pancakes.</div></p>
+
+<p>4) Where do they draw pictures?<br>
+<button onclick="toggleAnswer('rq4')">Show Answer</button>
+<div id="rq4" class="answer">At the table.</div></p>
+
+<p>5) What do they decide not to do?<br>
+<button onclick="toggleAnswer('rq5')">Show Answer</button>
+<div id="rq5" class="answer">They decide not to play games on their phones.</div></p>
+
+</div>
+
+<!-- 🎯 Summary -->
+<h2>🎯 Summary（まとめ）</h2>
+<div class="section-box">
+
+<p><strong>Let’s + verb</strong> is used to make suggestions.（「Let’s + 動詞」で提案）</p>
+<p><strong>Let’s not + verb</strong> is used to suggest not doing something.（「Let’s not」で否定の提案）</p>
+<p><strong>Yes, let’s.</strong> is a positive answer.（賛成の返事）</p>
+<p><strong>Sorry, I can’t.</strong> is a polite refusal.（丁寧な断り方）</p>
+
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+<a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Back to Index</a>
+</div>
+
+</body>
+</html>

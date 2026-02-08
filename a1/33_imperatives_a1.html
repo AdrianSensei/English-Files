@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Imperatives</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: #f5f7fa;
+  }
+
+  .section-box {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    padding: 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  th {
+    background: #E3EEF3;
+  }
+
+  button {
+    margin-top: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+  }
+
+  button:hover {
+    background: #d5d5d5;
+  }
+
+  .answer {
+    display: none;
+    margin-top: 8px;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+  }
+
+  .jp-note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
+
+</head>
+<body>
+
+<h1>Imperatives</h1>
+<p><strong>Level: A1</strong></p>
+
+<!-- 📚 Grammar Explanation -->
+<h2>📚 1. Grammar Explanation</h2>
+<div class="section-box">
+
+<p>Imperatives tell someone what to do or not to do.</p>
+<p class="jp-note">命令文は「〜しなさい／〜しないで」と指示するときに使います。</p>
+
+<p><strong>Positive form:</strong> base verb only.</p>
+<p class="jp-note">肯定：動詞の原形だけを使います。</p>
+
+<p><strong>Negative form:</strong> Don’t + base verb.</p>
+<p class="jp-note">否定：「Don’t + 動詞の原形」を使います。</p>
+
+<table>
+<tr><th>Type</th><th>Form</th><th>Example</th></tr>
+<tr><td>Positive</td><td>Verb...</td><td>Open the door.</td></tr>
+<tr><td>Negative</td><td>Don’t + verb...</td><td>Don’t run.</td></tr>
+</table>
+
+</div>
+
+<!-- ✏️ Short Example Sentences -->
+<h2>✏️ 2. Short Example Sentences</h2>
+<div class="section-box">
+
+<p><strong>Open your book.</strong><br>
+<span class="jp-note">本を開きなさい。</span></p>
+
+<p><strong>Close the window.</strong><br>
+<span class="jp-note">窓を閉めなさい。</span></p>
+
+<p><strong>Listen to the teacher.</strong><br>
+<span class="jp-note">先生の話を聞きなさい。</span></p>
+
+<p><strong>Don’t run in the hall.</strong><br>
+<span class="jp-note">廊下を走らないで。</span></p>
+
+<p><strong>Don’t touch that.</strong><br>
+<span class="jp-note">それに触らないで。</span></p>
+
+<p><strong>Be quiet, please.</strong><br>
+<span class="jp-note">静かにしてください。</span></p>
+
+<p><strong>Turn off the light.</strong><br>
+<span class="jp-note">電気を消しなさい。</span></p>
+
+</div>
+
+<!-- 📝 Longer Example Sentences -->
+<h2>📝 3. Longer Example Sentences</h2>
+<div class="section-box">
+
+<p><strong>Open the door slowly and be careful.</strong><br>
+<span class="jp-note">ドアをゆっくり開けて、気をつけてください。</span></p>
+
+<p><strong>Don’t eat in the classroom; eat in the cafeteria.</strong><br>
+<span class="jp-note">教室で食べないで、食堂で食べてください。</span></p>
+
+<p><strong>Listen to the music and write your answers.</strong><br>
+<span class="jp-note">音楽を聞いて、答えを書いてください。</span></p>
+
+<p><strong>Be quiet and read the story on the page.</strong><br>
+<span class="jp-note">静かにして、ページの物語を読みましょう。</span></p>
+
+<p><strong>Don’t use your phone; talk to your friend.</strong><br>
+<span class="jp-note">スマホを使わないで、友だちと話してください。</span></p>
+
+</div>
+
+<!-- 🧩 Practice Exercises -->
+<h2>🧩 4. Practice Exercises</h2>
+<div class="section-box">
+
+<h3>Exercise A – Choose the correct option</h3>
+<p class="jp-note">正しい命令文を選びましょう。</p>
+
+<p>1) 「ドアを開けて。」<br>a) You open the door.　b) Open the door.</p>
+<button onclick="toggleAnswer('ea1')">Show Answer</button>
+<div id="ea1" class="answer">b) Open the door.</div>
+
+<p>2) 「ここで走らないで。」<br>a) Don’t run here.　b) You don’t run here.</p>
+<button onclick="toggleAnswer('ea2')">Show Answer</button>
+<div id="ea2" class="answer">a) Don’t run here.</div>
+
+<p>3) 「静かにしなさい。」<br>a) Be quiet.　b) You are quiet.</p>
+<button onclick="toggleAnswer('ea3')">Show Answer</button>
+<div id="ea3" class="answer">a) Be quiet.</div>
+
+<p>4) 「電気を消して。」<br>a) Turn off the light.　b) Turn the light off not.</p>
+<button onclick="toggleAnswer('ea4')">Show Answer</button>
+<div id="ea4" class="answer">a) Turn off the light.</div>
+
+<p>5) 「本を閉じないで。」<br>a) Don’t close your book.　b) Close not your book.</p>
+<button onclick="toggleAnswer('ea5')">Show Answer</button>
+<div id="ea5" class="answer">a) Don’t close your book.</div>
+
+<h3>Exercise B – Complete the sentence</h3>
+<p class="jp-note">英語の命令文を完成させましょう。</p>
+
+<p>1) （窓を開けてください。）<br>
+<button onclick="toggleAnswer('eb1')">Show Answer</button>
+<div id="eb1" class="answer">Open the window.</div></p>
+
+<p>2) （ここに座ってください。）<br>
+<button onclick="toggleAnswer('eb2')">Show Answer</button>
+<div id="eb2" class="answer">Sit here.</div></p>
+
+<p>3) （走らないでください。）<br>
+<button onclick="toggleAnswer('eb3')">Show Answer</button>
+<div id="eb3" class="answer">Don’t run.</div></p>
+
+<p>4) （先生の話を聞きなさい。）<br>
+<button onclick="toggleAnswer('eb4')">Show Answer</button>
+<div id="eb4" class="answer">Listen to the teacher.</div></p>
+
+<p>5) （ドアを閉めてください。）<br>
+<button onclick="toggleAnswer('eb5')">Show Answer</button>
+<div id="eb5" class="answer">Close the door.</div></p>
+
+</div>
+
+<!-- 📖 Reading -->
+<h2>📖 5. Short Reading Text</h2>
+<div class="section-box">
+
+<h3>How to Make Lemonade</h3>
+
+<p>
+First, wash your hands. Then take one lemon and cut it in half.  
+Squeeze the lemon juice into a glass. Add some cold water.  
+Put one or two spoons of sugar and mix well. Taste it.  
+If it is too sour, add a little more sugar.  
+Put some ice in the glass.  
+Now sit down, relax, and enjoy your fresh lemonade.
+</p>
+
+<p class="jp-note">
+まず手を洗います。次にレモンを半分に切ります。  
+レモン汁をコップに入れます。冷たい水を加えます。  
+砂糖を入れてよく混ぜます。味見をします。  
+すっぱすぎたら砂糖を少し足します。  
+氷を入れます。  
+最後に座ってリラックスして、レモネードを楽しみましょう。
+</p>
+
+</div>
+
+<!-- ❓ Questions -->
+<h2>❓ 6. Reading Comprehension Questions</h2>
+<div class="section-box">
+
+<p>1) What do you do first?<br>
+<button onclick="toggleAnswer('rq1')">Show Answer</button>
+<div id="rq1" class="answer">You wash your hands.</div></p>
+
+<p>2) Where do you put the lemon juice?<br>
+<button onclick="toggleAnswer('rq2')">Show Answer</button>
+<div id="rq2" class="answer">In a glass.</div></p>
+
+<p>3) What do you add after water?<br>
+<button onclick="toggleAnswer('rq3')">Show Answer</button>
+<div id="rq3" class="answer">Sugar.</div></p>
+
+<p>4) What do you do if it is too sour?<br>
+<button onclick="toggleAnswer('rq4')">Show Answer</button>
+<div id="rq4" class="answer">Add more sugar.</div></p>
+
+<p>5) What do you do at the end?<br>
+<button onclick="toggleAnswer('rq5')">Show Answer</button>
+<div id="rq5" class="answer">Sit down, relax, and drink the lemonade.</div></p>
+
+</div>
+
+<!-- 🎯 Summary -->
+<h2>🎯 Summary（まとめ）</h2>
+<div class="section-box">
+
+<p><strong>Imperatives</strong> tell someone what to do.  
+<span class="jp-note">命令文は「〜しなさい／〜しないで」を伝える。</span></p>
+
+<p><strong>Base verb</strong> for positive imperatives.  
+<span class="jp-note">肯定は動詞の原形。</span></p>
+
+<p><strong>Don’t + verb</strong> for negative imperatives.  
+<span class="jp-note">否定は “Don’t + 動詞”。</span></p>
+
+<p><strong>Short and clear</strong> sentences work best.  
+<span class="jp-note">短く分かりやすい文が最適。</span></p>
+
+</div>
+
+</body>
+</html>

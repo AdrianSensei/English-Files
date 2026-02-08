@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Articles — a / an / the</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: #f5f7fa;
+  }
+
+  .section-box {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    padding: 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  th {
+    background: #E3EEF3;
+  }
+
+  button {
+    margin-top: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+  }
+
+  button:hover {
+    background: #d5d5d5;
+  }
+
+  .answer {
+    display: none;
+    margin-top: 8px;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+  }
+
+  .jp-note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
+
+</head>
+<body>
+
+<h1>Articles — a / an / the</h1>
+<p><strong>Level: A1</strong></p>
+
+<!-- 📚 Grammar Explanation -->
+<h2>📚 1. Grammar Explanation</h2>
+<div class="section-box">
+
+<p>Articles come before a noun. They show if the noun is general or specific.</p>
+<p class="jp-note">冠詞は名詞の前につき、その名詞が一般的か特定かを表します。</p>
+
+<p><strong>a / an</strong> are used for one, non-specific thing.</p>
+<p class="jp-note"><strong>a / an</strong> は「1つの・どれでもよいもの」に使います。</p>
+
+<p><strong>the</strong> is used for a specific thing.</p>
+<p class="jp-note"><strong>the</strong> は「どれか分かっている特定のもの」に使います。</p>
+
+<table>
+  <tr><th>Article</th><th>Use</th><th>Example</th></tr>
+  <tr><td>a</td><td>Before consonant sound</td><td>a dog</td></tr>
+  <tr><td>an</td><td>Before vowel sound</td><td>an apple</td></tr>
+  <tr><td>the</td><td>Specific thing</td><td>the dog</td></tr>
+</table>
+
+</div>
+
+<!-- ✏️ Short Example Sentences -->
+<h2>✏️ 2. Short Example Sentences</h2>
+<div class="section-box">
+
+<p><strong>I have a pen.</strong><br><span class="jp-note">私はペンを1本持っています。</span></p>
+
+<p><strong>She has an orange.</strong><br><span class="jp-note">彼女はオレンジを1つ持っています。</span></p>
+
+<p><strong>The pen is blue.</strong><br><span class="jp-note">そのペンは青いです。</span></p>
+
+<p><strong>This is a cat.</strong><br><span class="jp-note">これは猫です。</span></p>
+
+<p><strong>That is an egg.</strong><br><span class="jp-note">あれは卵です。</span></p>
+
+<p><strong>The cat is cute.</strong><br><span class="jp-note">その猫はかわいいです。</span></p>
+
+<p><strong>The egg is on the table.</strong><br><span class="jp-note">その卵はテーブルの上にあります。</span></p>
+
+</div>
+
+<!-- 📝 Longer Example Sentences -->
+<h2>📝 3. Longer Example Sentences</h2>
+<div class="section-box">
+
+<p><strong>I have a small bag, and it has an apple inside.</strong><br>
+<span class="jp-note">小さなかばんがあり、中にリンゴが1つ入っています。</span></p>
+
+<p><strong>There is a dog in the park, and the dog is very friendly.</strong><br>
+<span class="jp-note">公園に犬が1匹いて、その犬はとてもフレンドリーです。</span></p>
+
+<p><strong>She wants an umbrella, but the umbrella in the shop is expensive.</strong><br>
+<span class="jp-note">彼女は傘がほしいですが、お店のその傘は高いです。</span></p>
+
+<p><strong>We see a bird, and the bird is on the tree.</strong><br>
+<span class="jp-note">鳥を1羽見ます。その鳥は木の上にいます。</span></p>
+
+<p><strong>He buys a book, and the book is about animals.</strong><br>
+<span class="jp-note">彼は本を1冊買い、その本は動物についてです。</span></p>
+
+</div>
+
+<!-- 🧩 Practice Exercises -->
+<h2>🧩 4. Practice Exercises</h2>
+<div class="section-box">
+
+<h3>Exercise A – Choose the correct option</h3>
+<p class="jp-note">正しい冠詞を選びましょう。</p>
+
+<p>1) I have ___ cat.</p>
+<p>a) a　b) an</p>
+<button onclick="toggleAnswer('ea1')">Show Answer</button>
+<div id="ea1" class="answer">a) a</div>
+
+<p>2) She eats ___ orange.</p>
+<p>a) a　b) an</p>
+<button onclick="toggleAnswer('ea2')">Show Answer</button>
+<div id="ea2" class="answer">b) an</div>
+
+<p>3) Please open ___ window.</p>
+<p>a) a　b) the</p>
+<button onclick="toggleAnswer('ea3')">Show Answer</button>
+<div id="ea3" class="answer">b) the</div>
+
+<p>4) This is ___ egg.</p>
+<p>a) a　b) an</p>
+<button onclick="toggleAnswer('ea4')">Show Answer</button>
+<div id="ea4" class="answer">b) an</div>
+
+<p>5) I like ___ small dog in that shop.</p>
+<p>a) a　b) the</p>
+<button onclick="toggleAnswer('ea5')">Show Answer</button>
+<div id="ea5" class="answer">b) the</div>
+
+<h3>Exercise B – Complete the sentence</h3>
+<p class="jp-note">a / an / the を入れて文を完成させましょう。</p>
+
+<p>1) I want ___ apple.（私はリンゴを1つほしいです。）<br>
+<button onclick="toggleAnswer('eb1')">Show Answer</button>
+<div id="eb1" class="answer">I want an apple.</div></p>
+
+<p>2) Please close ___ door.（そのドアを閉めてください。）<br>
+<button onclick="toggleAnswer('eb2')">Show Answer</button>
+<div id="eb2" class="answer">Please close the door.</div></p>
+
+<p>3) She is ___ teacher.（彼女は先生です。）<br>
+<button onclick="toggleAnswer('eb3')">Show Answer</button>
+<div id="eb3" class="answer">She is a teacher.</div></p>
+
+<p>4) Look at ___ cat.（その猫を見て。）<br>
+<button onclick="toggleAnswer('eb4')">Show Answer</button>
+<div id="eb4" class="answer">Look at the cat.</div></p>
+
+<p>5) He has ___ umbrella.（彼は傘を1本持っています。）<br>
+<button onclick="toggleAnswer('eb5')">Show Answer</button>
+<div id="eb5" class="answer">He has an umbrella.</div></p>
+
+</div>
+
+<!-- 📖 Reading -->
+<h2>📖 5. Short Reading Text</h2>
+<div class="section-box">
+
+<h3>A Small Pet Shop</h3>
+
+<p>
+There is a small pet shop near my house. It has a dog, a cat, and a rabbit.  
+The dog is very friendly. The cat is quiet. The rabbit is cute and white.  
+I like to look at the animals after school.
+</p>
+
+<p class="jp-note">
+家の近くに小さなペットショップがあります。犬、猫、うさぎがいます。  
+その犬はとてもフレンドリーです。猫は静かです。うさぎは白くてかわいいです。  
+私は放課後にその動物たちを見るのが好きです。
+</p>
+
+</div>
+
+<!-- ❓ Questions -->
+<h2>❓ 6. Reading Comprehension Questions</h2>
+<div class="section-box">
+
+<p>1) Where is the pet shop?<br>
+<button onclick="toggleAnswer('rq1')">Show Answer</button>
+<div id="rq1" class="answer">It is near the writer’s house.</div></p>
+
+<p>2) How many animals are in the shop?<br>
+<button onclick="toggleAnswer('rq2')">Show Answer</button>
+<div id="rq2" class="answer">There are three animals.</div></p>
+
+<p>3) What is the dog like?<br>
+<button onclick="toggleAnswer('rq3')">Show Answer</button>
+<div id="rq3" class="answer">The dog is very friendly.</div></p>
+
+<p>4) What color is the rabbit?<br>
+<button onclick="toggleAnswer('rq4')">Show Answer</button>
+<div id="rq4" class="answer">It is white.</div></p>
+
+<p>5) When does the writer look at the animals?<br>
+<button onclick="toggleAnswer('rq5')">Show Answer</button>
+<div id="rq5" class="answer">After school.</div></p>
+
+</div>
+
+<!-- 🎯 Summary -->
+<h2>🎯 Summary（まとめ）</h2>
+<div class="section-box">
+
+<ul>
+  <li><strong>a</strong> is used before a consonant sound.（子音の音の前に使う）</li>
+  <li><strong>an</strong> is used before a vowel sound.（母音の音の前に使う）</li>
+  <li><strong>a / an</strong> are for one, non-specific thing.（1つの・特定でないもの）</li>
+  <li><strong>the</strong> is for a specific thing.（どれか分かっている特定のもの）</li>
+</ul>
+
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Back to Index</a>
+</div>
+
+</body>
+</html>

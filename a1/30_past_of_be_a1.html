@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Past of be — was / were</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: #f5f7fa;
+  }
+
+  .section-box {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    padding: 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  th {
+    background: #E3EEF3;
+  }
+
+  button {
+    margin-top: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+  }
+
+  button:hover {
+    background: #d5d5d5;
+  }
+
+  .answer {
+    display: none;
+    margin-top: 8px;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+  }
+
+  .jp-note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
+
+</head>
+<body>
+
+<h1>Past of be — was / were</h1>
+<p>Level: A1</p>
+
+<h2>📚 1. Grammar Explanation</h2>
+<div class="section-box">
+
+  <p>We use “was” and “were” to talk about the past.</p>
+  <p class="jp-note">「was」「were」は、過去のことを言うときに使います。</p>
+
+  <p><strong>was</strong> is used with I, he, she, it.</p>
+  <p class="jp-note">I / he / she / it と一緒に <strong>was</strong> を使います。</p>
+
+  <p><strong>were</strong> is used with you, we, they.</p>
+  <p class="jp-note">you / we / they と一緒に <strong>were</strong> を使います。</p>
+
+  <table>
+    <tr><th>Subject</th><th>Past form</th><th>Example</th></tr>
+    <tr><td>I / he / she / it</td><td>was</td><td>She was happy.</td></tr>
+    <tr><td>you / we / they</td><td>were</td><td>They were tired.</td></tr>
+  </table>
+
+  <p><strong>Negative:</strong> was not (wasn’t), were not (weren’t).</p>
+  <p class="jp-note">否定：<strong>was not / were not</strong>（wasn’t / weren’t）。</p>
+
+  <p><strong>Questions:</strong> Was / Were + subject...?</p>
+  <p class="jp-note">疑問文：<strong>Was / Were + 主語</strong> の順になります。</p>
+
+</div>
+
+<h2>✏️ 2. Short Example Sentences</h2>
+<div class="section-box">
+
+  <p><strong>I was at home yesterday.</strong></p>
+  <p class="jp-note">私は昨日家にいました。</p>
+
+  <p><strong>She was very happy.</strong></p>
+  <p class="jp-note">彼女はとても幸せでした。</p>
+
+  <p><strong>He was not busy.</strong></p>
+  <p class="jp-note">彼は忙しくありませんでした。</p>
+
+  <p><strong>They were at school.</strong></p>
+  <p class="jp-note">彼らは学校にいました。</p>
+
+  <p><strong>We were tired after the game.</strong></p>
+  <p class="jp-note">私たちは試合のあと疲れていました。</p>
+
+  <p><strong>You were not late.</strong></p>
+  <p class="jp-note">あなたは遅れていませんでした。</p>
+
+  <p><strong>Were you in Tokyo last week?</strong></p>
+  <p class="jp-note">あなたは先週東京にいましたか。</p>
+
+</div>
+
+<h2>📝 3. Longer Example Sentences</h2>
+<div class="section-box">
+
+  <p><strong>I was very tired last night, so I went to bed early.</strong></p>
+  <p class="jp-note">私は昨夜とても疲れていたので、早く寝ました。</p>
+
+  <p><strong>My friends were at the park, but I was at home.</strong></p>
+  <p class="jp-note">友だちは公園にいましたが、私は家にいました。</p>
+
+  <p><strong>She was not happy because the weather was bad.</strong></p>
+  <p class="jp-note">天気が悪かったので、彼女はうれしくありませんでした。</p>
+
+  <p><strong>We were in the library, and it was very quiet there.</strong></p>
+  <p class="jp-note">私たちは図書館にいて、そこはとても静かでした。</p>
+
+  <p><strong>Were they in your class last year, or were they in another class?</strong></p>
+  <p class="jp-note">彼らは去年あなたのクラスでしたか、それとも別のクラスでしたか。</p>
+
+</div>
+
+<h2>🧩 4. Practice Exercises</h2>
+<div class="section-box">
+
+  <h3>Exercise A – Choose the correct option</h3>
+  <p class="jp-note">正しい形（was / were / wasn’t / weren’t）を選びましょう。</p>
+
+  <p>1) I ______ at the park yesterday.</p>
+  <p>a) was　b) were</p>
+  <button onclick="toggleAnswer('ea1')">Show Answer</button>
+  <div id="ea1" class="answer">a) was</div>
+
+  <p>2) They ______ very happy.</p>
+  <p>a) was　b) were</p>
+  <button onclick="toggleAnswer('ea2')">Show Answer</button>
+  <div id="ea2" class="answer">b) were</div>
+
+  <p>3) She ______ not at school.</p>
+  <p>a) was　b) were</p>
+  <button onclick="toggleAnswer('ea3')">Show Answer</button>
+  <div id="ea3" class="answer">a) was</div>
+
+  <p>4) ______ you tired last night?</p>
+  <p>a) Was　b) Were</p>
+  <button onclick="toggleAnswer('ea4')">Show Answer</button>
+  <div id="ea4" class="answer">b) Were</div>
+
+  <p>5) They ______ not in the classroom.</p>
+  <p>a) wasn’t　b) weren’t</p>
+  <button onclick="toggleAnswer('ea5')">Show Answer</button>
+  <div id="ea5" class="answer">b) weren’t</div>
+
+  <h3>Exercise B – Complete the sentence</h3>
+  <p class="jp-note">英語の文を自分で完成させましょう。（選択肢なし）</p>
+
+  <p>1) （私は昨日忙しかったです。）<br>
+  <button onclick="toggleAnswer('eb1')">Show Answer</button>
+  <div id="eb1" class="answer">I was busy yesterday.</div></p>
+
+  <p>2) （彼らは家にいませんでした。）<br>
+  <button onclick="toggleAnswer('eb2')">Show Answer</button>
+  <div id="eb2" class="answer">They were not at home.</div></p>
+
+  <p>3) （あなたは昨日どこにいましたか。）<br>
+  <button onclick="toggleAnswer('eb3')">Show Answer</button>
+  <div id="eb3" class="answer">Where were you yesterday?</div></p>
+
+  <p>4) （彼女はとても眠かったです。）<br>
+  <button onclick="toggleAnswer('eb4')">Show Answer</button>
+  <div id="eb4" class="answer">She was very sleepy.</div></p>
+
+  <p>5) （私たちは先週同じクラスでした。）<br>
+  <button onclick="toggleAnswer('eb5')">Show Answer</button>
+  <div id="eb5" class="answer">We were in the same class last week.</div></p>
+
+</div>
+
+<h2>📖 5. Short Reading Text</h2>
+<div class="section-box">
+
+  <h3>I Was at the Museum</h3>
+
+  <p>
+Yesterday was a special day. I was at the museum with my family. The museum was big and very quiet. There were many old pictures and interesting statues. My sister was excited, but my brother was a little bored. My parents were happy because the tickets were cheap. At noon, we were hungry, so we went to the museum café. The food was simple but good. In the evening, we were tired, but we were glad. It was a nice day.
+  </p>
+
+  <p class="jp-note">
+昨日は特別な日でした。私は家族と一緒に博物館にいました。  
+博物館は大きくて、とても静かでした。古い絵やおもしろい像がたくさんありました。  
+妹はわくわくしていましたが、弟は少し退屈そうでした。  
+両親はチケットが安かったので、うれしそうでした。  
+昼ごろおなかがすいたので、博物館のカフェに行きました。  
+食べ物はシンプルでしたが、おいしかったです。  
+夕方には私たちは疲れていましたが、来てよかったと思いました。  
+とてもよい一日でした。
+  </p>
+
+</div>
+
+<h2>❓ 6. Reading Comprehension Questions</h2>
+<div class="section-box">
+
+  <p>1) Where was the writer yesterday?<br>
+  <button onclick="toggleAnswer('rq1')">Show Answer</button>
+  <div id="rq1" class="answer">The writer was at the museum.</div></p>
+
+  <p>2) How was the museum?<br>
+  <button onclick="toggleAnswer('rq2')">Show Answer</button>
+  <div id="rq2" class="answer">It was big and very quiet.</div></p>
+
+  <p>3) Who was excited at the museum?<br>
+  <button onclick="toggleAnswer('rq3')">Show Answer</button>
+  <div id="rq3" class="answer">The writer’s sister was excited.</div></p>
+
+  <p>4) Where did they go when they were hungry?<br>
+  <button onclick="toggleAnswer('rq4')">Show Answer</button>
+  <div id="rq4" class="answer">They went to the museum café.</div></p>
+
+  <p>5) How did they feel in the evening?<br>
+  <button onclick="toggleAnswer('rq5')">Show Answer</button>
+  <div id="rq5" class="answer">They were tired but glad.</div></p>
+
+</div>
+
+<h2>🎯 Summary（まとめ）</h2>
+<div class="section-box">
+
+  <ul>
+    <li><strong>was</strong> is used with I, he, she, it.（I / he / she / it と一緒に使う）</li>
+    <li><strong>were</strong> is used with you, we, they.（you / we / they と一緒に使う）</li>
+    <li><strong>was not / were not</strong> are the negative forms.（否定形は was not / were not）</li>
+    <li><strong>Was / Were + subject</strong> is used for questions.（疑問文は Was / Were + 主語）</li>
+  </ul>
+
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Back to Index</a>
+</div>
+
+</body>
+</html>

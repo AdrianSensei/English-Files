@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Demonstratives — this / that / these / those</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: #f5f7fa;
+  }
+
+  .section-box {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    padding: 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  th {
+    background: #E3EEF3;
+  }
+
+  button {
+    margin-top: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+  }
+
+  button:hover {
+    background: #d5d5d5;
+  }
+
+  .answer {
+    display: none;
+    margin-top: 8px;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+  }
+
+  .jp-note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
+
+</head>
+<body>
+
+<h1>Demonstratives — this / that / these / those</h1>
+<p><strong>Level: A1</strong></p>
+
+<!-- 📚 Grammar Explanation -->
+<h2>📚 1. Grammar Explanation</h2>
+<div class="section-box">
+
+<p><strong>this / these</strong> are used for things near the speaker.</p>
+<p class="jp-note">this / these は近くにあるものに使います。</p>
+
+<p><strong>that / those</strong> are used for things far from the speaker.</p>
+<p class="jp-note">that / those は遠くにあるものに使います。</p>
+
+<p><strong>this / that</strong> = one item. <strong>these / those</strong> = many items.</p>
+<p class="jp-note">this / that は1つ、these / those は複数です。</p>
+
+<table>
+  <tr><th>Word</th><th>Number</th><th>Distance</th><th>日本語</th></tr>
+  <tr><td>this</td><td>1</td><td>near</td><td>これ</td></tr>
+  <tr><td>that</td><td>1</td><td>far</td><td>あれ / それ</td></tr>
+  <tr><td>these</td><td>many</td><td>near</td><td>これら</td></tr>
+  <tr><td>those</td><td>many</td><td>far</td><td>あれら / それら</td></tr>
+</table>
+
+</div>
+
+<!-- ✏️ Short Example Sentences -->
+<h2>✏️ 2. Short Example Sentences</h2>
+<div class="section-box">
+
+<p><strong>This is my bag.</strong><br><span class="jp-note">これは私のかばんです。</span></p>
+
+<p><strong>That is your pen.</strong><br><span class="jp-note">あれはあなたのペンです。</span></p>
+
+<p><strong>These are my books.</strong><br><span class="jp-note">これらは私の本です。</span></p>
+
+<p><strong>Those are his shoes.</strong><br><span class="jp-note">あれらは彼のくつです。</span></p>
+
+<p><strong>This is my desk.</strong><br><span class="jp-note">これは私のつくえです。</span></p>
+
+<p><strong>That is our classroom.</strong><br><span class="jp-note">あれは私たちの教室です。</span></p>
+
+<p><strong>These are new pens.</strong><br><span class="jp-note">これらは新しいペンです。</span></p>
+
+</div>
+
+<!-- 📝 Longer Example Sentences -->
+<h2>📝 3. Longer Example Sentences</h2>
+<div class="section-box">
+
+<p><strong>This bag is light, but that bag is heavy.</strong><br>
+<span class="jp-note">このかばんは軽いですが、あのかばんは重いです。</span></p>
+
+<p><strong>These books are for me, and those books are for you.</strong><br>
+<span class="jp-note">これらの本は私のもので、あれらの本はあなたのものです。</span></p>
+
+<p><strong>This is my lunch, and that is my friend’s lunch.</strong><br>
+<span class="jp-note">これは私のお弁当で、あれは友だちのお弁当です。</span></p>
+
+<p><strong>These shoes are old, but those shoes are new.</strong><br>
+<span class="jp-note">このくつは古いですが、あのくつは新しいです。</span></p>
+
+<p><strong>This is my seat, and that is the teacher’s seat.</strong><br>
+<span class="jp-note">ここが私の席で、あそこが先生の席です。</span></p>
+
+</div>
+
+<!-- 🧩 Practice Exercises -->
+<h2>🧩 4. Practice Exercises</h2>
+<div class="section-box">
+
+<h3>Exercise A – Choose the correct option</h3>
+<p class="jp-note">正しい語を選びましょう。</p>
+
+<p>1) ______ is my pencil.</p>
+<p>a) This　b) That</p>
+<button onclick="toggleAnswer('ea1')">Show Answer</button>
+<div id="ea1" class="answer">This</div>
+
+<p>2) ______ are my bags.</p>
+<p>a) These　b) Those</p>
+<button onclick="toggleAnswer('ea2')">Show Answer</button>
+<div id="ea2" class="answer">These</div>
+
+<p>3) ______ is your bike over there.</p>
+<p>a) This　b) That</p>
+<button onclick="toggleAnswer('ea3')">Show Answer</button>
+<div id="ea3" class="answer">That</div>
+
+<p>4) ______ are my friends over there.</p>
+<p>a) These　b) Those</p>
+<button onclick="toggleAnswer('ea4')">Show Answer</button>
+<div id="ea4" class="answer">Those</div>
+
+<p>5) ______ are new erasers.</p>
+<p>a) These　b) Those</p>
+<button onclick="toggleAnswer('ea5')">Show Answer</button>
+<div id="ea5" class="answer">These</div>
+
+<h3>Exercise B – Complete the sentence</h3>
+<p class="jp-note">文を完成させましょう。</p>
+
+<p>1) ______ is my school bag.<br>
+<button onclick="toggleAnswer('eb1')">Show Answer</button>
+<div id="eb1" class="answer">This is my school bag.</div></p>
+
+<p>2) ______ are my notebooks.<br>
+<button onclick="toggleAnswer('eb2')">Show Answer</button>
+<div id="eb2" class="answer">These are my notebooks.</div></p>
+
+<p>3) ______ is our bus over there.<br>
+<button onclick="toggleAnswer('eb3')">Show Answer</button>
+<div id="eb3" class="answer">That is our bus over there.</div></p>
+
+<p>4) ______ are my brother’s shoes.<br>
+<button onclick="toggleAnswer('eb4')">Show Answer</button>
+<div id="eb4" class="answer">Those are my brother’s shoes.</div></p>
+
+<p>5) ______ is my favorite pen.<br>
+<button onclick="toggleAnswer('eb5')">Show Answer</button>
+<div id="eb5" class="answer">This is my favorite pen.</div></p>
+
+</div>
+
+<!-- 📖 Reading -->
+<h2>📖 5. Short Reading Text</h2>
+<div class="section-box">
+
+<h3>This Bag, That Bag</h3>
+
+<p>
+I am in a small shop. This bag is blue and light. That bag is red and heavy.  
+These bags are cheap. Those bags near the door are expensive.  
+I like this blue bag. It is my new school bag.
+</p>
+
+<p class="jp-note">
+私は小さなお店にいます。このかばんは青くて軽いです。あのかばんは赤くて重いです。  
+ここにあるかばんは安いです。ドアの近くのかばんは高いです。  
+私はこの青いかばんが好きです。これが私の新しいスクールバッグです。
+</p>
+
+</div>
+
+<!-- ❓ Questions -->
+<h2>❓ 6. Reading Comprehension Questions</h2>
+<div class="section-box">
+
+<p>1) Where is the writer?<br>
+<button onclick="toggleAnswer('rq1')">Show Answer</button>
+<div id="rq1" class="answer">The writer is in a small shop.</div></p>
+
+<p>2) What color is “this” bag?<br>
+<button onclick="toggleAnswer('rq2')">Show Answer</button>
+<div id="rq2" class="answer">It is blue.</div></p>
+
+<p>3) Is that bag heavy?<br>
+<button onclick="toggleAnswer('rq3')">Show Answer</button>
+<div id="rq3" class="answer">Yes, it is heavy.</div></p>
+
+<p>4) Which bags are cheap?<br>
+<button onclick="toggleAnswer('rq4')">Show Answer</button>
+<div id="rq4" class="answer">These bags are cheap.</div></p>
+
+<p>5) What is the writer’s new school bag?<br>
+<button onclick="toggleAnswer('rq5')">Show Answer</button>
+<div id="rq5" class="answer">The blue bag is the new school bag.</div></p>
+
+</div>
+
+<!-- 🎯 Summary -->
+<h2>🎯 Summary（まとめ）</h2>
+<div class="section-box">
+
+<p><strong>This / these</strong> = near.</p>
+<p class="jp-note">this / these は近いもの。</p>
+
+<p><strong>That / those</strong> = far.</p>
+<p class="jp-note">that / those は遠いもの。</p>
+
+<p><strong>This / that</strong> = 1 item.</p>
+<p class="jp-note">this / that は1つ。</p>
+
+<p><strong>These / those</strong> = many items.</p>
+<p class="jp-note">these / those は複数。</p>
+
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Back to Index</a>
+</div>
+
+</body>
+</html>
