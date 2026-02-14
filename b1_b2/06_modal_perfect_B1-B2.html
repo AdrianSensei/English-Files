@@ -15,9 +15,9 @@
         color: #333;
     }
 
-    h1 { text-align: center; margin-bottom: 10px; }
-    h2 { margin-top: 40px; color: #222; }
-    h3 { margin-top: 25px; color: #444; }
+    h1 { text-align: center; margin-bottom: 10px; color: #2a4d69; }
+    h2 { margin-top: 40px; color: #2a4d69; }
+    h3 { margin-top: 25px; color: #2a4d69; }
 
     .section-box {
         background: #ffffff;
@@ -53,25 +53,33 @@
 
     .answer {
         display: none;
-        margin-top: 8px;
         padding: 8px;
         background: #f0f0f0;
         border-left: 3px solid #999;
+        margin-top: 8px;
     }
 
     button {
-        margin-top: 5px;
         padding: 6px 10px;
         cursor: pointer;
         background: #e0e0e0;
         color: #333;
         border: 1px solid #c8c8c8;
         border-radius: 6px;
+        display: block;
+        margin-bottom: 18px;
     }
 
     button:hover { background: #d5d5d5; }
 
     ul { margin-left: 20px; }
+
+    .jp-note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
 </style>
 
 <script>
@@ -87,7 +95,7 @@ function toggleAnswer(id) {
 
 <h1>Modal Perfect – B1-B2</h1>
 
-<!-- 📚 1. GRAMMAR EXPLANATION -->
+<!-- 📚 1. GRAMMAR EXPLANATION (UNCHANGED) -->
 <h2>📚 1. Grammar Explanation（文法の説明）</h2>
 <div class="section-box">
 
@@ -135,13 +143,28 @@ function toggleAnswer(id) {
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>I should have slept earlier; I was exhausted this morning. → もっと早く寝ればよかった。今朝とても疲れていました。</li>
-<li>You should have told me before the meeting started. → 会議が始まる前に言ってくれればよかった。</li>
-<li>She could have taken a taxi, but she chose to walk in the rain. → タクシーに乗れたはずですが、雨の中歩くことを選びました。</li>
-<li>They could have finished earlier if they hadn’t taken such a long break. → 長い休憩を取らなければ、もっと早く終われたはずです。</li>
-<li>He might have lost his keys on the train. → 電車で鍵をなくしたかもしれません。</li>
-<li>It might have rained last night; the ground is still wet. → 昨夜雨が降ったかもしれません。地面がまだ濡れています。</li>
-<li>I could have helped you if you had asked. → 頼んでくれれば手伝えたはずです。</li>
+
+<li>I should have slept earlier; I was exhausted this morning.</li>
+<div class="jp-note">もっと早く寝ればよかった。今朝とても疲れていました。</div>
+
+<li>You should have told me before the meeting started.</li>
+<div class="jp-note">会議が始まる前に言ってくれればよかった。</div>
+
+<li>She could have taken a taxi, but she chose to walk in the rain.</li>
+<div class="jp-note">タクシーに乗れたはずですが、雨の中歩くことを選びました。</div>
+
+<li>They could have finished earlier if they hadn’t taken such a long break.</li>
+<div class="jp-note">長い休憩を取らなければ、もっと早く終われたはずです。</div>
+
+<li>He might have lost his keys on the train.</li>
+<div class="jp-note">電車で鍵をなくしたかもしれません。</div>
+
+<li>It might have rained last night; the ground is still wet.</li>
+<div class="jp-note">昨夜雨が降ったかもしれません。地面がまだ濡れています。</div>
+
+<li>I could have helped you if you had asked.</li>
+<div class="jp-note">頼んでくれれば手伝えたはずです。</div>
+
 </ul>
 </div>
 
@@ -149,20 +172,22 @@ function toggleAnswer(id) {
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>I should have checked the schedule before leaving, because the train was not running and I wasted a lot of time.  
-→ 電車が動いていなかったので、出発前に時刻表を確認すべきでした。時間を無駄にしました。</li>
 
-<li>She could have joined us for dinner, but she decided to stay home and finish her assignment.  
-→ 彼女は夕食に参加できたはずですが、課題を終えるために家にいることにしました。</li>
+<li>I should have checked the schedule before leaving, because the train was not running and I wasted a lot of time.</li>
+<div class="jp-note">電車が動いていなかったので、出発前に時刻表を確認すべきでした。時間を無駄にしました。</div>
 
-<li>They might have misunderstood the message, which explains why they arrived so late.  
-→ メッセージを誤解したのかもしれず、そのせいで遅れて到着したのでしょう。</li>
+<li>She could have joined us for dinner, but she decided to stay home and finish her assignment.</li>
+<div class="jp-note">彼女は夕食に参加できたはずですが、課題を終えるために家にいることにしました。</div>
 
-<li>We should have brought more water because the hike was much longer and hotter than we expected.  
-→ 予想よりハイキングが長く暑かったので、もっと水を持ってくるべきでした。</li>
+<li>They might have misunderstood the message, which explains why they arrived so late.</li>
+<div class="jp-note">メッセージを誤解したのかもしれず、そのせいで遅れて到着したのでしょう。</div>
 
-<li>He could have passed the test if he had studied harder, but he didn’t take it seriously.  
-→ もっと勉強していればテストに合格できたはずですが、真剣に取り組みませんでした。</li>
+<li>We should have brought more water because the hike was much longer and hotter than we expected.</li>
+<div class="jp-note">予想よりハイキングが長く暑かったので、もっと水を持ってくるべきでした。</div>
+
+<li>He could have passed the test if he had studied harder, but he didn’t take it seriously.</li>
+<div class="jp-note">もっと勉強していればテストに合格できたはずですが、真剣に取り組みませんでした。</div>
+
 </ul>
 </div>
 
@@ -170,77 +195,76 @@ function toggleAnswer(id) {
 <h2>🧩 4. Practice Exercises（練習問題）</h2>
 <div class="section-box">
 
-<h3>Exercise A – Choose the correct option（正しい答えを選びましょう）</h3>
+<h3>Exercise A – Choose the correct option</h3>
 
 <div class="exercise-item">
-1. I (should have / might have) called you earlier.  
+1. I (should have / might have) called you earlier.
 <button onclick="toggleAnswer('ea1')">Show Answer</button>
 <div id="ea1" class="answer">should have</div>
 </div>
 
 <div class="exercise-item">
-2. She (could have / should have) been at the party, but I’m not sure.  
+2. She (could have / should have) been at the party, but I’m not sure.
 <button onclick="toggleAnswer('ea2')">Show Answer</button>
 <div id="ea2" class="answer">could have</div>
 </div>
 
 <div class="exercise-item">
-3. They (might have / must have) forgotten the meeting.  
+3. They (might have / must have) forgotten the meeting.
 <button onclick="toggleAnswer('ea3')">Show Answer</button>
 <div id="ea3" class="answer">might have</div>
 </div>
 
 <div class="exercise-item">
-4. You (should have / could have) told me the truth.  
+4. You (should have / could have) told me the truth.
 <button onclick="toggleAnswer('ea4')">Show Answer</button>
 <div id="ea4" class="answer">should have</div>
 </div>
 
 <div class="exercise-item">
-5. He (could have / might have) won the race, but he fell.  
+5. He (could have / might have) won the race, but he fell.
 <button onclick="toggleAnswer('ea5')">Show Answer</button>
 <div id="ea5" class="answer">could have</div>
 </div>
 
-<h3>Exercise B – Complete the sentence（文を完成させましょう）</h3>
+<h3>Exercise B – Complete the sentence</h3>
 
 <div class="exercise-item">
-1. I ________ ________ (should) brought an umbrella.  
+1. I ________ ________ (should) brought an umbrella.
 <button onclick="toggleAnswer('eb1')">Show Answer</button>
 <div id="eb1" class="answer">should have</div>
 </div>
 
 <div class="exercise-item">
-2. She ________ ________ (might) missed the bus.  
+2. She ________ ________ (might) missed the bus.
 <button onclick="toggleAnswer('eb2')">Show Answer</button>
 <div id="eb2" class="answer">might have</div>
 </div>
 
 <div class="exercise-item">
-3. They ________ ________ (could) arrived earlier.  
+3. They ________ ________ (could) arrived earlier.
 <button onclick="toggleAnswer('eb3')">Show Answer</button>
 <div id="eb3" class="answer">could have</div>
 </div>
 
 <div class="exercise-item">
-4. You ________ ________ (should) listened to the teacher.  
+4. You ________ ________ (should) listened to the teacher.
 <button onclick="toggleAnswer('eb4')">Show Answer</button>
 <div id="eb4" class="answer">should have</div>
 </div>
 
 <div class="exercise-item">
-5. He ________ ________ (might) taken the wrong train.  
+5. He ________ ________ (might) taken the wrong train.
 <button onclick="toggleAnswer('eb5')">Show Answer</button>
 <div id="eb5" class="answer">might have</div>
 </div>
 
 </div>
 
-<!-- 📖 5. SHORT READING TEXT (EXTENDED) -->
-<h2>📖 5. Short Reading Text </h2>
+<!-- 📖 5. SHORT READING TEXT (UNCHANGED) -->
+<h2>📖 5. Short Reading Text</h2>
 <div class="section-box">
 
-<!-- Added English title -->
 <h3 style="margin-top: 0;">A Miscommunication at the Café</h3>
 
 <p>
@@ -260,7 +284,6 @@ In the end, we both should have confirmed the details more clearly.
 It could have been a nice afternoon, but our small mistakes caused a lot of confusion.  
 </p>
 
-<!-- Replaced Japanese Translation line with Japanese title -->
 <h3>カフェでの行き違い</h3>
 
 <p>
@@ -282,36 +305,36 @@ It could have been a nice afternoon, but our small mistakes caused a lot of conf
 
 </div>
 
-<!-- ❓ 6. READING COMPREHENSION QUESTIONS (UPDATED) -->
-<h2>❓ 6. Reading Comprehension Questions（読解問題）</h2>
+<!-- ❓ 6. READING COMPREHENSION QUESTIONS (B1–B2 → NO JAPANESE) -->
+<h2>❓ 6. Reading Comprehension Questions</h2>
 <div class="section-box">
 
 <div class="exercise-item">
-1. Why should the writer have left home earlier?  
+1. Why should the writer have left home earlier?
 <button onclick="toggleAnswer('rq1')">Show Answer</button>
 <div id="rq1" class="answer">Because the trains were delayed due to an accident.</div>
 </div>
 
 <div class="exercise-item">
-2. What might the friend have done instead of going to the café?  
+2. What might the friend have done instead of going to the café?
 <button onclick="toggleAnswer('rq2')">Show Answer</button>
 <div id="rq2" class="answer">She might have gone to another café nearby.</div>
 </div>
 
 <div class="exercise-item">
-3. What could the writer have done more carefully?  
+3. What could the writer have done more carefully?
 <button onclick="toggleAnswer('rq3')">Show Answer</button>
 <div id="rq3" class="answer">They could have read the message more carefully.</div>
 </div>
 
 <div class="exercise-item">
-4. Why might the friend have gone home?  
+4. Why might the friend have gone home?
 <button onclick="toggleAnswer('rq4')">Show Answer</button>
 <div id="rq4" class="answer">Because she might have waited somewhere else and then given up.</div>
 </div>
 
 <div class="exercise-item">
-5. What should both of them have done to avoid confusion?  
+5. What should both of them have done to avoid confusion?
 <button onclick="toggleAnswer('rq5')">Show Answer</button>
 <div id="rq5" class="answer">They should have confirmed the meeting details more clearly.</div>
 </div>
@@ -322,10 +345,19 @@ It could have been a nice afternoon, but our small mistakes caused a lot of conf
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li><b>Should have</b> → past advice/regret. → 過去のアドバイス・後悔。</li>
-<li><b>Could have</b> → past possibility/ability. → 過去の可能性・能力。</li>
-<li><b>Might have</b> → uncertain past possibility. → 過去の不確かな可能性。</li>
-<li>Useful for regrets and past hypotheses. → 後悔・仮説に便利。</li>
+
+<li><strong>Should have</strong> → past advice/regret.</li>
+<div class="jp-note">過去のアドバイス・後悔。</div>
+
+<li><strong>Could have</strong> → past possibility/ability.</li>
+<div class="jp-note">過去の可能性・能力。</div>
+
+<li><strong>Might have</strong> → uncertain past possibility.</li>
+<div class="jp-note">過去の不確かな可能性。</div>
+
+<li>Useful for regrets and past hypotheses.</li>
+<div class="jp-note">後悔・仮説に便利。</div>
+
 </ul>
 </div>
 

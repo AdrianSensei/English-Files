@@ -15,9 +15,9 @@
         color: #333;
     }
 
-    h1 { text-align: center; margin-bottom: 10px; }
-    h2 { margin-top: 40px; color: #222; }
-    h3 { margin-top: 25px; color: #444; }
+    h1, h2, h3 {
+        color: #2a4d69;
+    }
 
     .section-box {
         background: #ffffff;
@@ -60,18 +60,26 @@
     }
 
     button {
-        margin-top: 5px;
         padding: 6px 10px;
         cursor: pointer;
         background: #e0e0e0;
         color: #333;
         border: 1px solid #c8c8c8;
         border-radius: 6px;
+        display: block;
+        margin-bottom: 18px;
     }
 
     button:hover { background: #d5d5d5; }
 
     ul { margin-left: 20px; }
+
+    .jp-note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
 </style>
 
 <script>
@@ -157,13 +165,34 @@ Used when the time in the “if” clause and the result clause are different.
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>If you mix red and blue, you get purple. → 赤と青を混ぜると紫になります。</li>
-<li>If it rains tomorrow, we will cancel the trip. → 明日雨なら旅行を中止します。</li>
-<li>If I had a car, I would drive to work. → 車があれば車で通勤するのに。</li>
-<li>If she had left earlier, she would have caught the train. → もっと早く出ていれば電車に間に合ったのに。</li>
-<li>If I had slept more, I would feel better now. → もっと寝ていれば今気分が良いのに。</li>
-<li>If he were taller, he would play basketball. → 彼がもっと背が高ければバスケをするでしょう。</li>
-<li>If you heat water to 100°C, it boils. → 水を100度まで加熱すると沸騰します。</li>
+<li>
+If you mix red and blue, you get purple.
+<div class="jp-note">赤と青を混ぜると紫になります。</div>
+</li>
+<li>
+If it rains tomorrow, we will cancel the trip.
+<div class="jp-note">明日雨なら旅行を中止します。</div>
+</li>
+<li>
+If I had a car, I would drive to work.
+<div class="jp-note">車があれば車で通勤するのに。</div>
+</li>
+<li>
+If she had left earlier, she would have caught the train.
+<div class="jp-note">もっと早く出ていれば電車に間に合ったのに。</div>
+</li>
+<li>
+If I had slept more, I would feel better now.
+<div class="jp-note">もっと寝ていれば今気分が良いのに。</div>
+</li>
+<li>
+If he were taller, he would play basketball.
+<div class="jp-note">彼がもっと背が高ければバスケをするでしょう。</div>
+</li>
+<li>
+If you heat water to 100°C, it boils.
+<div class="jp-note">水を100度まで加熱すると沸騰します。</div>
+</li>
 </ul>
 </div>
 
@@ -171,20 +200,30 @@ Used when the time in the “if” clause and the result clause are different.
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>If you don’t follow the instructions carefully, the machine will not work properly.  
-→ 説明をよく読まないと、機械は正しく動きません。</li>
+<li>
+If you don’t follow the instructions carefully, the machine will not work properly.
+<div class="jp-note">説明をよく読まないと、機械は正しく動きません。</div>
+</li>
 
-<li>If I had more free time, I would join a language exchange group to practice speaking.  
-→ もっと時間があれば、会話練習のためにランゲージエクスチェンジに参加するのに。</li>
+<li>
+If I had more free time, I would join a language exchange group to practice speaking.
+<div class="jp-note">もっと時間があれば、会話練習のためにランゲージエクスチェンジに参加するのに。</div>
+</li>
 
-<li>If she had known about the meeting, she would have prepared the documents earlier.  
-→ 会議のことを知っていれば、もっと早く資料を準備していたでしょう。</li>
+<li>
+If she had known about the meeting, she would have prepared the documents earlier.
+<div class="jp-note">会議のことを知っていれば、もっと早く資料を準備していたでしょう。</div>
+</li>
 
-<li>If I hadn’t missed the bus, I would be at the office by now.  
-→ バスに乗り遅れていなければ、今ごろオフィスにいるはずです。</li>
+<li>
+If I hadn’t missed the bus, I would be at the office by now.
+<div class="jp-note">バスに乗り遅れていなければ、今ごろオフィスにいるはずです。</div>
+</li>
 
-<li>If the weather improves tomorrow, we will go hiking in the mountains.  
-→ 明日天気が良くなれば、山にハイキングに行きます。</li>
+<li>
+If the weather improves tomorrow, we will go hiking in the mountains.
+<div class="jp-note">明日天気が良くなれば、山にハイキングに行きます。</div>
+</li>
 </ul>
 </div>
 
@@ -195,31 +234,31 @@ Used when the time in the “if” clause and the result clause are different.
 <h3>Exercise A – Choose the correct option（正しい答えを選びましょう）</h3>
 
 <div class="exercise-item">
-1. If it rains, we ______ inside. (stay / will stay / stayed)  
+1. If it rains, we ______ inside. (stay / will stay / stayed)
 <button onclick="toggleAnswer('ea1')">Show Answer</button>
 <div id="ea1" class="answer">will stay</div>
 </div>
 
 <div class="exercise-item">
-2. If I had more money, I ______ a new laptop. (buy / will buy / would buy)  
+2. If I had more money, I ______ a new laptop. (buy / will buy / would buy)
 <button onclick="toggleAnswer('ea2')">Show Answer</button>
 <div id="ea2" class="answer">would buy</div>
 </div>
 
 <div class="exercise-item">
-3. If she had studied harder, she ______ the exam. (passes / would pass / would have passed)  
+3. If she had studied harder, she ______ the exam. (passes / would pass / would have passed)
 <button onclick="toggleAnswer('ea3')">Show Answer</button>
 <div id="ea3" class="answer">would have passed</div>
 </div>
 
 <div class="exercise-item">
-4. If you heat metal, it ______. (expands / expanded / will expand)  
+4. If you heat metal, it ______. (expands / expanded / will expand)
 <button onclick="toggleAnswer('ea4')">Show Answer</button>
 <div id="ea4" class="answer">expands</div>
 </div>
 
 <div class="exercise-item">
-5. If I hadn’t eaten so much, I ______ sick now. (wouldn’t feel / won’t feel / wouldn’t have felt)  
+5. If I hadn’t eaten so much, I ______ sick now. (wouldn’t feel / won’t feel / wouldn’t have felt)
 <button onclick="toggleAnswer('ea5')">Show Answer</button>
 <div id="ea5" class="answer">wouldn’t feel</div>
 </div>
@@ -227,31 +266,31 @@ Used when the time in the “if” clause and the result clause are different.
 <h3>Exercise B – Complete the sentence（文を完成させましょう）</h3>
 
 <div class="exercise-item">
-1. If I ______ (know) the answer, I would tell you.  
+1. If I ______ (know) the answer, I would tell you.
 <button onclick="toggleAnswer('eb1')">Show Answer</button>
 <div id="eb1" class="answer">knew</div>
 </div>
 
 <div class="exercise-item">
-2. If she had left earlier, she ______ ______ (catch) the bus.  
+2. If she had left earlier, she ______ ______ (catch) the bus.
 <button onclick="toggleAnswer('eb2')">Show Answer</button>
 <div id="eb2" class="answer">would have caught</div>
 </div>
 
 <div class="exercise-item">
-3. If it rains tomorrow, we ______ (stay) home.  
+3. If it rains tomorrow, we ______ (stay) home.
 <button onclick="toggleAnswer('eb3')">Show Answer</button>
 <div id="eb3" class="answer">will stay</div>
 </div>
 
 <div class="exercise-item">
-4. If I hadn’t been so tired, I ______ ______ (join) the event.  
+4. If I hadn’t been so tired, I ______ ______ (join) the event.
 <button onclick="toggleAnswer('eb4')">Show Answer</button>
 <div id="eb4" class="answer">would have joined</div>
 </div>
 
 <div class="exercise-item">
-5. If he were more organized, he ______ (make) fewer mistakes.  
+5. If he were more organized, he ______ (make) fewer mistakes.
 <button onclick="toggleAnswer('eb5')">Show Answer</button>
 <div id="eb5" class="answer">would make</div>
 </div>
@@ -262,7 +301,6 @@ Used when the time in the “if” clause and the result clause are different.
 <h2>📖 5. Short Reading Text </h2>
 <div class="section-box">
 
-<!-- Added English title -->
 <h3 style="margin-top: 0;">Learning and Growing Through Workplace Challenges</h3>
 
 <p>
@@ -280,7 +318,6 @@ Still, I try to improve little by little.
 If I continue learning consistently, I know I will become more confident and effective in my work.
 </p>
 
-<!-- Replaced Japanese Translation line with Japanese title -->
 <h3>職場での挑戦を通じた学びと成長</h3>
 
 <p>
@@ -306,36 +343,31 @@ If I continue learning consistently, I know I will become more confident and eff
 <div class="section-box">
 
 <div class="exercise-item">
-1. Why would the writer have struggled without the English course?  
-なぜ英語コースがなかったら苦労したと思いますか？  
+1. Why would the writer have struggled without the English course?
 <button onclick="toggleAnswer('rq1')">Show Answer</button>
 <div id="rq1" class="answer">Because they needed to explain ideas clearly at work.</div>
 </div>
 
 <div class="exercise-item">
-2. What did the manager say about teamwork?  
-マネージャーはチームワークについて何と言いましたか？  
+2. What did the manager say about teamwork?
 <button onclick="toggleAnswer('rq2')">Show Answer</button>
 <div id="rq2" class="answer">He said that effective teamwork would lead to better results.</div>
 </div>
 
 <div class="exercise-item">
-3. What would the writer study more deeply if they had more time?  
-もっと時間があれば何を勉強したいですか？  
+3. What would the writer study more deeply if they had more time?
 <button onclick="toggleAnswer('rq3')">Show Answer</button>
 <div id="rq3" class="answer">Grammar, especially conditionals.</div>
 </div>
 
 <div class="exercise-item">
-4. What mistake does the writer sometimes make?  
-書き手はどんなミスをすることがありますか？  
+4. What mistake does the writer sometimes make?
 <button onclick="toggleAnswer('rq4')">Show Answer</button>
 <div id="rq4" class="answer">They sometimes forget small tasks.</div>
 </div>
 
 <div class="exercise-item">
-5. What does the writer believe will happen if they continue learning?  
-学び続ければどうなると書き手は考えていますか？  
+5. What does the writer believe will happen if they continue learning?
 <button onclick="toggleAnswer('rq5')">Show Answer</button>
 <div id="rq5" class="answer">They will become more confident and effective at work.</div>
 </div>
@@ -346,11 +378,26 @@ If I continue learning consistently, I know I will become more confident and eff
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li><b>0 Conditional</b> = facts. → 事実。</li>
-<li><b>1st Conditional</b> = real future. → 現実の未来。</li>
-<li><b>2nd Conditional</b> = unreal present. → 現在の仮定。</li>
-<li><b>3rd Conditional</b> = unreal past. → 過去の仮定。</li>
-<li><b>Mixed</b> = different times. → 時間が混ざる。</li>
+<li>
+<b>0 Conditional</b> = facts.
+<div class="jp-note">0条件文＝事実。</div>
+</li>
+<li>
+<b>1st Conditional</b> = real future.
+<div class="jp-note">1条件文＝現実の未来。</div>
+</li>
+<li>
+<b>2nd Conditional</b> = unreal present.
+<div class="jp-note">2条件文＝現在の仮定。</div>
+</li>
+<li>
+<b>3rd Conditional</b> = unreal past.
+<div class="jp-note">3条件文＝過去の仮定。</div>
+</li>
+<li>
+<b>Mixed</b> = different times.
+<div class="jp-note">ミックス条件文＝時間が混ざる。</div>
+</li>
 </ul>
 </div>
 
