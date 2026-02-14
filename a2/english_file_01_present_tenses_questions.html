@@ -18,16 +18,17 @@
     h1 {
         text-align: center;
         margin-bottom: 10px;
+        color: #2a4d69;
     }
 
     h2 {
         margin-top: 40px;
-        color: #222;
+        color: #2a4d69;
     }
 
     h3 {
         margin-top: 25px;
-        color: #444;
+        color: #2a4d69;
     }
 
     .section-box {
@@ -66,28 +67,40 @@
 
     .answer {
         display: none;
-        margin-top: 8px;
         padding: 8px;
-        background: #eef5ff;
-        border-left: 3px solid #4a90e2;
+        background: #f0f0f0;
+        border-left: 3px solid #999;
+        margin-top: 8px;
     }
 
     button {
-        margin-top: 5px;
         padding: 6px 10px;
         cursor: pointer;
-        background: #4a90e2;
-        color: white;
-        border: none;
+        background: #e0e0e0;
+        color: #333;
+        border: 1px solid #c8c8c8;
         border-radius: 6px;
+        display: block;
+        margin-bottom: 18px;
     }
 
     button:hover {
-        background: #357ac8;
+        background: #d5d5d5;
     }
 
     ul {
         margin-left: 20px;
+    }
+
+    .jp-note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
+
+    .question-item {
+        margin-bottom: 5px;
     }
 </style>
 
@@ -109,36 +122,62 @@ function toggleAnswer(id) {
 <h2>📚 1. Grammar Explanation（文法の説明）</h2>
 <div class="section-box">
 
+<!-- 1A -->
 <h3>1A – Word Order in Questions（疑問文の語順）</h3>
 
 <h4>Questions with <i>be</i> and <i>can</i>（be動詞とcanの疑問文）</h4>
-<p>Are you hungry? → あなたはお腹がすいていますか？</p>
-<p>Can I sit here? → ここに座ってもいいですか？</p>
 
-<p><b>Rule:</b> Invert the verb and subject.（動詞と主語を逆にする）</p>
-<p>She is a teacher. → Is she a teacher?</p>
-<p>He can drive. → Can he drive?</p>
+<table>
+<tr><th>Statement</th><th>Question</th></tr>
+<tr><td>You are hungry.</td><td>Are you hungry? → あなたはお腹がすいていますか？</td></tr>
+<tr><td>I can sit here.</td><td>Can I sit here? → ここに座ってもいいですか？</td></tr>
+</table>
+
+<p><strong>Rule:</strong> Invert the verb and subject.（動詞と主語を逆にする）</p>
+
+<table>
+<tr><th>Statement</th><th>Question</th></tr>
+<tr><td>She is a teacher.</td><td>Is she a teacher?</td></tr>
+<tr><td>He can drive.</td><td>Can he drive?</td></tr>
+</table>
 
 <h4>Questions with do / does / did（do / does / did の疑問文）</h4>
-<p><b>Structure:</b> QUASI = Question word + Auxiliary + Subject + Infinitive</p>
-<p>Where does your sister work? → あなたの姉（妹）はどこで働いていますか？</p>
-<p>What did they talk about? → 彼らは何について話しましたか？</p>
 
-<p><b>Note:</b> Prepositions often go at the end.（前置詞は文末に置くことが多い）</p>
+<p><strong>Structure:</strong> QUASI = Question word + Auxiliary + Subject + Infinitive</p>
+
+<table>
+<tr><th>Question</th><th>Meaning</th></tr>
+<tr><td>Where does your sister work?</td><td>あなたの姉（妹）はどこで働いていますか？</td></tr>
+<tr><td>What did they talk about?</td><td>彼らは何について話しましたか？</td></tr>
+</table>
+
+<p><strong>Note:</strong> Prepositions often go at the end.（前置詞は文末に置くことが多い）</p>
 <p>Who do you live with? → 誰と一緒に住んでいますか？</p>
 
 <hr>
 
+<!-- 1B -->
 <h3>1B – Present Simple（現在形）</h3>
 
 <h4>Usage（使い方）</h4>
-<p>Daily routines / general truths（毎日の習慣・一般的な事実）</p>
-<p>He works in the city centre. → 彼は市の中心部で働いています。</p>
-<p>Do you speak French? → あなたはフランス語を話しますか？</p>
+<ul>
+<li>Daily routines（毎日の習慣）</li>
+<li>General truths（一般的な事実）</li>
+</ul>
+
+<table>
+<tr><th>Example</th><th>Meaning</th></tr>
+<tr><td>He works in the city centre.</td><td>彼は市の中心部で働いています。</td></tr>
+<tr><td>Do you speak French?</td><td>あなたはフランス語を話しますか？</td></tr>
+</table>
 
 <h4>Negative & Questions（否定文と疑問文）</h4>
-<p>I don’t live near here. → 私はこの近くに住んでいません。</p>
-<p>Does she like music? → 彼女は音楽が好きですか？</p>
+
+<table>
+<tr><th>Form</th><th>Example</th></tr>
+<tr><td>Negative</td><td>I don’t live near here. → 私はこの近くに住んでいません。</td></tr>
+<tr><td>Question</td><td>Does she like music? → 彼女は音楽が好きですか？</td></tr>
+</table>
 
 <h4>Spelling Rules（綴りのルール）</h4>
 <table>
@@ -151,7 +190,7 @@ function toggleAnswer(id) {
 </table>
 
 <h4>Frequency Adverbs（頻度副詞）</h4>
-<p>always, usually, often, sometimes, never</p>
+<p>always / usually / often / sometimes / never</p>
 <p>She’s never ill. → 彼女は決して病気になりません。</p>
 
 <h4>Position（位置）</h4>
@@ -166,6 +205,7 @@ function toggleAnswer(id) {
 
 <hr>
 
+<!-- 1C -->
 <h3>1C – Present Continuous（現在進行形）</h3>
 
 <h4>Usage（使い方）</h4>
@@ -175,8 +215,11 @@ function toggleAnswer(id) {
 <li>Describing pictures（絵の描写）</li>
 </ul>
 
-<p>I’m sending a message. → メッセージを送っています。</p>
-<p>She’s standing near the table. → 彼女はテーブルの近くに立っています。</p>
+<table>
+<tr><th>Example</th><th>Meaning</th></tr>
+<tr><td>I’m sending a message.</td><td>メッセージを送っています。</td></tr>
+<tr><td>She’s standing near the table.</td><td>彼女はテーブルの近くに立っています。</td></tr>
+</table>
 
 <h4>Structure（構造）</h4>
 <table>
@@ -186,8 +229,8 @@ function toggleAnswer(id) {
 <tr><td>He</td><td>is</td><td>working</td></tr>
 </table>
 
-<p><b>Negative:</b> I’m not working. → 働いていません。</p>
-<p><b>Question:</b> Are you working? → 働いていますか？</p>
+<p><strong>Negative:</strong> I’m not working. → 働いていません。</p>
+<p><strong>Question:</strong> Are you working? → 働いていますか？</p>
 
 <h4>Spelling Rules（綴りのルール）</h4>
 <table>
@@ -198,53 +241,66 @@ function toggleAnswer(id) {
 </table>
 
 <h4>Present Simple vs. Present Continuous（現在形 vs. 現在進行形）</h4>
-<p>What do you do? → I work for an IT company.（職業）</p>
-<p>What are you doing? → I’m checking my messages.（今していること）</p>
 
-<p><b>State verbs</b> (like, want, need) → use Present Simple</p>
+<table>
+<tr><th>Present Simple</th><th>Present Continuous</th></tr>
+<tr><td>What do you do?<br>I work for an IT company.（職業）</td>
+<td>What are you doing?<br>I’m checking my messages.（今していること）</td></tr>
+</table>
+
+<p><strong>State verbs</strong> (like, want, need) → use Present Simple</p>
 <p>I like Italian food. NOT I’m liking Italian food.</p>
 
 </div>
-
-
 
 <!-- ✏️ 2. SHORT EXAMPLE SENTENCES -->
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>I usually walk to school. → 普段は歩いて学校に行きます。</li>
-<li>She is cooking dinner now. → 彼女は今夕食を作っています。</li>
-<li>Do you play tennis? → テニスをしますか？</li>
-<li>They are watching a movie. → 彼らは映画を見ています。</li>
-<li>He never drinks coffee. → 彼はコーヒーを全く飲みません。</li>
-<li>Are you studying English today? → 今日は英語を勉強していますか？</li>
-<li>My brother works at a hospital. → 私の兄は病院で働いています。</li>
+    <li>I usually walk to school.</li>
+    <div class="jp-note">普段は歩いて学校に行きます。</div>
+
+    <li>She is cooking dinner now.</li>
+    <div class="jp-note">彼女は今夕食を作っています。</div>
+
+    <li>Do you play tennis?</li>
+    <div class="jp-note">テニスをしますか？</div>
+
+    <li>They are watching a movie.</li>
+    <div class="jp-note">彼らは映画を見ています。</div>
+
+    <li>He never drinks coffee.</li>
+    <div class="jp-note">彼はコーヒーを全く飲みません。</div>
+
+    <li>Are you studying English today?</li>
+    <div class="jp-note">今日は英語を勉強していますか？</div>
+
+    <li>My brother works at a hospital.</li>
+    <div class="jp-note">私の兄は病院で働いています。</div>
 </ul>
 </div>
-
 
 
 <!-- 📝 3. LONGER EXAMPLE SENTENCES -->
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>I’m staying with my grandparents this week because my parents are traveling.  
-→ 今週は両親が旅行中なので、祖父母の家に泊まっています。</li>
+    <li>I’m staying with my grandparents this week because my parents are traveling.</li>
+    <div class="jp-note">今週は両親が旅行中なので、祖父母の家に泊まっています。</div>
 
-<li>She usually takes the bus to work, but today she is driving because it’s raining.  
-→ 彼女は普段バスで通勤しますが、今日は雨なので車を運転しています。</li>
+    <li>She usually takes the bus to work, but today she is driving because it’s raining.</li>
+    <div class="jp-note">彼女は普段バスで通勤しますが、今日は雨なので車を運転しています。</div>
 
-<li>We don’t eat out very often, but we’re having dinner at a restaurant tonight.  
-→ 外食はあまりしませんが、今夜はレストランで夕食を食べます。</li>
+    <li>We don’t eat out very often, but we’re having dinner at a restaurant tonight.</li>
+    <div class="jp-note">外食はあまりしませんが、今夜はレストランで夕食を食べます。</div>
 
-<li>He is learning how to cook because he wants to live alone next year.  
-→ 来年一人暮らしをしたいので、彼は料理を学んでいます。</li>
+    <li>He is learning how to cook because he wants to live alone next year.</li>
+    <div class="jp-note">来年一人暮らしをしたいので、彼は料理を学んでいます。</div>
 
-<li>My friends are planning a trip, but I don’t know if I can join them yet.  
-→ 友達は旅行を計画していますが、私は参加できるかまだ分かりません。</li>
+    <li>My friends are planning a trip, but I don’t know if I can join them yet.</li>
+    <div class="jp-note">友達は旅行を計画していますが、私は参加できるかまだ分かりません。</div>
 </ul>
 </div>
-
 
 
 <!-- 🧩 4. PRACTICE EXERCISES -->
@@ -254,31 +310,31 @@ function toggleAnswer(id) {
 <h3>Exercise A – Choose the correct option（正しい答えを選びましょう）</h3>
 
 <div class="exercise-item">
-1. He ________ (work / works) in an office.  
+1. He ________ (work / works) in an office.
 <button onclick="toggleAnswer('ea1')">Show Answer</button>
 <div id="ea1" class="answer">works</div>
 </div>
 
 <div class="exercise-item">
-2. What ________ you ________ (do / doing) now?  
+2. What ________ you ________ (do / doing) now?
 <button onclick="toggleAnswer('ea2')">Show Answer</button>
 <div id="ea2" class="answer">are you doing</div>
 </div>
 
 <div class="exercise-item">
-3. She ________ (don’t / doesn’t) like chocolate.  
+3. She ________ (don’t / doesn’t) like chocolate.
 <button onclick="toggleAnswer('ea3')">Show Answer</button>
 <div id="ea3" class="answer">doesn’t</div>
 </div>
 
 <div class="exercise-item">
-4. They ________ (are / is) studying English today.  
+4. They ________ (are / is) studying English today.
 <button onclick="toggleAnswer('ea4')">Show Answer</button>
 <div id="ea4" class="answer">are</div>
 </div>
 
 <div class="exercise-item">
-5. ________ he ________ (live / lives) near here?  
+5. ________ he ________ (live / lives) near here?
 <button onclick="toggleAnswer('ea5')">Show Answer</button>
 <div id="ea5" class="answer">Does he live</div>
 </div>
@@ -287,36 +343,37 @@ function toggleAnswer(id) {
 <h3>Exercise B – Complete the sentence（文を完成させましょう）</h3>
 
 <div class="exercise-item">
-1. I __________ (study) English right now.  
+1. I __________ (study) English right now.
 <button onclick="toggleAnswer('eb1')">Show Answer</button>
 <div id="eb1" class="answer">am studying</div>
 </div>
 
 <div class="exercise-item">
-2. She usually __________ (go) to bed early.  
+2. She usually __________ (go) to bed early.
 <button onclick="toggleAnswer('eb2')">Show Answer</button>
 <div id="eb2" class="answer">goes</div>
 </div>
 
 <div class="exercise-item">
-3. We __________ (not work) on weekends.  
+3. We __________ (not work) on weekends.
 <button onclick="toggleAnswer('eb3')">Show Answer</button>
 <div id="eb3" class="answer">don’t work</div>
 </div>
 
 <div class="exercise-item">
-4. Why __________ you __________ (wear) a jacket?  
+4. Why __________ you __________ (wear) a jacket?
 <button onclick="toggleAnswer('eb4')">Show Answer</button>
 <div id="eb4" class="answer">are you wearing</div>
 </div>
 
 <div class="exercise-item">
-5. My brother __________ (have) two cats.  
+5. My brother __________ (have) two cats.
 <button onclick="toggleAnswer('eb5')">Show Answer</button>
 <div id="eb5" class="answer">has</div>
 </div>
 
 </div>
+
 
 <!-- 📖 5. Short Reading Text -->
 <h2>📖 5. Short Reading Text </h2>
@@ -343,56 +400,62 @@ Every morning, I wake up at 6:30 and make a cup of tea. I usually check my messa
 <h2>❓ 6. Reading Comprehension Questions（読解問題）</h2>
 <div class="section-box">
 
-<div class="exercise-item">
-1. What time does the writer wake up?  
-→ 筆者は何時に起きますか？  
+<div class="question-item">
+1) What time does the writer wake up?<br>
+<p class="jp-note">筆者は何時に起きますか？</p>
+</div>
 <button onclick="toggleAnswer('rq1')">Show Answer</button>
 <div id="rq1" class="answer">6:30</div>
-</div>
 
-<div class="exercise-item">
-2. Why is the writer studying English?  
-→ なぜ英語を勉強していますか？  
+<div class="question-item">
+2) Why is the writer studying English?<br>
+<p class="jp-note">なぜ英語を勉強していますか？</p>
+</div>
 <button onclick="toggleAnswer('rq2')">Show Answer</button>
 <div id="rq2" class="answer">Because they want to work abroad.</div>
-</div>
 
-<div class="exercise-item">
-3. How long does the writer usually study?  
-→ 普段どれくらい勉強しますか？  
+<div class="question-item">
+3) How long does the writer usually study?<br>
+<p class="jp-note">普段どれくらい勉強しますか？</p>
+</div>
 <button onclick="toggleAnswer('rq3')">Show Answer</button>
 <div id="rq3" class="answer">About one hour.</div>
-</div>
 
-<div class="exercise-item">
-4. Why is the writer studying longer today?  
-→ なぜ今日は長く勉強していますか？  
+<div class="question-item">
+4) Why is the writer studying longer today?<br>
+<p class="jp-note">なぜ今日は長く勉強していますか？</p>
+</div>
 <button onclick="toggleAnswer('rq4')">Show Answer</button>
 <div id="rq4" class="answer">Because they have a test tomorrow.</div>
-</div>
 
-<div class="exercise-item">
-5. Who is helping the writer study?  
-→ 誰が勉強を手伝っていますか？  
+<div class="question-item">
+5) Who is helping the writer study?<br>
+<p class="jp-note">誰が勉強を手伝っていますか？</p>
+</div>
 <button onclick="toggleAnswer('rq5')">Show Answer</button>
 <div id="rq5" class="answer">Their friend.</div>
-</div>
 
 </div>
-
 
 
 <!-- 🎯 7. SUMMARY -->
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li>Use QUASI for question word order. → 疑問文はQUASIの語順を使う。</li>
-<li>Present Simple = habits & facts. → 現在形＝習慣と事実。</li>
-<li>Present Continuous = actions now. → 現在進行形＝今していること。</li>
-<li>Watch spelling rules carefully. → 綴りのルールに注意。</li>
+    <li><strong>QUASI</strong> for question word order.</li>
+    <div class="jp-note">疑問文は<strong>QUASI</strong>の語順を使う。</div>
+
+    <li><strong>Present Simple</strong> = habits & facts.</li>
+    <div class="jp-note"><strong>現在形</strong>＝習慣と事実。</div>
+
+    <li><strong>Present Continuous</strong> = actions now.</li>
+    <div class="jp-note"><strong>現在進行形</strong>＝今していること。</div>
+
+    <li><strong>Spelling rules</strong> are important for correct forms.</li>
+    <div class="jp-note"><strong>綴りのルール</strong>に注意して正しい形を使いましょう。</div>
 </ul>
 
-<p>この文法は日常会話でとても役立ちます。しっかり練習して自然に使えるようにしましょう！</p>
+<p class="jp-note">この文法は日常会話でとても役立ちます。しっかり練習して自然に使えるようにしましょう！</p>
 </div>
 
 <div style="text-align:center; margin-top:30px;">

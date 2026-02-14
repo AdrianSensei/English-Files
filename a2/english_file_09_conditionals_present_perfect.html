@@ -5,79 +5,89 @@
 <title>Conditionals & Present Perfect – A2–B1</title>
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f5f7fa;
-        padding: 40px;
-        max-width: 900px;
-        margin: auto;
-        line-height: 1.7;
-        color: #333;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+    color: #333;
+}
 
-    h1 { text-align: center; margin-bottom: 10px; }
-    h2 { margin-top: 40px; color: #222; }
-    h3 { margin-top: 25px; color: #444; }
+h1, h2, h3 {
+    color: #2a4d69;
+}
 
-    .section-box {
-        background: #ffffff;
-        border: 1px solid #d0d7de;
-        padding: 25px;
-        border-radius: 12px;
-        margin-top: 20px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
+.section-box {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 15px 0;
-        background: #fff;
-        border-radius: 8px;
-        overflow: hidden;
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-    th {
-        background: #E3EEF3;
-        padding: 10px;
-        border-bottom: 2px solid #d0d7de;
-        text-align: left;
-    }
+th {
+    background: #E3EEF3;
+    padding: 10px;
+    border-bottom: 2px solid #d0d7de;
+    text-align: left;
+}
 
-    td {
-        padding: 10px;
-        border-bottom: 1px solid #e5e5e5;
-    }
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
 
-    .exercise-item { margin-bottom: 15px; }
+.jp-note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
 
-    .answer {
-        display: none;
-        margin-top: 8px;
-        padding: 8px;
-        background: #eef5ff;
-        border-left: 3px solid #4a90e2;
-    }
+button {
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 18px; /* ENTER ENTRE PREGUNTAS */
+}
 
-    button {
-        margin-top: 5px;
-        padding: 6px 10px;
-        cursor: pointer;
-        background: #4a90e2;
-        color: white;
-        border: none;
-        border-radius: 6px;
-    }
+button:hover {
+    background: #d5d5d5;
+}
 
-    button:hover { background: #357ac8; }
+.answer {
+    display: none;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+    margin-top: 8px;
+}
 
-    ul { margin-left: 20px; }
+ul {
+    margin-left: 20px;
+}
 </style>
 
 <script>
 function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
 }
 </script>
 
@@ -88,7 +98,7 @@ function toggleAnswer(id) {
 <h1>Conditionals & Present Perfect</h1>
 <h3>Level: A2–B1</h3>
 
-<!-- 📚 1. GRAMMAR EXPLANATION -->
+<!-- 1. GRAMMAR EXPLANATION (UNCHANGED) -->
 <h2>📚 1. Grammar Explanation（文法の説明）</h2>
 <div class="section-box">
 
@@ -126,79 +136,84 @@ Use <b>present perfect</b> for unfinished time or experience.
 
 </div>
 
-<!-- ✏️ 2. SHORT EXAMPLE SENTENCES -->
+<!-- 2. SHORT EXAMPLE SENTENCES (REFACTORED) -->
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>If I won the lottery, I’d travel the world. → 宝くじに当たったら、世界を旅します。</li>
-<li>Would you go if it snowed? → 雪が降ったら行きますか？</li>
-<li>I’ve lived here since 2010. → 2010年からここに住んでいます。</li>
-<li>She’s worked here for five years. → 彼女はここで5年間働いています。</li>
-<li>I met him last year. → 去年彼に会いました。</li>
-<li>I’ve met him before. → 以前彼に会ったことがあります。</li>
+
+<li>If I won the lottery, I’d travel the world.</li>
+<div class="jp-note">宝くじに当たったら、世界を旅します。</div>
+
+<li>Would you go if it snowed?</li>
+<div class="jp-note">雪が降ったら行きますか？</div>
+
+<li>I’ve lived here since 2010.</li>
+<div class="jp-note">2010年からここに住んでいます。</div>
+
+<li>She’s worked here for five years.</li>
+<div class="jp-note">彼女はここで5年間働いています。</div>
+
+<li>I met him last year.</li>
+<div class="jp-note">去年彼に会いました。</div>
+
+<li>I’ve met him before.</li>
+<div class="jp-note">以前彼に会ったことがあります。</div>
+
 </ul>
 </div>
 
-<!-- 📝 3. LONGER EXAMPLE SENTENCES -->
+<!-- 3. LONGER EXAMPLE SENTENCES (REFACTORED) -->
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>If I didn’t have to work on weekends, I’d visit my family more often.  
-→ 週末に働かなくてよければ、もっと頻繁に家族に会いに行きます。</li>
 
-<li>We’d get there faster if we took a taxi.  
-→ タクシーに乗れば、もっと早く着きます。</li>
+<li>If I didn’t have to work on weekends, I’d visit my family more often.</li>
+<div class="jp-note">週末に働かなくてよければ、もっと頻繁に家族に会いに行きます。</div>
 
-<li>I’ve lived in this town for over ten years, and I still love it.  
-→ この町に10年以上住んでいますが、今でも大好きです。</li>
+<li>We’d get there faster if we took a taxi.</li>
+<div class="jp-note">タクシーに乗れば、もっと早く着きます。</div>
 
-<li>She’s had her cat since she was a child.  
-→ 彼女は子供の頃から猫を飼っています。</li>
+<li>I’ve lived in this town for over ten years, and I still love it.</li>
+<div class="jp-note">この町に10年以上住んでいますが、今でも大好きです。</div>
 
-<li>I went to London in 2018, but I haven’t been back since.  
-→ 2018年にロンドンに行きましたが、それ以来行っていません。</li>
+<li>She’s had her cat since she was a child.</li>
+<div class="jp-note">彼女は子供の頃から猫を飼っています。</div>
+
+<li>I went to London in 2018, but I haven’t been back since.</li>
+<div class="jp-note">2018年にロンドンに行きましたが、それ以来行っていません。</div>
+
 </ul>
 </div>
 
-<!-- 🧩 4. PRACTICE EXERCISES -->
+<!-- 4. PRACTICE EXERCISES (REFACTORED) -->
 <h2>🧩 4. Practice Exercises（練習問題）</h2>
 <div class="section-box">
 
-<h3>Exercise A – Choose the correct option（正しい答えを選びましょう）</h3>
+<h3>Exercise A – Choose the correct option</h3>
 
-<div class="exercise-item">
-1. If I had more money, I ______ travel more. (will / would)  
+<div class="exercise-item">1. If I had more money, I ______ travel more. (will / would)</div>
 <button onclick="toggleAnswer('ea1')">Show Answer</button>
-<div id="ea1" class="answer">[Answer: would]</div>
-</div>
+<div id="ea1" class="answer">would</div>
 
-<div class="exercise-item">
-2. How long ______ you lived here? (have / did)  
+<div class="exercise-item">2. How long ______ you lived here? (have / did)</div>
 <button onclick="toggleAnswer('ea2')">Show Answer</button>
-<div id="ea2" class="answer">[Answer: have]</div>
-</div>
+<div id="ea2" class="answer">have</div>
 
-<div class="exercise-item">
-3. I ______ in Osaka for three years. (lived / have lived)  
+<div class="exercise-item">3. I ______ in Osaka for three years. (lived / have lived)</div>
 <button onclick="toggleAnswer('ea3')">Show Answer</button>
-<div id="ea3" class="answer">[Answer: have lived]</div>
-</div>
+<div id="ea3" class="answer">have lived</div>
 
-<div class="exercise-item">
-4. If it rained, we ______ go to the beach. (won’t / wouldn’t)  
+<div class="exercise-item">4. If it rained, we ______ go to the beach. (won’t / wouldn’t)</div>
 <button onclick="toggleAnswer('ea4')">Show Answer</button>
-<div id="ea4" class="answer">[Answer: wouldn’t]</div>
-</div>
+<div id="ea4" class="answer">wouldn’t</div>
 
-<div class="exercise-item">
-5. She ______ her phone yesterday. (lost / has lost)  
+<div class="exercise-item">5. She ______ her phone yesterday. (lost / has lost)</div>
 <button onclick="toggleAnswer('ea5')">Show Answer</button>
-<div id="ea5" class="answer">[Answer: lost]</div>
-</div>
+<div id="ea5" class="answer">lost</div>
 
 </div>
 
-<!-- 📖 5. SHORT READING TEXT -->
+<!-- 5. SHORT READING TEXT (UNCHANGED) -->
 <h2>📖 5. Short Reading Text </h2>
 <div class="section-box">
 
@@ -216,50 +231,64 @@ My cousin lives in Canada. He’s lived there since 2010 and he really enjoys it
 
 </div>
 
-<!-- ❓ 6. READING COMPREHENSION QUESTIONS -->
+<!-- 6. READING COMPREHENSION QUESTIONS (REFACTORED) -->
 <h2>❓ 6. Reading Comprehension Questions（読解問題）</h2>
 <div class="section-box">
 
-<div class="exercise-item">
-1. How long has the cousin lived in Canada?  
+<div class="question-item">
+1. How long has the cousin lived in Canada?<br>
+<p class="jp-note">いとこはどれくらいカナダに住んでいますか？</p>
+</div>
 <button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">[Answer: Since 2010.]</div>
-</div>
+<div id="rq1" class="answer">Since 2010.</div>
 
-<div class="exercise-item">
-2. What does the cousin do for work?  
+<div class="question-item">
+2. What does the cousin do for work?<br>
+<p class="jp-note">いとこはどんな仕事をしていますか？</p>
+</div>
 <button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">[Answer: He works as a designer.]</div>
-</div>
+<div id="rq2" class="answer">He works as a designer.</div>
 
-<div class="exercise-item">
-3. How many times has the writer visited the cousin?  
+<div class="question-item">
+3. How many times has the writer visited the cousin?<br>
+<p class="jp-note">筆者はいとこを何回訪れましたか？</p>
+</div>
 <button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">[Answer: Twice.]</div>
-</div>
+<div id="rq3" class="answer">Twice.</div>
 
-<div class="exercise-item">
-4. What would the writer do if they had more vacation time?  
+<div class="question-item">
+4. What would the writer do if they had more vacation time?<br>
+<p class="jp-note">もっと休みがあれば、筆者は何をしますか？</p>
+</div>
 <button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">[Answer: They’d go to Canada again this year.]</div>
-</div>
+<div id="rq4" class="answer">They’d go to Canada again this year.</div>
 
-<div class="exercise-item">
-5. Since when has the cousin had a dog?  
+<div class="question-item">
+5. Since when has the cousin had a dog?<br>
+<p class="jp-note">いとこはいつから犬を飼っていますか？</p>
+</div>
 <button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">[Answer: Since 2015.]</div>
-</div>
+<div id="rq5" class="answer">Since 2015.</div>
 
 </div>
 
-<!-- 🎯 7. SUMMARY -->
+<!-- 7. SUMMARY (REFACTORED) -->
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li><b>Second conditional</b>: if + past → would / wouldn’t + verb（仮定・非現実）</li>
-<li><b>Present perfect + for / since</b>: 過去に始まり今も続くこと</li>
-<li><b>Past simple</b>: 完全に終わった過去の出来事</li>
+
+<li><b>Second conditional:</b> if + past → would / wouldn’t + verb</li>
+<div class="jp-note">仮定・非現実の状況。</div>
+
+<li><b>Present perfect + for / since:</b> ongoing actions</li>
+<div class="jp-note">過去に始まり今も続くこと。</div>
+
+<li><b>Past simple:</b> finished past</li>
+<div class="jp-note">完全に終わった過去の出来事。</div>
+
 <li>Use <b>for</b> + period, <b>since</b> + starting point.</li>
+<div class="jp-note">for は期間、since は開始時点。</div>
+
 </ul>
 </div>
 

@@ -5,79 +5,89 @@
 <title>Comparatives & Superlatives – A2–B1</title>
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f5f7fa;
-        padding: 40px;
-        max-width: 900px;
-        margin: auto;
-        line-height: 1.7;
-        color: #333;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+    color: #333;
+}
 
-    h1 { text-align: center; margin-bottom: 10px; }
-    h2 { margin-top: 40px; color: #222; }
-    h3 { margin-top: 25px; color: #444; }
+h1, h2, h3 {
+    color: #2a4d69;
+}
 
-    .section-box {
-        background: #ffffff;
-        border: 1px solid #d0d7de;
-        padding: 25px;
-        border-radius: 12px;
-        margin-top: 20px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
+.section-box {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 15px 0;
-        background: #fff;
-        border-radius: 8px;
-        overflow: hidden;
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-    th {
-        background: #E3EEF3;
-        padding: 10px;
-        border-bottom: 2px solid #d0d7de;
-        text-align: left;
-    }
+th {
+    background: #E3EEF3;
+    padding: 10px;
+    border-bottom: 2px solid #d0d7de;
+    text-align: left;
+}
 
-    td {
-        padding: 10px;
-        border-bottom: 1px solid #e5e5e5;
-    }
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
 
-    .exercise-item { margin-bottom: 15px; }
+.jp-note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
 
-    .answer {
-        display: none;
-        margin-top: 8px;
-        padding: 8px;
-        background: #eef5ff;
-        border-left: 3px solid #4a90e2;
-    }
+button {
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 18px;
+}
 
-    button {
-        margin-top: 5px;
-        padding: 6px 10px;
-        cursor: pointer;
-        background: #4a90e2;
-        color: white;
-        border: none;
-        border-radius: 6px;
-    }
+button:hover {
+    background: #d5d5d5;
+}
 
-    button:hover { background: #357ac8; }
+.answer {
+    display: none;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+    margin-top: 8px;
+}
 
-    ul { margin-left: 20px; }
+ul {
+    margin-left: 20px;
+}
 </style>
 
 <script>
 function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
 }
 </script>
 
@@ -88,8 +98,7 @@ function toggleAnswer(id) {
 <h1>Comparatives & Superlatives</h1>
 <h3>Level: A2–B1</h3>
 
-
-<!-- 📚 1. GRAMMAR EXPLANATION -->
+<!-- 1. GRAMMAR EXPLANATION — UNTOUCHED -->
 <h2>📚 1. Grammar Explanation（文法の説明）</h2>
 <div class="section-box">
 
@@ -107,7 +116,6 @@ We use comparatives to show differences between two things.
 <tr><td>(not) as + adj + as</td><td>not as big as</td></tr>
 </table>
 
-
 <h3>2. Superlatives（最上級）</h3>
 <p>
 We use superlatives to show the highest level in a group.  
@@ -120,7 +128,6 @@ We use superlatives to show the highest level in a group.
 <tr><td>the most + adj</td><td>the most beautiful</td></tr>
 <tr><td>the least + adj</td><td>the least expensive</td></tr>
 </table>
-
 
 <h3>3. Quantifiers（数量表現）</h3>
 <p>
@@ -137,122 +144,109 @@ We use quantifiers to talk about amount.
 
 </div>
 
-
-
-<!-- ✏️ 2. SHORT EXAMPLE SENTENCES -->
+<!-- 2. SHORT EXAMPLE SENTENCES — REFACTORED -->
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>This bag is heavier than mine. → このかばんは私のより重い。</li>
-<li>My sister is more patient than me. → 姉は私よりがまん強い。</li>
-<li>Winter is the coldest season here. → ここでは冬が一番寒い。</li>
-<li>This café is the most popular in town. → このカフェは町で一番人気です。</li>
-<li>I drank too much coffee today. → 今日はコーヒーを飲みすぎた。</li>
-<li>There are too many people on the train. → 電車に人が多すぎる。</li>
-<li>The room isn’t big enough for five people. → その部屋は5人には十分大きくない。</li>
+
+<li>This bag is heavier than mine.</li>
+<div class="jp-note">このかばんは私のより重い。</div>
+
+<li>My sister is more patient than me.</li>
+<div class="jp-note">姉は私よりがまん強い。</div>
+
+<li>Winter is the coldest season here.</li>
+<div class="jp-note">ここでは冬が一番寒い。</div>
+
+<li>This café is the most popular in town.</li>
+<div class="jp-note">このカフェは町で一番人気です。</div>
+
+<li>I drank too much coffee today.</li>
+<div class="jp-note">今日はコーヒーを飲みすぎた。</div>
+
+<li>There are too many people on the train.</li>
+<div class="jp-note">電車に人が多すぎる。</div>
+
+<li>The room isn’t big enough for five people.</li>
+<div class="jp-note">その部屋は5人には十分大きくない。</div>
+
 </ul>
 </div>
 
-
-
-<!-- 📝 3. LONGER EXAMPLE SENTENCES -->
+<!-- 3. LONGER EXAMPLE SENTENCES — REFACTORED -->
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>My new phone is much faster than my old one, so I can work more easily.  
-→ 新しいスマホは前のよりずっと速く、作業がしやすいです。</li>
 
-<li>This restaurant is the most comfortable place to study in the neighborhood.  
-→ このレストランは近所で一番勉強しやすい場所です。</li>
+<li>My new phone is much faster than my old one, so I can work more easily.</li>
+<div class="jp-note">新しいスマホは前のよりずっと速く、作業がしやすいです。</div>
 
-<li>I bought too many snacks for the trip, so my bag became very heavy.  
-→ 旅行のためにお菓子を買いすぎて、かばんがとても重くなりました。</li>
+<li>This restaurant is the most comfortable place to study in the neighborhood.</li>
+<div class="jp-note">このレストランは近所で一番勉強しやすい場所です。</div>
 
-<li>Our classroom isn’t warm enough in winter, so students often wear jackets.  
-→ 冬は教室が十分暖かくなく、生徒はよく上着を着ています。</li>
+<li>I bought too many snacks for the trip, so my bag became very heavy.</li>
+<div class="jp-note">旅行のためにお菓子を買いすぎて、かばんがとても重くなりました。</div>
 
-<li>My brother works harder this year than he did last year because he wants a promotion.  
-→ 昇進したいので、兄は去年より今年のほうが一生懸命働いています。</li>
+<li>Our classroom isn’t warm enough in winter, so students often wear jackets.</li>
+<div class="jp-note">冬は教室が十分暖かくなく、生徒はよく上着を着ています。</div>
+
+<li>My brother works harder this year than he did last year because he wants a promotion.</li>
+<div class="jp-note">昇進したいので、兄は去年より今年のほうが一生懸命働いています。</div>
+
 </ul>
 </div>
 
-
-
-<!-- 🧩 4. PRACTICE EXERCISES -->
+<!-- 4. PRACTICE EXERCISES — REFACTORED -->
 <h2>🧩 4. Practice Exercises（練習問題）</h2>
 <div class="section-box">
 
-<h3>Exercise A – Choose the correct option（正しい答えを選びましょう）</h3>
+<h3>Exercise A – Choose the correct option</h3>
 
-<div class="exercise-item">
-1. This test is ________ than the last one. (easier / easy)  
+<div class="exercise-item">1. This test is ________ than the last one. (easier / easy)</div>
 <button onclick="toggleAnswer('ea1')">Show Answer</button>
-<div id="ea1" class="answer">[Answer: easier]</div>
-</div>
+<div id="ea1" class="answer">easier</div>
 
-<div class="exercise-item">
-2. My sister is ________ in our family. (the tallest / taller)  
+<div class="exercise-item">2. My sister is ________ in our family. (the tallest / taller)</div>
 <button onclick="toggleAnswer('ea2')">Show Answer</button>
-<div id="ea2" class="answer">[Answer: the tallest]</div>
-</div>
+<div id="ea2" class="answer">the tallest</div>
 
-<div class="exercise-item">
-3. There are ________ cars on the road today. (too many / too much)  
+<div class="exercise-item">3. There are ________ cars on the road today. (too many / too much)</div>
 <button onclick="toggleAnswer('ea3')">Show Answer</button>
-<div id="ea3" class="answer">[Answer: too many]</div>
-</div>
+<div id="ea3" class="answer">too many</div>
 
-<div class="exercise-item">
-4. This room isn’t big ________. (enough / too)  
+<div class="exercise-item">4. This room isn’t big ________. (enough / too)</div>
 <button onclick="toggleAnswer('ea4')">Show Answer</button>
-<div id="ea4" class="answer">[Answer: enough]</div>
-</div>
+<div id="ea4" class="answer">enough</div>
 
-<div class="exercise-item">
-5. My laptop is ________ than yours. (more expensive / expensiver)  
+<div class="exercise-item">5. My laptop is ________ than yours. (more expensive / expensiver)</div>
 <button onclick="toggleAnswer('ea5')">Show Answer</button>
-<div id="ea5" class="answer">[Answer: more expensive]</div>
-</div>
+<div id="ea5" class="answer">more expensive</div>
 
+<h3>Exercise B – Complete the sentence</h3>
 
-
-<h3>Exercise B – Complete the sentence（文を完成させましょう）</h3>
-
-<div class="exercise-item">
-1. This chair is ____________________________ than that one. (comfortable)  
+<div class="exercise-item">1. This chair is ____________________________ than that one. (comfortable)</div>
 <button onclick="toggleAnswer('eb1')">Show Answer</button>
-<div id="eb1" class="answer">[Answer: more comfortable]</div>
-</div>
+<div id="eb1" class="answer">more comfortable</div>
 
-<div class="exercise-item">
-2. She is the ____________________________ person in the office. (friendly)  
+<div class="exercise-item">2. She is the ____________________________ person in the office. (friendly)</div>
 <button onclick="toggleAnswer('eb2')">Show Answer</button>
-<div id="eb2" class="answer">[Answer: most friendly / friendliest]</div>
-</div>
+<div id="eb2" class="answer">most friendly / friendliest</div>
 
-<div class="exercise-item">
-3. I don’t have ____________________________ time to finish this. (enough)  
+<div class="exercise-item">3. I don’t have ____________________________ time to finish this. (enough)</div>
 <button onclick="toggleAnswer('eb3')">Show Answer</button>
-<div id="eb3" class="answer">[Answer: enough]</div>
-</div>
+<div id="eb3" class="answer">enough</div>
 
-<div class="exercise-item">
-4. He bought ____________________________ snacks for the trip. (too many)  
+<div class="exercise-item">4. He bought ____________________________ snacks for the trip. (too many)</div>
 <button onclick="toggleAnswer('eb4')">Show Answer</button>
-<div id="eb4" class="answer">[Answer: too many]</div>
-</div>
+<div id="eb4" class="answer">too many</div>
 
-<div class="exercise-item">
-5. This movie is ____________________________ than I expected. (funny)  
+<div class="exercise-item">5. This movie is ____________________________ than I expected. (funny)</div>
 <button onclick="toggleAnswer('eb5')">Show Answer</button>
-<div id="eb5" class="answer">[Answer: funnier]</div>
-</div>
+<div id="eb5" class="answer">funnier</div>
 
 </div>
 
-
-
-<!-- 📖 5. SHORT READING TEXT -->
+<!-- 5. SHORT READING TEXT — UNTOUCHED -->
 <h2>📖 5. Short Reading Text </h2>
 <div class="section-box">
 
@@ -270,60 +264,67 @@ Last weekend, my friends and I visited a new shopping mall in our city. It was m
 
 </div>
 
-
-
-<!-- ❓ 6. READING COMPREHENSION QUESTIONS -->
+<!-- 6. READING COMPREHENSION QUESTIONS — REFACTORED -->
 <h2>❓ 6. Reading Comprehension Questions（読解問題）</h2>
 <div class="section-box">
 
-<div class="exercise-item">
-1. Why was it difficult to walk in the mall?  
-→ なぜ歩きにくかったですか？  
+<div class="question-item">
+1. Why was it difficult to walk in the mall?<br>
+<p class="jp-note">なぜ歩きにくかったですか？</p>
+</div>
 <button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">[Answer: Because there were too many people.]</div>
-</div>
+<div id="rq1" class="answer">Because there were too many people.</div>
 
-<div class="exercise-item">
-2. Where was the most relaxing place?  
-→ 一番リラックスできる場所はどこでしたか？  
+<div class="question-item">
+2. Where was the most relaxing place?<br>
+<p class="jp-note">一番リラックスできる場所はどこでしたか？</p>
+</div>
 <button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">[Answer: The café on the top floor.]</div>
-</div>
+<div id="rq2" class="answer">The café on the top floor.</div>
 
-<div class="exercise-item">
-3. Why didn’t the writer buy more food?  
-→ なぜもっと食べ物を買いませんでしたか？  
+<div class="question-item">
+3. Why didn’t the writer buy more food?<br>
+<p class="jp-note">なぜもっと食べ物を買いませんでしたか？</p>
+</div>
 <button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">[Answer: Because it was too expensive.]</div>
-</div>
+<div id="rq3" class="answer">Because it was too expensive.</div>
 
-<div class="exercise-item">
-4. What was the most interesting part of the bookstore?  
-→ 本屋で一番おもしろかった場所は？  
+<div class="question-item">
+4. What was the most interesting part of the bookstore?<br>
+<p class="jp-note">本屋で一番おもしろかった場所は？</p>
+</div>
 <button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">[Answer: The travel section.]</div>
-</div>
+<div id="rq4" class="answer">The travel section.</div>
 
-<div class="exercise-item">
-5. Does the writer want to visit the mall again?  
-→ また行きたいと思っていますか？  
+<div class="question-item">
+5. Does the writer want to visit the mall again?<br>
+<p class="jp-note">また行きたいと思っていますか？</p>
+</div>
 <button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">[Answer: Yes, on a quieter day.]</div>
-</div>
+<div id="rq5" class="answer">Yes, on a quieter day.</div>
 
 </div>
 
-
-
-<!-- 🎯 7. SUMMARY -->
+<!-- 7. SUMMARY — REFACTORED -->
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li>Comparatives compare two things. → 2つを比べる。</li>
-<li>Superlatives show the highest level. → グループで一番。</li>
-<li>Quantifiers describe amount. → 量を表す。</li>
-<li>too / too much / too many = 過剰。</li>
-<li>enough = 十分。</li>
+
+<li><strong>Comparatives</strong> compare two things.</li>
+<div class="jp-note">2つを比べる。</div>
+
+<li><strong>Superlatives</strong> show the highest level.</li>
+<div class="jp-note">グループで一番。</div>
+
+<li><strong>Quantifiers</strong> describe amount.</li>
+<div class="jp-note">量を表す。</div>
+
+<li><strong>too / too much / too many</strong> = 過剰。</li>
+<div class="jp-note">多すぎることを表す。</div>
+
+<li><strong>enough</strong> = 十分。</li>
+<div class="jp-note">必要な量がある。</div>
+
 </ul>
 </div>
 

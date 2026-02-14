@@ -5,79 +5,89 @@
 <title>Advice, Conditionals & Possession – A2–B1</title>
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f5f7fa;
-        padding: 40px;
-        max-width: 900px;
-        margin: auto;
-        line-height: 1.7;
-        color: #333;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+    color: #333;
+}
 
-    h1 { text-align: center; margin-bottom: 10px; }
-    h2 { margin-top: 40px; color: #222; }
-    h3 { margin-top: 25px; color: #444; }
+h1, h2, h3 {
+    color: #2a4d69;
+}
 
-    .section-box {
-        background: #ffffff;
-        border: 1px solid #d0d7de;
-        padding: 25px;
-        border-radius: 12px;
-        margin-top: 20px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
+.section-box {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 15px 0;
-        background: #fff;
-        border-radius: 8px;
-        overflow: hidden;
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-    th {
-        background: #E3EEF3;
-        padding: 10px;
-        border-bottom: 2px solid #d0d7de;
-        text-align: left;
-    }
+th {
+    background: #E3EEF3;
+    padding: 10px;
+    border-bottom: 2px solid #d0d7de;
+    text-align: left;
+}
 
-    td {
-        padding: 10px;
-        border-bottom: 1px solid #e5e5e5;
-    }
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
 
-    .exercise-item { margin-bottom: 15px; }
+.jp-note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
 
-    .answer {
-        display: none;
-        margin-top: 8px;
-        padding: 8px;
-        background: #eef5ff;
-        border-left: 3px solid #4a90e2;
-    }
+button {
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 18px; /* ENTER ENTRE PREGUNTAS */
+}
 
-    button {
-        margin-top: 5px;
-        padding: 6px 10px;
-        cursor: pointer;
-        background: #4a90e2;
-        color: white;
-        border: none;
-        border-radius: 6px;
-    }
+button:hover {
+    background: #d5d5d5;
+}
 
-    button:hover { background: #357ac8; }
+.answer {
+    display: none;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+    margin-top: 8px;
+}
 
-    ul { margin-left: 20px; }
+ul {
+    margin-left: 20px;
+}
 </style>
 
 <script>
 function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
 }
 </script>
 
@@ -88,7 +98,7 @@ function toggleAnswer(id) {
 <h1>Advice, Conditionals & Possession</h1>
 <h3>Level: A2–B1</h3>
 
-<!-- 📚 1. GRAMMAR EXPLANATION -->
+<!-- 1. GRAMMAR EXPLANATION (UNCHANGED) -->
 <h2>📚 1. Grammar Explanation（文法の説明）</h2>
 <div class="section-box">
 
@@ -135,79 +145,84 @@ We use possessive pronouns to show who something belongs to.
 
 </div>
 
-<!-- ✏️ 2. SHORT EXAMPLE SENTENCES -->
+<!-- 2. SHORT EXAMPLE SENTENCES (REFACTORED) -->
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>You should eat more vegetables. → 野菜をもっと食べたほうがいいです。</li>
-<li>You shouldn’t go to bed so late. → 遅く寝ないほうがいいです。</li>
-<li>If it rains, we’ll stay home. → 雨が降ったら家にいます。</li>
-<li>If you’re tired, take a break. → 疲れたら休んでください。</li>
-<li>This book is mine. → この本は私のです。</li>
-<li>Is that bag yours? → あのかばんはあなたのですか？</li>
+
+<li>You should eat more vegetables.</li>
+<div class="jp-note">野菜をもっと食べたほうがいいです。</div>
+
+<li>You shouldn’t go to bed so late.</li>
+<div class="jp-note">遅く寝ないほうがいいです。</div>
+
+<li>If it rains, we’ll stay home.</li>
+<div class="jp-note">雨が降ったら家にいます。</div>
+
+<li>If you’re tired, take a break.</li>
+<div class="jp-note">疲れたら休んでください。</div>
+
+<li>This book is mine.</li>
+<div class="jp-note">この本は私のです。</div>
+
+<li>Is that bag yours?</li>
+<div class="jp-note">あのかばんはあなたのですか？</div>
+
 </ul>
 </div>
 
-<!-- 📝 3. LONGER EXAMPLE SENTENCES -->
+<!-- 3. LONGER EXAMPLE SENTENCES (REFACTORED) -->
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>You shouldn’t stay up too late if you have an exam tomorrow.  
-→ 明日試験があるなら、夜更かししないほうがいいです。</li>
 
-<li>If we leave now, we’ll catch the train and arrive on time.  
-→ 今出発すれば、電車に間に合って時間通りに着きます。</li>
+<li>You shouldn’t stay up too late if you have an exam tomorrow.</li>
+<div class="jp-note">明日試験があるなら、夜更かししないほうがいいです。</div>
 
-<li>I think you should talk to your manager before making a decision.  
-→ 決断する前に、上司と話したほうがいいと思います。</li>
+<li>If we leave now, we’ll catch the train and arrive on time.</li>
+<div class="jp-note">今出発すれば、電車に間に合って時間通りに着きます。</div>
 
-<li>If you don’t bring your passport, you won’t be able to travel.  
-→ パスポートを持ってこなければ、旅行できません。</li>
+<li>I think you should talk to your manager before making a decision.</li>
+<div class="jp-note">決断する前に、上司と話したほうがいいと思います。</div>
 
-<li>That phone isn’t mine. It’s hers.  
-→ その携帯は私のではありません。彼女のです。</li>
+<li>If you don’t bring your passport, you won’t be able to travel.</li>
+<div class="jp-note">パスポートを持ってこなければ、旅行できません。</div>
+
+<li>That phone isn’t mine. It’s hers.</li>
+<div class="jp-note">その携帯は私のではありません。彼女のです。</div>
+
 </ul>
 </div>
 
-<!-- 🧩 4. PRACTICE EXERCISES -->
+<!-- 4. PRACTICE EXERCISES (REFACTORED) -->
 <h2>🧩 4. Practice Exercises（練習問題）</h2>
 <div class="section-box">
 
-<h3>Exercise A – Choose the correct option（正しい答えを選びましょう）</h3>
+<h3>Exercise A – Choose the correct option</h3>
 
-<div class="exercise-item">
-1. You ______ go to bed earlier. (should / shouldn’t)  
+<div class="exercise-item">1. You ______ go to bed earlier. (should / shouldn’t)</div>
 <button onclick="toggleAnswer('ea1')">Show Answer</button>
-<div id="ea1" class="answer">[Answer: should]</div>
-</div>
+<div id="ea1" class="answer">should</div>
 
-<div class="exercise-item">
-2. I don’t think you ______ eat that. (should / shouldn’t)  
+<div class="exercise-item">2. I don’t think you ______ eat that. (should / shouldn’t)</div>
 <button onclick="toggleAnswer('ea2')">Show Answer</button>
-<div id="ea2" class="answer">[Answer: should]</div>
-</div>
+<div id="ea2" class="answer">should</div>
 
-<div class="exercise-item">
-3. If you study, you ______ pass the test. (will / won’t)  
+<div class="exercise-item">3. If you study, you ______ pass the test. (will / won’t)</div>
 <button onclick="toggleAnswer('ea3')">Show Answer</button>
-<div id="ea3" class="answer">[Answer: will]</div>
-</div>
+<div id="ea3" class="answer">will</div>
 
-<div class="exercise-item">
-4. If it rains, we ______ go to the park. (will / won’t)  
+<div class="exercise-item">4. If it rains, we ______ go to the park. (will / won’t)</div>
 <button onclick="toggleAnswer('ea4')">Show Answer</button>
-<div id="ea4" class="answer">[Answer: won’t]</div>
-</div>
+<div id="ea4" class="answer">won’t</div>
 
-<div class="exercise-item">
-5. That pen is ______. (mine / my)  
+<div class="exercise-item">5. That pen is ______. (mine / my)</div>
 <button onclick="toggleAnswer('ea5')">Show Answer</button>
-<div id="ea5" class="answer">[Answer: mine]</div>
-</div>
+<div id="ea5" class="answer">mine</div>
 
 </div>
 
-<!-- 📖 5. SHORT READING TEXT -->
+<!-- 5. SHORT READING TEXT (UNCHANGED) -->
 <h2>📖 5. Short Reading Text </h2>
 <div class="section-box">
 
@@ -225,50 +240,64 @@ My friend Emma loves giving advice. She thinks I should eat healthier and sleep 
 
 </div>
 
-<!-- ❓ 6. READING COMPREHENSION QUESTIONS -->
+<!-- 6. READING COMPREHENSION QUESTIONS (REFACTORED) -->
 <h2>❓ 6. Reading Comprehension Questions（読解問題）</h2>
 <div class="section-box">
 
-<div class="exercise-item">
-1. What does Emma think the writer should do?  
+<div class="question-item">
+1. What does Emma think the writer should do?<br>
+<p class="jp-note">エマは筆者が何をすべきだと言っていますか？</p>
+</div>
 <button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">[Answer: Eat healthier and sleep more.]</div>
-</div>
+<div id="rq1" class="answer">Eat healthier and sleep more.</div>
 
-<div class="exercise-item">
-2. What happened when the writer stopped drinking coffee at night?  
+<div class="question-item">
+2. What happened when the writer stopped drinking coffee at night?<br>
+<p class="jp-note">夜にコーヒーを飲むのをやめたらどうなりましたか？</p>
+</div>
 <button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">[Answer: They slept better.]</div>
-</div>
+<div id="rq2" class="answer">They slept better.</div>
 
-<div class="exercise-item">
-3. What will happen if the writer exercises regularly?  
+<div class="question-item">
+3. What will happen if the writer exercises regularly?<br>
+<p class="jp-note">定期的に運動すればどうなりますか？</p>
+</div>
 <button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">[Answer: They will feel more energetic.]</div>
-</div>
+<div id="rq3" class="answer">They will feel more energetic.</div>
 
-<div class="exercise-item">
-4. What does Emma do every morning?  
+<div class="question-item">
+4. What does Emma do every morning?<br>
+<p class="jp-note">エマは毎朝何をしますか？</p>
+</div>
 <button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">[Answer: She goes running.]</div>
-</div>
+<div id="rq4" class="answer">She goes running.</div>
 
-<div class="exercise-item">
-5. Does Emma run even if it rains?  
+<div class="question-item">
+5. Does Emma run even if it rains?<br>
+<p class="jp-note">雨が降ってもエマは走りますか？</p>
+</div>
 <button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">[Answer: Yes, she takes an umbrella and still goes.]</div>
-</div>
+<div id="rq5" class="answer">Yes, she takes an umbrella and still goes.</div>
 
 </div>
 
-<!-- 🎯 7. SUMMARY -->
+<!-- 7. SUMMARY (REFACTORED) -->
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li><b>should / shouldn’t</b> → advice（助言）</li>
-<li><b>First conditional</b> → if + present → will / won’t + verb</li>
-<li><b>Possessive pronouns</b> → mine, yours, his, hers, ours, theirs</li>
+
+<li><b>should / shouldn’t:</b> advice</li>
+<div class="jp-note">助言をするときに使う。</div>
+
+<li><b>First conditional:</b> if + present → will / won’t + verb</li>
+<div class="jp-note">未来の可能性について話す。</div>
+
+<li><b>Possessive pronouns:</b> mine, yours, his, hers, ours, theirs</li>
+<div class="jp-note">所有を表す代名詞。</div>
+
 <li>Don’t use a noun after possessive pronouns.</li>
+<div class="jp-note">所有代名詞の後に名詞は置かない。</div>
+
 </ul>
 </div>
 

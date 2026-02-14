@@ -5,79 +5,89 @@
 <title>Past Perfect – A2–B1</title>
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f5f7fa;
-        padding: 40px;
-        max-width: 900px;
-        margin: auto;
-        line-height: 1.7;
-        color: #333;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+    color: #333;
+}
 
-    h1 { text-align: center; margin-bottom: 10px; }
-    h2 { margin-top: 40px; color: #222; }
-    h3 { margin-top: 25px; color: #444; }
+h1, h2, h3 {
+    color: #2a4d69;
+}
 
-    .section-box {
-        background: #ffffff;
-        border: 1px solid #d0d7de;
-        padding: 25px;
-        border-radius: 12px;
-        margin-top: 20px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
+.section-box {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 15px 0;
-        background: #fff;
-        border-radius: 8px;
-        overflow: hidden;
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-    th {
-        background: #E3EEF3;
-        padding: 10px;
-        border-bottom: 2px solid #d0d7de;
-        text-align: left;
-    }
+th {
+    background: #E3EEF3;
+    padding: 10px;
+    border-bottom: 2px solid #d0d7de;
+    text-align: left;
+}
 
-    td {
-        padding: 10px;
-        border-bottom: 1px solid #e5e5e5;
-    }
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
 
-    .exercise-item { margin-bottom: 15px; }
+.jp-note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
 
-    .answer {
-        display: none;
-        margin-top: 8px;
-        padding: 8px;
-        background: #eef5ff;
-        border-left: 3px solid #4a90e2;
-    }
+button {
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 18px;
+}
 
-    button {
-        margin-top: 5px;
-        padding: 6px 10px;
-        cursor: pointer;
-        background: #4a90e2;
-        color: white;
-        border: none;
-        border-radius: 6px;
-    }
+button:hover {
+    background: #d5d5d5;
+}
 
-    button:hover { background: #357ac8; }
+.answer {
+    display: none;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+    margin-top: 8px;
+}
 
-    ul { margin-left: 20px; }
+ul {
+    margin-left: 20px;
+}
 </style>
 
 <script>
 function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
 }
 </script>
 
@@ -88,7 +98,7 @@ function toggleAnswer(id) {
 <h1>Past Perfect</h1>
 <h3>Level: A2–B1</h3>
 
-<!-- 📚 1. GRAMMAR EXPLANATION -->
+<!-- 1. GRAMMAR EXPLANATION — UNTOUCHED -->
 <h2>📚 1. Grammar Explanation（文法の説明）</h2>
 <div class="section-box">
 
@@ -124,112 +134,109 @@ Use <b>shall I / shall we</b> to offer help or suggestions.
 
 </div>
 
-<!-- ✏️ 2. SHORT EXAMPLE SENTENCES -->
+<!-- 2. SHORT EXAMPLE SENTENCES — REFACTORED -->
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>I think it’ll be sunny tomorrow. → 明日は晴れると思います。</li>
-<li>I won’t go out tonight. → 今夜は出かけません。</li>
-<li>She’ll love the gift. → 彼女はプレゼントを気に入るでしょう。</li>
-<li>We’re meeting at 7 p.m. → 午後7時に会う予定です。</li>
-<li>Look at the clouds! It’s going to rain. → 雲を見て！雨が降りそう。</li>
-<li>I’ll help you with your homework. → 宿題を手伝います。</li>
-<li>Shall we sit over there? → あそこで座りましょうか？</li>
+
+<li>I think it’ll be sunny tomorrow.</li>
+<div class="jp-note">明日は晴れると思います。</div>
+
+<li>I won’t go out tonight.</li>
+<div class="jp-note">今夜は出かけません。</div>
+
+<li>She’ll love the gift.</li>
+<div class="jp-note">彼女はプレゼントを気に入るでしょう。</div>
+
+<li>We’re meeting at 7 p.m.</li>
+<div class="jp-note">午後7時に会う予定です。</div>
+
+<li>Look at the clouds! It’s going to rain.</li>
+<div class="jp-note">雲を見て！雨が降りそう。</div>
+
+<li>I’ll help you with your homework.</li>
+<div class="jp-note">宿題を手伝います。</div>
+
+<li>Shall we sit over there?</li>
+<div class="jp-note">あそこで座りましょうか？</div>
+
 </ul>
 </div>
 
-<!-- 📝 3. LONGER EXAMPLE SENTENCES -->
+<!-- 3. LONGER EXAMPLE SENTENCES — REFACTORED -->
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>I’m sure you’ll enjoy the movie because it’s very funny and exciting.  
-→ とても面白くてワクワクするので、きっと映画を楽しめると思います。</li>
 
-<li>We’re going to visit Kyoto next weekend because we love traditional culture.  
-→ 伝統文化が好きなので、来週末に京都を訪れる予定です。</li>
+<li>I’m sure you’ll enjoy the movie because it’s very funny and exciting.</li>
+<div class="jp-note">とても面白くてワクワクするので、きっと映画を楽しめると思います。</div>
 
-<li>Don’t worry about the test. I’ll help you study and you’ll do well.  
-→ テストのことは心配しないで。勉強を手伝うから、きっとうまくいきます。</li>
+<li>We’re going to visit Kyoto next weekend because we love traditional culture.</li>
+<div class="jp-note">伝統文化が好きなので、来週末に京都を訪れる予定です。</div>
 
-<li>She won’t come to the party because she has to work late tonight.  
-→ 今夜遅くまで仕事なので、彼女はパーティーに来ません。</li>
+<li>Don’t worry about the test. I’ll help you study and you’ll do well.</li>
+<div class="jp-note">テストのことは心配しないで。勉強を手伝うから、きっとうまくいきます。</div>
 
-<li>Shall we try the new restaurant near the station this Friday?  
-→ 今週の金曜日、駅の近くの新しいレストランに行ってみませんか？</li>
+<li>She won’t come to the party because she has to work late tonight.</li>
+<div class="jp-note">今夜遅くまで仕事なので、彼女はパーティーに来ません。</div>
+
+<li>Shall we try the new restaurant near the station this Friday?</li>
+<div class="jp-note">今週の金曜日、駅の近くの新しいレストランに行ってみませんか？</div>
+
 </ul>
 </div>
 
-<!-- 🧩 4. PRACTICE EXERCISES -->
+<!-- 4. PRACTICE EXERCISES — REFACTORED -->
 <h2>🧩 4. Practice Exercises（練習問題）</h2>
 <div class="section-box">
 
-<h3>Exercise A – Choose the correct option（正しい答えを選びましょう）</h3>
+<h3>Exercise A – Choose the correct option</h3>
 
-<div class="exercise-item">
-1. I think it ______ tomorrow. (will rain / rains)  
+<div class="exercise-item">1. I think it ______ tomorrow. (will rain / rains)</div>
 <button onclick="toggleAnswer('ea1')">Show Answer</button>
-<div id="ea1" class="answer">[Answer: will rain]</div>
-</div>
+<div id="ea1" class="answer">will rain</div>
 
-<div class="exercise-item">
-2. Look at those clouds! It’s ______. (going to rain / will rain)  
+<div class="exercise-item">2. Look at those clouds! It’s ______. (going to rain / will rain)</div>
 <button onclick="toggleAnswer('ea2')">Show Answer</button>
-<div id="ea2" class="answer">[Answer: going to rain]</div>
-</div>
+<div id="ea2" class="answer">going to rain</div>
 
-<div class="exercise-item">
-3. I’m tired. I ______ stay home tonight. (will / am going to)  
+<div class="exercise-item">3. I’m tired. I ______ stay home tonight. (will / am going to)</div>
 <button onclick="toggleAnswer('ea3')">Show Answer</button>
-<div id="ea3" class="answer">[Answer: will]</div>
-</div>
+<div id="ea3" class="answer">will</div>
 
-<div class="exercise-item">
-4. ______ I help you with that box? (Shall / Will)  
+<div class="exercise-item">4. ______ I help you with that box? (Shall / Will)</div>
 <button onclick="toggleAnswer('ea4')">Show Answer</button>
-<div id="ea4" class="answer">[Answer: Shall]</div>
-</div>
+<div id="ea4" class="answer">Shall</div>
 
-<div class="exercise-item">
-5. She ______ come to the meeting. She’s sick. (won’t / doesn’t)  
+<div class="exercise-item">5. She ______ come to the meeting. She’s sick. (won’t / doesn’t)</div>
 <button onclick="toggleAnswer('ea5')">Show Answer</button>
-<div id="ea5" class="answer">[Answer: won’t]</div>
-</div>
+<div id="ea5" class="answer">won’t</div>
 
-<h3>Exercise B – Complete the sentence（文を完成させましょう）</h3>
+<h3>Exercise B – Complete the sentence</h3>
 
-<div class="exercise-item">
-1. I’m sure you ____________________________ the exam. (pass)  
+<div class="exercise-item">1. I’m sure you ____________________________ the exam. (pass)</div>
 <button onclick="toggleAnswer('eb1')">Show Answer</button>
-<div id="eb1" class="answer">[Answer: will pass]</div>
-</div>
+<div id="eb1" class="answer">will pass</div>
 
-<div class="exercise-item">
-2. We ____________________________ dinner with my parents tomorrow. (have)  
+<div class="exercise-item">2. We ____________________________ dinner with my parents tomorrow. (have)</div>
 <button onclick="toggleAnswer('eb2')">Show Answer</button>
-<div id="eb2" class="answer">[Answer: are having / are going to have]</div>
-</div>
+<div id="eb2" class="answer">are having / are going to have</div>
 
-<div class="exercise-item">
-3. It’s very cold. I think it ____________________________ tonight. (snow)  
+<div class="exercise-item">3. It’s very cold. I think it ____________________________ tonight. (snow)</div>
 <button onclick="toggleAnswer('eb3')">Show Answer</button>
-<div id="eb3" class="answer">[Answer: will snow / is going to snow]</div>
-</div>
+<div id="eb3" class="answer">will snow / is going to snow</div>
 
-<div class="exercise-item">
-4. ____________________________ we watch a movie after dinner? (shall)  
+<div class="exercise-item">4. ____________________________ we watch a movie after dinner? (shall)</div>
 <button onclick="toggleAnswer('eb4')">Show Answer</button>
-<div id="eb4" class="answer">[Answer: Shall]</div>
-</div>
+<div id="eb4" class="answer">Shall</div>
 
-<div class="exercise-item">
-5. I ____________________________ you as soon as I arrive. (call)  
+<div class="exercise-item">5. I ____________________________ you as soon as I arrive. (call)</div>
 <button onclick="toggleAnswer('eb5')">Show Answer</button>
-<div id="eb5" class="answer">[Answer: will call]</div>
-</div>
+<div id="eb5" class="answer">will call</div>
 
 </div>
 
-<!-- 📖 5. SHORT READING TEXT -->
+<!-- 5. SHORT READING TEXT — UNTOUCHED -->
 <h2>📖 5. Short Reading Text </h2>
 <div class="section-box">
 
@@ -247,55 +254,64 @@ Next month, my company is going to open a new office in another city. My manager
 
 </div>
 
-<!-- ❓ 6. READING COMPREHENSION QUESTIONS -->
+<!-- 6. READING COMPREHENSION QUESTIONS — REFACTORED -->
 <h2>❓ 6. Reading Comprehension Questions（読解問題）</h2>
 <div class="section-box">
 
-<div class="exercise-item">
-1. Why is the writer moving to another city?  
-→ なぜ書き手は別の都市に引っ越すのですか？  
+<div class="question-item">
+1. Why is the writer moving to another city?<br>
+<p class="jp-note">なぜ書き手は別の都市に引っ越すのですか？</p>
+</div>
 <button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">[Answer: Because the company is opening a new office and the manager asked them to go.]</div>
-</div>
+<div id="rq1" class="answer">Because the company is opening a new office and the manager asked them to go.</div>
 
-<div class="exercise-item">
-2. How long will the writer stay in the new city?  
-→ どのくらいその新しい街にいる予定ですか？  
+<div class="question-item">
+2. How long will the writer stay in the new city?<br>
+<p class="jp-note">どのくらいその新しい街にいる予定ですか？</p>
+</div>
 <button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">[Answer: For one year.]</div>
-</div>
+<div id="rq2" class="answer">For one year.</div>
 
-<div class="exercise-item">
-3. What are the writer’s colleagues saying about the city?  
-→ 同僚たちはその街について何と言っていますか？  
+<div class="question-item">
+3. What are the writer’s colleagues saying about the city?<br>
+<p class="jp-note">同僚たちはその街について何と言っていますか？</p>
+</div>
 <button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">[Answer: That it is very safe and the food is delicious.]</div>
-</div>
+<div id="rq3" class="answer">That it is very safe and the food is delicious.</div>
 
-<div class="exercise-item">
-4. How will the writer keep in touch with their family?  
-→ 家族とはどのように連絡を取り続けますか？  
+<div class="question-item">
+4. How will the writer keep in touch with their family?<br>
+<p class="jp-note">家族とはどのように連絡を取り続けますか？</p>
+</div>
 <button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">[Answer: By having video calls every week.]</div>
-</div>
+<div id="rq4" class="answer">By having video calls every week.</div>
 
-<div class="exercise-item">
-5. Does the writer think the change will be positive?  
-→ この変化は良いものになると思っていますか？  
+<div class="question-item">
+5. Does the writer think the change will be positive?<br>
+<p class="jp-note">この変化は良いものになると思っていますか？</p>
+</div>
 <button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">[Answer: Yes, they believe it will be a positive change.]</div>
-</div>
+<div id="rq5" class="answer">Yes, they believe it will be a positive change.</div>
 
 </div>
 
-<!-- 🎯 7. SUMMARY -->
+<!-- 7. SUMMARY — REFACTORED -->
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li>Use will / won’t for predictions and quick decisions. → 予測・即決に使う。</li>
-<li>Use shall I / shall we for offers and suggestions. → 申し出・提案に使う。</li>
-<li>Use be going to for plans and visible predictions. → 計画・見てわかる予測。</li>
-<li>Present continuous can also talk about fixed future plans. → 予定された未来にも使える。</li>
+
+<li><b>will / won’t</b> for predictions and quick decisions.</li>
+<div class="jp-note">予測・即決に使う。</div>
+
+<li><b>shall I / shall we</b> for offers and suggestions.</li>
+<div class="jp-note">申し出・提案に使う。</div>
+
+<li><b>be going to</b> for plans and visible predictions.</li>
+<div class="jp-note">計画・見てわかる予測。</div>
+
+<li><b>present continuous</b> for fixed future plans.</li>
+<div class="jp-note">予定された未来に使う。</div>
+
 </ul>
 </div>
 

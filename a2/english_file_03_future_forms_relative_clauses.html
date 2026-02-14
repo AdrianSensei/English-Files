@@ -15,7 +15,9 @@ body {
     color: #333;
 }
 
-h1, h2, h3 { color: #2a4d69; }
+h1, h2, h3 {
+    color: #2a4d69;
+}
 
 .section-box {
     background: #ffffff;
@@ -47,29 +49,39 @@ td {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.answer {
-    display: none;
-    margin-top: 5px;
-    padding: 8px;
-    background: #eef5ff;
-    border-left: 3px solid #2a4d69;
+.jp-note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 12px;
 }
 
 button {
-    margin-top: 5px;
     padding: 6px 10px;
     cursor: pointer;
-    background: #4a90e2;
-    color: white;
-    border: none;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
     border-radius: 6px;
+    display: block;
+    margin-bottom: 18px;
 }
 
-button:hover { background: #357ac8; }
+button:hover {
+    background: #d5d5d5;
+}
 
-.section-icon { margin-right: 6px; }
+.answer {
+    display: none;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+    margin-top: 8px;
+}
 
-ul { margin-left: 20px; }
+ul {
+    margin-left: 20px;
+}
 </style>
 
 <script>
@@ -78,14 +90,16 @@ function toggleAnswer(id) {
   el.style.display = el.style.display === "none" ? "block" : "none";
 }
 </script>
+
 </head>
 
 <body>
 
-<h1>📘 Future Forms & Relative Clauses<br><small>Level: A2–B1</small></h1>
+<h1>Future Forms & Relative Clauses</h1>
+<h3>Level: A2–B1</h3>
 
-<!-- 1. GRAMMAR EXPLANATION -->
-<h2><span class="section-icon">📚</span>1. Grammar Explanation</h2>
+<!-- 1. GRAMMAR EXPLANATION — UNTOUCHED -->
+<h2>📚 1. Grammar Explanation</h2>
 <div class="section-box">
 
 <h3>1) be going to (future plans & predictions)</h3>
@@ -119,102 +133,110 @@ function toggleAnswer(id) {
 
 </div>
 
-<!-- 2. SHORT EXAMPLE SENTENCES -->
-<h2><span class="section-icon">✏️</span>2. Short Example Sentences</h2>
+<!-- 2. SHORT EXAMPLE SENTENCES — REFACTORED -->
+<h2>✏️ 2. Short Example Sentences</h2>
 <div class="section-box">
-
 <ul>
-<li>I’m going to buy a new notebook.（新しいノートを買うつもりです。）</li>
-<li>She’s meeting her friend tonight.（彼女は今夜友達に会います。）</li>
-<li>It’s going to snow later.（後で雪が降りそうです。）</li>
-<li>We’re having lunch at 1 p.m.（午後1時に昼食の予定です。）</li>
-<li>That’s the shop where I get my coffee.（そこは私がコーヒーを買う店です。）</li>
-<li>He’s the man who fixed my bike.（彼は自転車を直してくれた人です。）</li>
-<li>This is the pen which writes very smoothly.（これはとても書きやすいペンです。）</li>
-</ul>
 
+<li>I’m going to buy a new notebook.</li>
+<div class="jp-note">新しいノートを買うつもりです。</div>
+
+<li>She’s meeting her friend tonight.</li>
+<div class="jp-note">彼女は今夜友達に会います。</div>
+
+<li>It’s going to snow later.</li>
+<div class="jp-note">後で雪が降りそうです。</div>
+
+<li>We’re having lunch at 1 p.m.</li>
+<div class="jp-note">午後1時に昼食の予定です。</div>
+
+<li>That’s the shop where I get my coffee.</li>
+<div class="jp-note">そこは私がコーヒーを買う店です。</div>
+
+<li>He’s the man who fixed my bike.</li>
+<div class="jp-note">彼は自転車を直してくれた人です。</div>
+
+<li>This is the pen which writes very smoothly.</li>
+<div class="jp-note">これはとても書きやすいペンです。</div>
+
+</ul>
 </div>
 
-<!-- 3. LONGER EXAMPLE SENTENCES -->
-<h2><span class="section-icon">📝</span>3. Longer Example Sentences</h2>
+<!-- 3. LONGER EXAMPLE SENTENCES — REFACTORED -->
+<h2>📝 3. Longer Example Sentences</h2>
 <div class="section-box">
-
 <ul>
-<li>I’m going to start a new project next week because I finally have time.（時間ができたので来週新しいプロジェクトを始めるつもりです。）</li>
-<li>We’re meeting our coworkers at the station tomorrow morning.（明日の朝、駅で同僚と会う予定です。）</li>
-<li>Look at those clouds—they’re going to bring heavy rain.（あの雲は大雨になりそうです。）</li>
-<li>That’s the café where I usually study on weekends.（そこは週末によく勉強するカフェです。）</li>
-<li>She’s the person who always helps new students feel comfortable.（彼女は新入生を安心させてくれる人です。）</li>
-</ul>
 
+<li>I’m going to start a new project next week because I finally have time.</li>
+<div class="jp-note">時間ができたので来週新しいプロジェクトを始めるつもりです。</div>
+
+<li>We’re meeting our coworkers at the station tomorrow morning.</li>
+<div class="jp-note">明日の朝、駅で同僚と会う予定です。</div>
+
+<li>Look at those clouds—they’re going to bring heavy rain.</li>
+<div class="jp-note">あの雲は大雨になりそうです。</div>
+
+<li>That’s the café where I usually study on weekends.</li>
+<div class="jp-note">そこは週末によく勉強するカフェです。</div>
+
+<li>She’s the person who always helps new students feel comfortable.</li>
+<div class="jp-note">彼女は新入生を安心させてくれる人です。</div>
+
+</ul>
 </div>
 
-<!-- 4. PRACTICE EXERCISES -->
-<h2><span class="section-icon">🧩</span>4. Practice Exercises</h2>
+<!-- 4. PRACTICE EXERCISES — REFACTORED -->
+<h2>🧩 4. Practice Exercises</h2>
 <div class="section-box">
 
-<h3>Exercise A: Choose the correct option<br><small>（正しい形を選んでください）</small></h3>
+<h3>Exercise A – Choose the correct option</h3>
 
-<ol>
-<li>I (am meeting / meet) my cousin tonight.
-<button onclick="toggleAnswer('a1')">Show/Hide Answer</button>
-<div id="a1" class="answer">am meeting</div>
-</li>
+<div class="exercise-item">1. I (am meeting / meet) my cousin tonight.</div>
+<button onclick="toggleAnswer('ea1')">Show Answer</button>
+<div id="ea1" class="answer">am meeting</div>
 
-<li>They’re going to (travel / traveling) next month.
-<button onclick="toggleAnswer('a2')">Show/Hide Answer</button>
-<div id="a2" class="answer">travel</div>
-</li>
+<div class="exercise-item">2. They’re going to (travel / traveling) next month.</div>
+<button onclick="toggleAnswer('ea2')">Show Answer</button>
+<div id="ea2" class="answer">travel</div>
 
-<li>Look! That dog is going to (jump / jumping).
-<button onclick="toggleAnswer('a3')">Show/Hide Answer</button>
-<div id="a3" class="answer">jump</div>
-</li>
+<div class="exercise-item">3. Look! That dog is going to (jump / jumping).</div>
+<button onclick="toggleAnswer('ea3')">Show Answer</button>
+<div id="ea3" class="answer">jump</div>
 
-<li>She (isn’t going to come / doesn’t come) to the event.
-<button onclick="toggleAnswer('a4')">Show/Hide Answer</button>
-<div id="a4" class="answer">isn’t going to come</div>
-</li>
+<div class="exercise-item">4. She (isn’t going to come / doesn’t come) to the event.</div>
+<button onclick="toggleAnswer('ea4')">Show Answer</button>
+<div id="ea4" class="answer">isn’t going to come</div>
 
-<li>This is the place (who / where) we had lunch.
-<button onclick="toggleAnswer('a5')">Show/Hide Answer</button>
-<div id="a5" class="answer">where</div>
-</li>
-</ol>
+<div class="exercise-item">5. This is the place (who / where) we had lunch.</div>
+<button onclick="toggleAnswer('ea5')">Show Answer</button>
+<div id="ea5" class="answer">where</div>
 
-<h3>Exercise B: Complete the sentences<br><small>（文を完成させてください）</small></h3>
+<h3>Exercise B – Complete the sentence</h3>
 
-<ol>
-<li>He’s the engineer ______ designed our new app.
-<button onclick="toggleAnswer('b1')">Show/Hide Answer</button>
-<div id="b1" class="answer">who</div>
-</li>
+<div class="exercise-item">1. He’s the engineer ______ designed our new app.</div>
+<button onclick="toggleAnswer('eb1')">Show Answer</button>
+<div id="eb1" class="answer">who</div>
 
-<li>We ______ visit Kyoto this spring.
-<button onclick="toggleAnswer('b2')">Show/Hide Answer</button>
-<div id="b2" class="answer">are going to</div>
-</li>
+<div class="exercise-item">2. We ______ visit Kyoto this spring.</div>
+<button onclick="toggleAnswer('eb2')">Show Answer</button>
+<div id="eb2" class="answer">are going to</div>
 
-<li>I’m ______ my parents at the airport tomorrow.
-<button onclick="toggleAnswer('b3')">Show/Hide Answer</button>
-<div id="b3" class="answer">meeting</div>
-</li>
+<div class="exercise-item">3. I’m ______ my parents at the airport tomorrow.</div>
+<button onclick="toggleAnswer('eb3')">Show Answer</button>
+<div id="eb3" class="answer">meeting</div>
 
-<li>That’s the restaurant ______ serves amazing pasta.
-<button onclick="toggleAnswer('b4')">Show/Hide Answer</button>
-<div id="b4" class="answer">which</div>
-</li>
+<div class="exercise-item">4. That’s the restaurant ______ serves amazing pasta.</div>
+<button onclick="toggleAnswer('eb4')">Show Answer</button>
+<div id="eb4" class="answer">which</div>
 
-<li>It’s ______ be very windy tonight.
-<button onclick="toggleAnswer('b5')">Show/Hide Answer</button>
-<div id="b5" class="answer">going to</div>
-</li>
-</ol>
+<div class="exercise-item">5. It’s ______ be very windy tonight.</div>
+<button onclick="toggleAnswer('eb5')">Show Answer</button>
+<div id="eb5" class="answer">going to</div>
 
 </div>
 
-<!-- 5. READING TEXT -->
-<h2><span class="section-icon">📖</span>5. Short Reading Text</h2>
+<!-- 5. SHORT READING TEXT — UNTOUCHED -->
+<h2>📖 5. Short Reading Text</h2>
 <div class="section-box">
 
 <h3>A Busy Weekend Ahead</h3>
@@ -231,51 +253,68 @@ function toggleAnswer(id) {
 
 </div>
 
-<!-- 6. QUESTIONS -->
-<h2><span class="section-icon">❓</span>6. Reading Comprehension Questions</h2>
+<!-- 6. READING COMPREHENSION QUESTIONS — REFACTORED -->
+<h2>❓ 6. Reading Comprehension Questions</h2>
 <div class="section-box">
 
-<ol>
-<li>Who is the writer meeting on Saturday morning?
-<button onclick="toggleAnswer('q1')">Show/Hide Answer</button>
-<div id="q1" class="answer">A friend who lives in another city.</div>
-</li>
+<div class="question-item">
+1. Who is the writer meeting on Saturday morning?<br>
+<p class="jp-note">書き手は土曜の朝に誰と会いますか？</p>
+</div>
+<button onclick="toggleAnswer('rq1')">Show Answer</button>
+<div id="rq1" class="answer">A friend who lives in another city.</div>
 
-<li>Where is the new café located?
-<button onclick="toggleAnswer('q2')">Show/Hide Answer</button>
-<div id="q2" class="answer">In the city where the friend lives.</div>
-</li>
+<div class="question-item">
+2. Where is the new café located?<br>
+<p class="jp-note">新しいカフェはどこにありますか？</p>
+</div>
+<button onclick="toggleAnswer('rq2')">Show Answer</button>
+<div id="rq2" class="answer">In the city where the friend lives.</div>
 
-<li>Why is the writer going to buy tools?
-<button onclick="toggleAnswer('q3')">Show/Hide Answer</button>
-<div id="q3" class="answer">To fix a shelf in the apartment.</div>
-</li>
+<div class="question-item">
+3. Why is the writer going to buy tools?<br>
+<p class="jp-note">なぜ工具を買うつもりですか？</p>
+</div>
+<button onclick="toggleAnswer('rq3')">Show Answer</button>
+<div id="rq3" class="answer">To fix a shelf in the apartment.</div>
 
-<li>What is the writer doing on Sunday afternoon?
-<button onclick="toggleAnswer('q4')">Show/Hide Answer</button>
-<div id="q4" class="answer">Cooking dinner for the family.</div>
-</li>
+<div class="question-item">
+4. What is the writer doing on Sunday afternoon?<br>
+<p class="jp-note">日曜の午後は何をしますか？</p>
+</div>
+<button onclick="toggleAnswer('rq4')">Show Answer</button>
+<div id="rq4" class="answer">Cooking dinner for the family.</div>
 
-<li>Which person helps the writer with English writing?
-<button onclick="toggleAnswer('q5')">Show/Hide Answer</button>
-<div id="q5" class="answer">A teacher.</div>
-</li>
-</ol>
+<div class="question-item">
+5. Which person helps the writer with English writing?<br>
+<p class="jp-note">英語ライティングを手伝ってくれるのは誰ですか？</p>
+</div>
+<button onclick="toggleAnswer('rq5')">Show Answer</button>
+<div id="rq5" class="answer">A teacher.</div>
 
 </div>
 
-<!-- SUMMARY -->
-<h2><span class="section-icon">🎯</span>Summary（まとめ）</h2>
+<!-- 7. SUMMARY — REFACTORED -->
+<h2>🎯 Summary（まとめ）</h2>
 <div class="section-box">
-
 <ul>
-<li><strong>be going to</strong> = future plans & predictions（未来の計画・予想）</li>
-<li><strong>Present continuous</strong> = fixed arrangements（決まった予定）</li>
-<li><strong>who / which / where</strong> = explain people, things, places（人・物・場所の説明）</li>
-<li>Use simple forms to talk about the future clearly.（未来を分かりやすく話す）</li>
-<li>Practice helps you choose naturally.（練習すると自然に使える）</li>
-</ul>
 
+<li><strong>be going to</strong> = future plans & predictions</li>
+<div class="jp-note">未来の計画・予想。</div>
+
+<li><strong>Present continuous</strong> = fixed arrangements</li>
+<div class="jp-note">決まった予定。</div>
+
+<li><strong>who / which / where</strong> = explain people, things, places</li>
+<div class="jp-note">人・物・場所を説明する語。</div>
+
+<li>Use simple forms to talk about the future clearly.</li>
+<div class="jp-note">未来を分かりやすく話す。</div>
+
+<li>Practice helps you choose naturally.</li>
+<div class="jp-note">練習すると自然に使えるようになる。</div>
+
+</ul>
 </div>
 
 <div style="text-align:center; margin-top:30px;">
