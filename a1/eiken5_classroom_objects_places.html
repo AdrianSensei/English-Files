@@ -9,55 +9,88 @@
       max-width: 900px;
       margin: auto;
       line-height: 1.7;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f7f7f7;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
     }
-    .section-box {
-      background: #ffffff;
-      border: 1px solid #dddddd;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      padding: 20px 24px;
-      margin-bottom: 24px;
-      border-radius: 6px;
+
+    h1, h2, h3 {
+      color: #2a4d69;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 30px;
     }
+
     h2 {
-      margin-top: 0;
+      margin-top: 40px;
     }
+
+    h3 {
+      margin-top: 25px;
+    }
+
+    .section-box {
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
+      margin: 15px 0;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
     }
-    table th, table td {
-      border: 1px solid #dddddd;
-      padding: 8px;
+
+    table th {
+      background: #E3EEF3;
+      padding: 10px;
+      border-bottom: 2px solid #d0d7de;
       text-align: left;
     }
-    table th {
-      background: #f0f0f0;
+
+    table td {
+      padding: 10px;
+      border-bottom: 1px solid #e5e5e5;
     }
+
+    .jp-note {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 4px;
+      margin-bottom: 12px;
+    }
+
     ul {
-      margin-top: 8px;
+      margin-left: 20px;
     }
+
     li {
       margin-bottom: 4px;
     }
+
     button {
-      margin-top: 5px;
       padding: 6px 10px;
       cursor: pointer;
       background: #e0e0e0;
       color: #333;
       border: 1px solid #c8c8c8;
       border-radius: 6px;
+      display: block;
+      margin-bottom: 18px;
     }
+
     button:hover {
       background: #d5d5d5;
     }
+
     .answer {
       display: none;
       margin-top: 8px;
@@ -65,16 +98,9 @@
       background: #f0f0f0;
       border-left: 3px solid #999;
     }
-    .jp-note {
-      color: #555;
-      font-size: 0.95em;
-      margin-top: 4px;
-    }
+
     .example-en {
       font-weight: 500;
-    }
-    .example-pair {
-      margin-bottom: 6px;
     }
   </style>
 </head>
@@ -85,7 +111,7 @@
 <div class="section-box">
   <h2>📚 1. Grammar Explanation（文法の説明）</h2>
 
-  <h3>1. Using “this” and “that”</h3>
+  <h3>1. Using "this" and "that"</h3>
   <p>
     <strong>This</strong> = something near you.  
     <strong>That</strong> = something far from you.
@@ -125,62 +151,49 @@
 <div class="section-box">
   <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 
-  <div class="example-pair">
-    <span class="example-en">1. This is my desk.</span><br>これは私のつくえです。
-  </div>
+  <ul>
+    <li>This is my desk.</li>
+    <div class="jp-note">これは私のつくえです。</div>
 
-  <div class="example-pair">
-    <span class="example-en">2. That is your chair.</span><br>あれはあなたのいすです。
-  </div>
+    <li>That is your chair.</li>
+    <div class="jp-note">あれはあなたのいすです。</div>
 
-  <div class="example-pair">
-    <span class="example-en">3. The pen is on the desk.</span><br>ペンはつくえの上にあります。
-  </div>
+    <li>The pen is on the desk.</li>
+    <div class="jp-note">ペンはつくえの上にあります。</div>
 
-  <div class="example-pair">
-    <span class="example-en">4. My bag is under the table.</span><br>私のかばんはテーブルの下にあります。
-  </div>
+    <li>My bag is under the table.</li>
+    <div class="jp-note">私のかばんはテーブルの下にあります。</div>
 
-  <div class="example-pair">
-    <span class="example-en">5. This is my book.</span><br>これは私の本です。
-  </div>
+    <li>This is my book.</li>
+    <div class="jp-note">これは私の本です。</div>
 
-  <div class="example-pair">
-    <span class="example-en">6. That is the teacher’s board.</span><br>あれは先生のボードです。
-  </div>
+    <li>That is the teacher's board.</li>
+    <div class="jp-note">あれは先生のボードです。</div>
 
-  <div class="example-pair">
-    <span class="example-en">7. The eraser is in the bag.</span><br>消しゴムはかばんの中にあります。
-  </div>
+    <li>The eraser is in the bag.</li>
+    <div class="jp-note">消しゴムはかばんの中にあります。</div>
+  </ul>
 </div>
 
 <div class="section-box">
   <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 
-  <div class="example-pair">
-    <span class="example-en">1. This is my new school bag, and it is very light.</span><br>
-    これは私の新しいスクールバッグで、とても軽いです。
-  </div>
+  <ul>
+    <li>This is my new school bag, and it is very light.</li>
+    <div class="jp-note">これは私の新しいスクールバッグで、とても軽いです。</div>
 
-  <div class="example-pair">
-    <span class="example-en">2. That is our English teacher’s desk near the window.</span><br>
-    あれは窓の近くにある英語の先生のつくえです。
-  </div>
+    <li>That is our English teacher's desk near the window.</li>
+    <div class="jp-note">あれは窓の近くにある英語の先生のつくえです。</div>
 
-  <div class="example-pair">
-    <span class="example-en">3. The books are on the shelf, and the pencils are in the box.</span><br>
-    本は棚の上にあり、えんぴつは箱の中にあります。
-  </div>
+    <li>The books are on the shelf, and the pencils are in the box.</li>
+    <div class="jp-note">本は棚の上にあり、えんぴつは箱の中にあります。</div>
 
-  <div class="example-pair">
-    <span class="example-en">4. My lunch bag is under the chair, but my notebook is on the desk.</span><br>
-    私のお弁当袋はいすの下にありますが、ノートはつくえの上にあります。
-  </div>
+    <li>My lunch bag is under the chair, but my notebook is on the desk.</li>
+    <div class="jp-note">私のお弁当袋はいすの下にありますが、ノートはつくえの上にあります。</div>
 
-  <div class="example-pair">
-    <span class="example-en">5. This is the classroom map, and that is the science room on the second floor.</span><br>
-    これは教室の地図で、あれは2階にある理科室です。
-  </div>
+    <li>This is the classroom map, and that is the science room on the second floor.</li>
+    <div class="jp-note">これは教室の地図で、あれは2階にある理科室です。</div>
+  </ul>
 </div>
 
 <div class="section-box">
@@ -191,33 +204,33 @@
 
   <ol>
     <li>
-      ( This / That ) is my chair.<br>
-      <button onclick="toggleAnswer('ea1')">Show Answer</button>
-      <div id="ea1" class="answer">This is my chair.</div>
+      ( This / That ) is my chair.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">This is my chair.</div>
     </li>
 
     <li>
-      The pen is ( on / under ) the desk.<br>
-      <button onclick="toggleAnswer('ea2')">Show Answer</button>
-      <div id="ea2" class="answer">The pen is on the desk.</div>
+      The pen is ( on / under ) the desk.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">The pen is on the desk.</div>
     </li>
 
     <li>
-      That is ( my / your ) bag.<br>
-      <button onclick="toggleAnswer('ea3')">Show Answer</button>
-      <div id="ea3" class="answer">That is your bag.</div>
+      That is ( my / your ) bag.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">That is your bag.</div>
     </li>
 
     <li>
-      The eraser is ( in / on ) the box.<br>
-      <button onclick="toggleAnswer('ea4')">Show Answer</button>
-      <div id="ea4" class="answer">The eraser is in the box.</div>
+      The eraser is ( in / on ) the box.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">The eraser is in the box.</div>
     </li>
 
     <li>
-      ( This / That ) is the teacher’s board.<br>
-      <button onclick="toggleAnswer('ea5')">Show Answer</button>
-      <div id="ea5" class="answer">That is the teacher’s board.</div>
+      ( This / That ) is the teacher's board.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">That is the teacher's board.</div>
     </li>
   </ol>
 
@@ -226,33 +239,33 @@
 
   <ol>
     <li>
-      ______ is my desk.<br>
-      <button onclick="toggleAnswer('eb1')">Show Answer</button>
-      <div id="eb1" class="answer">This is my desk.</div>
+      ______ is my desk.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">This is my desk.</div>
     </li>
 
     <li>
-      The book is ______ the bag.<br>
-      <button onclick="toggleAnswer('eb2')">Show Answer</button>
-      <div id="eb2" class="answer">The book is in the bag.</div>
+      The book is ______ the bag.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">The book is in the bag.</div>
     </li>
 
     <li>
-      My hat is ______ the chair.<br>
-      <button onclick="toggleAnswer('eb3')">Show Answer</button>
-      <div id="eb3" class="answer">My hat is under the chair.</div>
+      My hat is ______ the chair.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">My hat is under the chair.</div>
     </li>
 
     <li>
-      ______ is the music room.<br>
-      <button onclick="toggleAnswer('eb4')">Show Answer</button>
-      <div id="eb4" class="answer">That is the music room.</div>
+      ______ is the music room.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">That is the music room.</div>
     </li>
 
     <li>
-      The ruler is ______ the desk.<br>
-      <button onclick="toggleAnswer('eb5')">Show Answer</button>
-      <div id="eb5" class="answer">The ruler is on the desk.</div>
+      The ruler is ______ the desk.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">The ruler is on the desk.</div>
     </li>
   </ol>
 </div>
@@ -264,7 +277,7 @@
 
   <p>
     This is my classroom. It is bright and clean. There are many desks and chairs.
-    The teacher’s desk is near the board, and the students’ desks are in rows.
+    The teacher's desk is near the board, and the students' desks are in rows.
     My bag is under my desk, and my books are on the shelf.
     That is the art corner, and this is the reading corner.
     I like this classroom because everything is easy to find.
@@ -286,38 +299,38 @@
 
   <ol>
     <li>
-      Where is the teacher’s desk?<br>
-      先生のつくえはどこにありますか？<br>
-      <button onclick="toggleAnswer('rq1')">Show Answer</button>
-      <div id="rq1" class="answer">It is near the board.</div>
+      Where is the teacher's desk?<br>
+      先生のつくえはどこにありますか？
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">It is near the board.</div>
     </li>
 
     <li>
       Where are the student desks?<br>
-      生徒のつくえはどこにありますか？<br>
-      <button onclick="toggleAnswer('rq2')">Show Answer</button>
-      <div id="rq2" class="answer">They are in rows.</div>
+      生徒のつくえはどこにありますか？
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">They are in rows.</div>
     </li>
 
     <li>
       Where is the bag?<br>
-      かばんはどこにありますか？<br>
-      <button onclick="toggleAnswer('rq3')">Show Answer</button>
-      <div id="rq3" class="answer">It is under the desk.</div>
+      かばんはどこにありますか？
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">It is under the desk.</div>
     </li>
 
     <li>
       What is on the shelf?<br>
-      棚の上には何がありますか？<br>
-      <button onclick="toggleAnswer('rq4')">Show Answer</button>
-      <div id="rq4" class="answer">Books are on the shelf.</div>
+      棚の上には何がありますか？
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">Books are on the shelf.</div>
     </li>
 
     <li>
       Why does the writer like the classroom?<br>
-      筆者はなぜこの教室が好きですか？<br>
-      <button onclick="toggleAnswer('rq5')">Show Answer</button>
-      <div id="rq5" class="answer">Because everything is easy to find.</div>
+      筆者はなぜこの教室が好きですか？
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">Because everything is easy to find.</div>
     </li>
   </ol>
 </div>
@@ -326,22 +339,17 @@
   <h2>🎯 Summary（まとめ）</h2>
 
   <ul>
-    <li>
-      <strong>This</strong> = near, <strong>that</strong> = far.<br>
-      <span class="jp-note">this は近いもの、that は遠いもの。</span>
-    </li>
-    <li>
-      Classroom items include desk, chair, board, bag, etc.<br>
-      <span class="jp-note">教室の語彙をおぼえましょう。</span>
-    </li>
-    <li>
-      Use <strong>on / in / under</strong> to show location.<br>
-      <span class="jp-note">on / in / under で場所を表します。</span>
-    </li>
-    <li>
-      Practice describing where things are in the classroom.<br>
-      <span class="jp-note">教室の中のものの場所を言う練習をしましょう。</span>
-    </li>
+    <li><strong>This</strong> = near, <strong>that</strong> = far.</li>
+    <div class="jp-note"><strong>this</strong> は近いもの、<strong>that</strong> は遠いもの。</div>
+
+    <li><strong>Classroom items</strong> include desk, chair, board, bag, etc.</li>
+    <div class="jp-note"><strong>教室の語彙</strong>をおぼえましょう。</div>
+
+    <li>Use <strong>on / in / under</strong> to show location.</li>
+    <div class="jp-note"><strong>on / in / under</strong> で場所を表します。</div>
+
+    <li>Practice describing where things are in the <strong>classroom</strong>.</li>
+    <div class="jp-note"><strong>教室</strong>の中のものの場所を言う練習をしましょう。</div>
   </ul>
 </div>
 
@@ -350,9 +358,11 @@
 </div>
 
 <script>
-function toggleAnswer(id) {
-  const el = document.getElementById(id);
-  el.style.display = el.style.display === "none" || el.style.display === "" ? "block" : "none";
+function toggleAnswer(button) {
+  const answer = button.nextElementSibling;
+  if (!answer || !answer.classList.contains('answer')) return;
+  const current = window.getComputedStyle(answer).display;
+  answer.style.display = current === "none" ? "block" : "none";
 }
 </script>
 

@@ -15,6 +15,10 @@
         color: #333;
     }
 
+    h1, h2, h3 {
+        color: #2a4d69;
+    }
+
     h1 {
         text-align: center;
         margin-bottom: 10px;
@@ -22,12 +26,10 @@
 
     h2 {
         margin-top: 40px;
-        color: #222;
     }
 
     h3 {
         margin-top: 25px;
-        color: #444;
     }
 
     .section-box {
@@ -60,6 +62,13 @@
         border-bottom: 1px solid #e5e5e5;
     }
 
+    .jp-note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
+
     .exercise-item {
         margin-bottom: 15px;
     }
@@ -68,26 +77,31 @@
         display: none;
         margin-top: 8px;
         padding: 8px;
-        background: #eef5ff;
-        border-left: 3px solid #4a90e2;
+        background: #f0f0f0;
+        border-left: 3px solid #999;
     }
 
     button {
-        margin-top: 5px;
         padding: 6px 10px;
         cursor: pointer;
-        background: #4a90e2;
-        color: white;
-        border: none;
+        background: #e0e0e0;
+        color: #333;
+        border: 1px solid #c8c8c8;
         border-radius: 6px;
+        display: block;
+        margin-bottom: 18px;
     }
 
     button:hover {
-        background: #357ac8;
+        background: #d5d5d5;
     }
 
     ul {
         margin-left: 20px;
+    }
+
+    li {
+        margin-bottom: 4px;
     }
 
     .vocab {
@@ -111,13 +125,6 @@
         color: #555;
     }
 </style>
-
-<script>
-function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
-}
-</script>
 
 </head>
 
@@ -152,13 +159,26 @@ function toggleAnswer(id) {
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>I wake up at 7. → 7時に起きます。</li>
-<li>She eats breakfast every day. → 彼女は毎日朝ごはんを食べます。</li>
-<li>We go to school by bus. → 私たちはバスで学校へ行きます。</li>
-<li>He sometimes watches TV. → 彼はときどきテレビを見ます。</li>
-<li>I never drink coffee. → コーヒーは全く飲みません。</li>
-<li>Do you walk to school? → 歩いて学校へ行きますか？</li>
-<li>My brother plays games after dinner. → 兄は夕食後にゲームをします。</li>
+<li>I wake up at 7.</li>
+<div class="jp-note">7時に起きます。</div>
+
+<li>She eats breakfast every day.</li>
+<div class="jp-note">彼女は毎日朝ごはんを食べます。</div>
+
+<li>We go to school by bus.</li>
+<div class="jp-note">私たちはバスで学校へ行きます。</div>
+
+<li>He sometimes watches TV.</li>
+<div class="jp-note">彼はときどきテレビを見ます。</div>
+
+<li>I never drink coffee.</li>
+<div class="jp-note">コーヒーは全く飲みません。</div>
+
+<li>Do you walk to school?</li>
+<div class="jp-note">歩いて学校へ行きますか？</div>
+
+<li>My brother plays games after dinner.</li>
+<div class="jp-note">兄は夕食後にゲームをします。</div>
 </ul>
 </div>
 
@@ -166,15 +186,20 @@ function toggleAnswer(id) {
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>I usually wake up early because I need time to get ready for school. → 学校の準備をする時間が必要なので、普段は早く起きます。</li>
+<li>I usually wake up early because I need time to get ready for school.</li>
+<div class="jp-note">学校の準備をする時間が必要なので、普段は早く起きます。</div>
 
-<li>My sister takes the train every morning, but I walk because I live nearby. → 姉は毎朝電車に乗りますが、私は近くに住んでいるので歩きます。</li>
+<li>My sister takes the train every morning, but I walk because I live nearby.</li>
+<div class="jp-note">姉は毎朝電車に乗りますが、私は近くに住んでいるので歩きます。</div>
 
-<li>After school, I do my homework and then play outside with my friends. → 放課後は宿題をして、その後友達と外で遊びます。</li>
+<li>After school, I do my homework and then play outside with my friends.</li>
+<div class="jp-note">放課後は宿題をして、その後友達と外で遊びます。</div>
 
-<li>We eat dinner together at 7, and we talk about our day. → 私たちは7時に一緒に夕食を食べて、一日のことを話します。</li>
+<li>We eat dinner together at 7, and we talk about our day.</li>
+<div class="jp-note">私たちは7時に一緒に夕食を食べて、一日のことを話します。</div>
 
-<li>Before I go to bed, I read a book for about 10 minutes. → 寝る前に10分ほど本を読みます。</li>
+<li>Before I go to bed, I read a book for about 10 minutes.</li>
+<div class="jp-note">寝る前に10分ほど本を読みます。</div>
 </ul>
 </div>
 
@@ -185,66 +210,66 @@ function toggleAnswer(id) {
 <h3>Exercise A – Choose the correct option（正しい答えを選びましょう）</h3>
 
 <div class="exercise-item">
-1. She ________ breakfast at 7. (eat / eats)  
-<button onclick="toggleAnswer('ea1')">Show Answer</button>
-<div id="ea1" class="answer">eats</div>
+1. She ________ breakfast at 7. (eat / eats)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">eats</div>
 </div>
 
 <div class="exercise-item">
-2. I ________ to school by bike. (go / goes)  
-<button onclick="toggleAnswer('ea2')">Show Answer</button>
-<div id="ea2" class="answer">go</div>
+2. I ________ to school by bike. (go / goes)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">go</div>
 </div>
 
 <div class="exercise-item">
-3. ________ you get up early? (Do / Does)  
-<button onclick="toggleAnswer('ea3')">Show Answer</button>
-<div id="ea3" class="answer">Do</div>
+3. ________ you get up early? (Do / Does)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Do</div>
 </div>
 
 <div class="exercise-item">
-4. He ________ TV after dinner. (watch / watches)  
-<button onclick="toggleAnswer('ea4')">Show Answer</button>
-<div id="ea4" class="answer">watches</div>
+4. He ________ TV after dinner. (watch / watches)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">watches</div>
 </div>
 
 <div class="exercise-item">
-5. We ________ lunch at school. (have / has)  
-<button onclick="toggleAnswer('ea5')">Show Answer</button>
-<div id="ea5" class="answer">have</div>
+5. We ________ lunch at school. (have / has)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">have</div>
 </div>
 
 
 <h3>Exercise B – Complete the sentence（文を完成させましょう）</h3>
 
 <div class="exercise-item">
-1. I ________ (wake) up at 6:30.  
-<button onclick="toggleAnswer('eb1')">Show Answer</button>
-<div id="eb1" class="answer">wake</div>
+1. I ________ (wake) up at 6:30.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">wake</div>
 </div>
 
 <div class="exercise-item">
-2. She ________ (walk) to school.  
-<button onclick="toggleAnswer('eb2')">Show Answer</button>
-<div id="eb2" class="answer">walks</div>
+2. She ________ (walk) to school.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">walks</div>
 </div>
 
 <div class="exercise-item">
-3. We ________ (not eat) breakfast at school.  
-<button onclick="toggleAnswer('eb3')">Show Answer</button>
-<div id="eb3" class="answer">do not eat</div>
+3. We ________ (not eat) breakfast at school.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">do not eat</div>
 </div>
 
 <div class="exercise-item">
-4. ________ he ________ (play) games?  
-<button onclick="toggleAnswer('eb4')">Show Answer</button>
-<div id="eb4" class="answer">Does he play</div>
+4. ________ he ________ (play) games?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Does he play</div>
 </div>
 
 <div class="exercise-item">
-5. I ________ (read) a book at night.  
-<button onclick="toggleAnswer('eb5')">Show Answer</button>
-<div id="eb5" class="answer">read</div>
+5. I ________ (read) a book at night.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">read</div>
 </div>
 
 <h3>Exercise C – Production (write 1–2 sentences)</h3>
@@ -253,8 +278,8 @@ function toggleAnswer(id) {
 <li>What did you do last weekend?</li>
 <li>Describe your daily routine using the word <strong>usually</strong>.</li>
 </ol>
-<button onclick="toggleAnswer('pc1')">Show Sample</button>
-<div id="pc1" class="answer">
+<button onclick="toggleAnswer(this)">Show Sample</button>
+<div class="answer">
 <strong>Sample:</strong><br>
 Last weekend I visited my grandparents and we cooked dinner together. I usually wake up at 7 and walk to school with my friend.
 </div>
@@ -291,45 +316,45 @@ My name is Ken. Every day I wake up at 7 and eat breakfast with my family. After
 <div class="section-box">
 
 <div class="exercise-item">
-1. What time does the writer wake up?  
-→ 筆者は何時に起きますか？  
-<button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">7:00</div>
+1. What time does the writer wake up?<br>
+筆者は何時に起きますか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">7:00</div>
 </div>
 
 <div class="exercise-item">
-2. Who does the writer walk to school with?  
-→ 誰と学校へ歩いて行きますか？  
-<button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">A friend.</div>
+2. Who does the writer walk to school with?<br>
+誰と学校へ歩いて行きますか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">A friend.</div>
 </div>
 
 <div class="exercise-item">
-3. What subject does the writer like the most?  
-→ 一番好きな教科は何ですか？  
-<button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">English.</div>
+3. What subject does the writer like the most?<br>
+一番好きな教科は何ですか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">English.</div>
 </div>
 
 <div class="exercise-item">
-4. What did the writer do last Saturday?  
-→ 先週の土曜日、筆者は何をしましたか？  
-<button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">Visited grandparents and cooked dinner.</div>
+4. What did the writer do last Saturday?<br>
+先週の土曜日、筆者は何をしましたか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Visited grandparents and cooked dinner.</div>
 </div>
 
 <div class="exercise-item">
-5. What time does the writer usually go to bed?  
-→ 普段何時に寝ますか？  
-<button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">9:00</div>
+5. What time does the writer usually go to bed?<br>
+普段何時に寝ますか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">9:00</div>
 </div>
 
 <div class="exercise-item">
-6. Inference: Why does the writer help his mother with chores?  
-→ 推論：なぜ筆者は母の手伝いをするのでしょうか？  
-<button onclick="toggleAnswer('rq6')">Show Answer</button>
-<div id="rq6" class="answer">Because he finishes homework at home and helps his family as part of his daily routine.</div>
+6. Inference: Why does the writer help his mother with chores?<br>
+推論：なぜ筆者は母の手伝いをするのでしょうか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Because he finishes homework at home and helps his family as part of his daily routine.</div>
 </div>
 
 </div>
@@ -338,14 +363,34 @@ My name is Ken. Every day I wake up at 7 and eat breakfast with my family. After
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li>Use Present Simple for daily routines. → 毎日の習慣は現在形。</li>
-<li>Add “s” for he/she. → 三人称単数は s をつける。</li>
-<li>Use Do/Does for questions. → 質問は Do/Does。</li>
-<li>Frequency words help describe habits. → 頻度の言葉で習慣を説明。</li>
+<li>Use <strong>Present Simple</strong> for daily routines.</li>
+<div class="jp-note">毎日の習慣は<strong>現在形</strong>。</div>
+
+<li>Add <strong>"s"</strong> for he/she.</li>
+<div class="jp-note">三人称単数は <strong>s</strong> をつける。</div>
+
+<li>Use <strong>Do/Does</strong> for questions.</li>
+<div class="jp-note">質問は <strong>Do/Does</strong>。</div>
+
+<li><strong>Frequency words</strong> help describe habits.</li>
+<div class="jp-note"><strong>頻度の言葉</strong>で習慣を説明。</div>
 </ul>
 
 <p>Practice writing 1–2 sentences about your last weekend and your usual day to improve your English skills.</p>
 </div>
+
+<div style="text-align:center; margin-top:30px;">
+    <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Back to Index</a>
+</div>
+
+<script>
+function toggleAnswer(button) {
+  const answer = button.nextElementSibling;
+  if (!answer || !answer.classList.contains('answer')) return;
+  const current = window.getComputedStyle(answer).display;
+  answer.style.display = current === "none" ? "block" : "none";
+}
+</script>
 
 </body>
 </html>

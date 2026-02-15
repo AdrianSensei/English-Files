@@ -15,6 +15,10 @@
         color: #333;
     }
 
+    h1, h2, h3 {
+        color: #2a4d69;
+    }
+
     h1 {
         text-align: center;
         margin-bottom: 10px;
@@ -22,12 +26,10 @@
 
     h2 {
         margin-top: 40px;
-        color: #222;
     }
 
     h3 {
         margin-top: 25px;
-        color: #444;
     }
 
     .section-box {
@@ -60,6 +62,13 @@
         border-bottom: 1px solid #e5e5e5;
     }
 
+    .jp-note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
+
     .exercise-item {
         margin-bottom: 15px;
     }
@@ -68,26 +77,31 @@
         display: none;
         margin-top: 8px;
         padding: 8px;
-        background: #eef5ff;
-        border-left: 3px solid #4a90e2;
+        background: #f0f0f0;
+        border-left: 3px solid #999;
     }
 
     button {
-        margin-top: 5px;
         padding: 6px 10px;
         cursor: pointer;
-        background: #4a90e2;
-        color: white;
-        border: none;
+        background: #e0e0e0;
+        color: #333;
+        border: 1px solid #c8c8c8;
         border-radius: 6px;
+        display: block;
+        margin-bottom: 18px;
     }
 
     button:hover {
-        background: #357ac8;
+        background: #d5d5d5;
     }
 
     ul {
         margin-left: 20px;
+    }
+
+    li {
+        margin-bottom: 4px;
     }
 
     .vocab {
@@ -112,13 +126,6 @@
     }
 </style>
 
-<script>
-function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
-}
-</script>
-
 </head>
 
 <body>
@@ -129,7 +136,7 @@ function toggleAnswer(id) {
 <h2>📚 1. Grammar Explanation（文法の説明）</h2>
 <div class="section-box">
 
-<h3>1. Family members and “be” verbs（家族の言い方と be 動詞）</h3>
+<h3>1. Family members and "be" verbs（家族の言い方と be 動詞）</h3>
 <p>We use <strong>be</strong> verbs (am / is / are) to talk about our family. → 家族について話すときに be 動詞（am / is / are）を使います。</p>
 
 <table>
@@ -162,13 +169,26 @@ function toggleAnswer(id) {
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>This is my family. → これは私の家族です。</li>
-<li>My father is a teacher. → 私の父は先生です。</li>
-<li>My mother is kind. → 私の母はやさしいです。</li>
-<li>My sister is funny. → 私の妹（姉）はおもしろいです。</li>
-<li>We are a happy family. → 私たちは仲のよい家族です。</li>
-<li>Your brother is very tall. → あなたの兄（弟）はとても背が高いです。</li>
-<li>Their grandparents are old but very active. → 彼らの祖父母は年をとっていますが、とても元気です。</li>
+<li>This is my family.</li>
+<div class="jp-note">これは私の家族です。</div>
+
+<li>My father is a teacher.</li>
+<div class="jp-note">私の父は先生です。</div>
+
+<li>My mother is kind.</li>
+<div class="jp-note">私の母はやさしいです。</div>
+
+<li>My sister is funny.</li>
+<div class="jp-note">私の妹（姉）はおもしろいです。</div>
+
+<li>We are a happy family.</li>
+<div class="jp-note">私たちは仲のよい家族です。</div>
+
+<li>Your brother is very tall.</li>
+<div class="jp-note">あなたの兄（弟）はとても背が高いです。</div>
+
+<li>Their grandparents are old but very active.</li>
+<div class="jp-note">彼らの祖父母は年をとっていますが、とても元気です。</div>
 </ul>
 </div>
 
@@ -176,15 +196,20 @@ function toggleAnswer(id) {
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>My family is small because I am an only child. → 私は一人っ子なので、私の家族は小さいです。</li>
+<li>My family is small because I am an only child.</li>
+<div class="jp-note">私は一人っ子なので、私の家族は小さいです。</div>
 
-<li>My father is a doctor, and he is very busy on weekdays. → 父は医者で、平日はとても忙しいです。</li>
+<li>My father is a doctor, and he is very busy on weekdays.</li>
+<div class="jp-note">父は医者で、平日はとても忙しいです。</div>
 
-<li>My mother is kind and patient, and she helps me with my homework. → 母はやさしくてがまん強く、宿題を手伝ってくれます。</li>
+<li>My mother is kind and patient, and she helps me with my homework.</li>
+<div class="jp-note">母はやさしくてがまん強く、宿題を手伝ってくれます。</div>
 
-<li>My grandparents live in another city, but we visit them on weekends. → 祖父母は別の町に住んでいますが、週末に会いに行きます。</li>
+<li>My grandparents live in another city, but we visit them on weekends.</li>
+<div class="jp-note">祖父母は別の町に住んでいますが、週末に会いに行きます。</div>
 
-<li>We often eat dinner together and talk about our day. → 私たちはよく一緒に夕食を食べて、一日のことを話します。</li>
+<li>We often eat dinner together and talk about our day.</li>
+<div class="jp-note">私たちはよく一緒に夕食を食べて、一日のことを話します。</div>
 </ul>
 </div>
 
@@ -195,66 +220,66 @@ function toggleAnswer(id) {
 <h3>Exercise A – Choose the correct option（正しい答えを選びましょう）</h3>
 
 <div class="exercise-item">
-1. This is ______ mother. (my / I)  
-<button onclick="toggleAnswer('ea1')">Show Answer</button>
-<div id="ea1" class="answer">my</div>
+1. This is ______ mother. (my / I)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">my</div>
 </div>
 
 <div class="exercise-item">
-2. ______ father is a doctor. (Her / She)  
-<button onclick="toggleAnswer('ea2')">Show Answer</button>
-<div id="ea2" class="answer">Her</div>
+2. ______ father is a doctor. (Her / She)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Her</div>
 </div>
 
 <div class="exercise-item">
-3. My grandparents ______ kind. (is / are)  
-<button onclick="toggleAnswer('ea3')">Show Answer</button>
-<div id="ea3" class="answer">are</div>
+3. My grandparents ______ kind. (is / are)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">are</div>
 </div>
 
 <div class="exercise-item">
-4. This is ______ brother. (his / he)  
-<button onclick="toggleAnswer('ea4')">Show Answer</button>
-<div id="ea4" class="answer">his</div>
+4. This is ______ brother. (his / he)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">his</div>
 </div>
 
 <div class="exercise-item">
-5. Our family ______ small. (is / are)  
-<button onclick="toggleAnswer('ea5')">Show Answer</button>
-<div id="ea5" class="answer">is</div>
+5. Our family ______ small. (is / are)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">is</div>
 </div>
 
 
 <h3>Exercise B – Complete the sentence（文を完成させましょう）</h3>
 
 <div class="exercise-item">
-1. This is ______ sister. (my)  
-<button onclick="toggleAnswer('eb1')">Show Answer</button>
-<div id="eb1" class="answer">my</div>
+1. This is ______ sister. (my)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">my</div>
 </div>
 
 <div class="exercise-item">
-2. My father ______ a teacher. (be)  
-<button onclick="toggleAnswer('eb2')">Show Answer</button>
-<div id="eb2" class="answer">is</div>
+2. My father ______ a teacher. (be)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">is</div>
 </div>
 
 <div class="exercise-item">
-3. Her grandparents ______ in Tokyo. (live)  
-<button onclick="toggleAnswer('eb3')">Show Answer</button>
-<div id="eb3" class="answer">live</div>
+3. Her grandparents ______ in Tokyo. (live)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">live</div>
 </div>
 
 <div class="exercise-item">
-4. Our family ______ dinner together every night. (eat)  
-<button onclick="toggleAnswer('eb4')">Show Answer</button>
-<div id="eb4" class="answer">eats</div>
+4. Our family ______ dinner together every night. (eat)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">eats</div>
 </div>
 
 <div class="exercise-item">
-5. Their mother is ______ and funny. (kind)  
-<button onclick="toggleAnswer('eb5')">Show Answer</button>
-<div id="eb5" class="answer">kind</div>
+5. Their mother is ______ and funny. (kind)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">kind</div>
 </div>
 
 <h3>Exercise C – Production (write 1–2 sentences)</h3>
@@ -263,8 +288,8 @@ function toggleAnswer(id) {
 <li>How many people are in your family?</li>
 <li>Describe one family member using <strong>my / his / her</strong> and one adjective.</li>
 </ol>
-<button onclick="toggleAnswer('pc1')">Show Sample</button>
-<div id="pc1" class="answer">
+<button onclick="toggleAnswer(this)">Show Sample</button>
+<div class="answer">
 <strong>Sample:</strong><br>
 There are four people in my family. My mother is kind and my father is funny.
 </div>
@@ -300,45 +325,45 @@ My name is Hana, and this is my family. There are four people in my family: my f
 <div class="section-box">
 
 <div class="exercise-item">
-1. How many people are in Hana’s family?  
-→ はなの家族は何人ですか？  
-<button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">Four people.</div>
+1. How many people are in Hana's family?<br>
+はなの家族は何人ですか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Four people.</div>
 </div>
 
 <div class="exercise-item">
-2. What does Hana’s father do?  
-→ はなの父はどんな仕事をしていますか？  
-<button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">He is a company worker.</div>
+2. What does Hana's father do?<br>
+はなの父はどんな仕事をしていますか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">He is a company worker.</div>
 </div>
 
 <div class="exercise-item">
-3. What is Hana’s mother like?  
-→ はなの母はどんな人ですか？  
-<button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">She is kind and patient.</div>
+3. What is Hana's mother like?<br>
+はなの母はどんな人ですか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">She is kind and patient.</div>
 </div>
 
 <div class="exercise-item">
-4. How old is Hana’s brother?  
-→ はなの弟は何歳ですか？  
-<button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">He is ten years old.</div>
+4. How old is Hana's brother?<br>
+はなの弟は何歳ですか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">He is ten years old.</div>
 </div>
 
 <div class="exercise-item">
-5. What did Hana’s family do last weekend?  
-→ 先週末、家族は何をしましたか？  
-<button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">They visited their grandparents and had lunch with them.</div>
+5. What did Hana's family do last weekend?<br>
+先週末、家族は何をしましたか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">They visited their grandparents and had lunch with them.</div>
 </div>
 
 <div class="exercise-item">
-6. Inference: Why does Hana say they are a happy family?  
-→ 推論：なぜはなは「私たちは仲のよい家族です」と言っているのでしょうか？  
-<button onclick="toggleAnswer('rq6')">Show Answer</button>
-<div id="rq6" class="answer">Because they often spend time together, eat dinner, talk, and enjoy activities as a family.</div>
+6. Inference: Why does Hana say they are a happy family?<br>
+推論：なぜはなは「私たちは仲のよい家族です」と言っているのでしょうか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Because they often spend time together, eat dinner, talk, and enjoy activities as a family.</div>
 </div>
 
 </div>
@@ -347,16 +372,32 @@ My name is Hana, and this is my family. There are four people in my family: my f
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li>Use family words like mother, father, sister, brother, grandparents. → 母・父・兄弟・祖父母などの家族の語彙を使いましょう。</li>
-<li>Use my / your / his / her / our / their to show who something belongs to. → 所有形容詞で「だれのものか」を表します。</li>
-<li>Use be verbs + adjectives to describe family members. → be 動詞＋形容詞で家族の性格やようすを説明します。</li>
-<li>Practice writing 1–2 sentences about your family to talk about them in English. → 家族について1〜2文書いて、英語で紹介する練習をしましょう。</li>
+<li>Use <strong>family words</strong> like mother, father, sister, brother, grandparents.</li>
+<div class="jp-note">母・父・兄弟・祖父母などの<strong>家族の語彙</strong>を使いましょう。</div>
+
+<li>Use <strong>my / your / his / her / our / their</strong> to show who something belongs to.</li>
+<div class="jp-note"><strong>所有形容詞</strong>で「だれのものか」を表します。</div>
+
+<li>Use <strong>be verbs + adjectives</strong> to describe family members.</li>
+<div class="jp-note"><strong>be 動詞＋形容詞</strong>で家族の性格やようすを説明します。</div>
+
+<li>Practice writing 1–2 sentences about your <strong>family</strong> to talk about them in English.</li>
+<div class="jp-note"><strong>家族</strong>について1〜2文書いて、英語で紹介する練習をしましょう。</div>
 </ul>
 </div>
 
 <div style="text-align:center; margin-top:30px;">
     <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Back to Index</a>
 </div>
+
+<script>
+function toggleAnswer(button) {
+  const answer = button.nextElementSibling;
+  if (!answer || !answer.classList.contains('answer')) return;
+  const current = window.getComputedStyle(answer).display;
+  answer.style.display = current === "none" ? "block" : "none";
+}
+</script>
 
 </body>
 </html>

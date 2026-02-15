@@ -9,55 +9,88 @@
       max-width: 900px;
       margin: auto;
       line-height: 1.7;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f7f7f7;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
     }
-    .section-box {
-      background: #ffffff;
-      border: 1px solid #dddddd;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      padding: 20px 24px;
-      margin-bottom: 24px;
-      border-radius: 6px;
+
+    h1, h2, h3 {
+      color: #2a4d69;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 30px;
     }
+
     h2 {
-      margin-top: 0;
+      margin-top: 40px;
     }
+
+    h3 {
+      margin-top: 25px;
+    }
+
+    .section-box {
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
+      margin: 15px 0;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
     }
-    table th, table td {
-      border: 1px solid #dddddd;
-      padding: 8px;
+
+    table th {
+      background: #E3EEF3;
+      padding: 10px;
+      border-bottom: 2px solid #d0d7de;
       text-align: left;
     }
-    table th {
-      background: #f0f0f0;
+
+    table td {
+      padding: 10px;
+      border-bottom: 1px solid #e5e5e5;
     }
+
+    .jp-note {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 4px;
+      margin-bottom: 12px;
+    }
+
     ul {
-      margin-top: 8px;
+      margin-left: 20px;
     }
+
     li {
       margin-bottom: 4px;
     }
+
     button {
-      margin-top: 5px;
       padding: 6px 10px;
       cursor: pointer;
       background: #e0e0e0;
       color: #333;
       border: 1px solid #c8c8c8;
       border-radius: 6px;
+      display: block;
+      margin-bottom: 18px;
     }
+
     button:hover {
       background: #d5d5d5;
     }
+
     .answer {
       display: none;
       margin-top: 8px;
@@ -65,23 +98,14 @@
       background: #f0f0f0;
       border-left: 3px solid #999;
     }
-    .jp-note {
-      color: #555;
-      font-size: 0.95em;
-      margin-top: 4px;
-    }
-    .example-en {
-      font-weight: 500;
-    }
-    .example-pair {
-      margin-bottom: 6px;
-    }
+
     .vocab {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
       margin-top: 8px;
     }
+
     .vocab-item {
       background:#f8f8f8;
       border:1px solid #eee;
@@ -89,6 +113,7 @@
       border-radius:6px;
       font-weight:500;
     }
+
     .small {
       font-size: 0.95em;
       color: #444;
@@ -102,18 +127,18 @@
 <div class="section-box">
   <h2>📚 1. Grammar Explanation（文法の説明）</h2>
 
-  <h3>1. Using “like” and “don’t like”</h3>
+  <h3>1. Using "like" and "don't like"</h3>
   <p>
-    We use <strong>like</strong> to talk about things we enjoy, and <strong>don’t like</strong> to talk about things we do not enjoy.
+    We use <strong>like</strong> to talk about things we enjoy, and <strong>don't like</strong> to talk about things we do not enjoy.
   </p>
-  <p class="jp-note">like は「好き」、don’t like は「好きではない」を表します。</p>
+  <p class="jp-note">like は「好き」、don't like は「好きではない」を表します。</p>
 
   <table>
     <tr><th>Form</th><th>Example</th></tr>
     <tr><td>I like …</td><td>I like apples.</td></tr>
-    <tr><td>I don’t like …</td><td>I don’t like carrots.</td></tr>
+    <tr><td>I don't like …</td><td>I don't like carrots.</td></tr>
     <tr><td>You like …</td><td>You like music.</td></tr>
-    <tr><td>You don’t like …</td><td>You don’t like soccer.</td></tr>
+    <tr><td>You don't like …</td><td>You don't like soccer.</td></tr>
   </table>
 
   <h3>2. Talking about food and hobbies</h3>
@@ -128,7 +153,7 @@
     <li>You like tennis. – あなたはテニスが好きです。</li>
   </ul>
 
-  <h3>3. Giving simple reasons with “because”</h3>
+  <h3>3. Giving simple reasons with "because"</h3>
   <p>
     We can explain our likes with <strong>because + reason</strong>.
   </p>
@@ -136,7 +161,7 @@
 
   <ul>
     <li>I like apples <strong>because they are sweet</strong>.</li>
-    <li>I don’t like math <strong>because it is difficult</strong>.</li>
+    <li>I don't like math <strong>because it is difficult</strong>.</li>
   </ul>
 </div>
 
@@ -152,47 +177,52 @@
 <div class="section-box">
   <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 
-  <div class="example-pair"><span class="example-en">1. I like apples.</span><br>りんごが好きです。</div>
-  <div class="example-pair"><span class="example-en">2. I don’t like milk.</span><br>牛乳は好きではありません。</div>
-  <div class="example-pair"><span class="example-en">3. You like music.</span><br>あなたは音楽が好きです。</div>
-  <div class="example-pair"><span class="example-en">4. I like swimming.</span><br>私は水泳が好きです。</div>
-  <div class="example-pair"><span class="example-en">5. I don’t like spiders.</span><br>私はクモが好きではありません。</div>
-  <div class="example-pair"><span class="example-en">6. You like chocolate.</span><br>あなたはチョコレートが好きです。</div>
-  <div class="example-pair"><span class="example-en">7. I like games because they are fun.</span><br>ゲームが好きです。楽しいからです。</div>
+  <ul>
+    <li>I like apples.</li>
+    <div class="jp-note">りんごが好きです。</div>
+
+    <li>I don't like milk.</li>
+    <div class="jp-note">牛乳は好きではありません。</div>
+
+    <li>You like music.</li>
+    <div class="jp-note">あなたは音楽が好きです。</div>
+
+    <li>I like swimming.</li>
+    <div class="jp-note">私は水泳が好きです。</div>
+
+    <li>I don't like spiders.</li>
+    <div class="jp-note">私はクモが好きではありません。</div>
+
+    <li>You like chocolate.</li>
+    <div class="jp-note">あなたはチョコレートが好きです。</div>
+
+    <li>I like games because they are fun.</li>
+    <div class="jp-note">ゲームが好きです。楽しいからです。</div>
+  </ul>
 </div>
 
 <div class="section-box">
   <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 
-  <div class="example-pair">
-    <span class="example-en">1. I like cooking because I can make food for my family.</span><br>
-    料理が好きです。家族のために作れるからです。
-  </div>
+  <ul>
+    <li>I like cooking because I can make food for my family.</li>
+    <div class="jp-note">料理が好きです。家族のために作れるからです。</div>
 
-  <div class="example-pair">
-    <span class="example-en">2. You don’t like coffee because it is too bitter.</span><br>
-    あなたはコーヒーが好きではありません。苦すぎるからです。
-  </div>
+    <li>You don't like coffee because it is too bitter.</li>
+    <div class="jp-note">あなたはコーヒーが好きではありません。苦すぎるからです。</div>
 
-  <div class="example-pair">
-    <span class="example-en">3. I like reading books after school because it is relaxing.</span><br>
-    放課後に本を読むのが好きです。リラックスできるからです。
-  </div>
+    <li>I like reading books after school because it is relaxing.</li>
+    <div class="jp-note">放課後に本を読むのが好きです。リラックスできるからです。</div>
 
-  <div class="example-pair">
-    <span class="example-en">4. My sister likes dancing, and she practices every day.</span><br>
-    私の妹はダンスが好きで、毎日練習しています。
-  </div>
+    <li>My sister likes dancing, and she practices every day.</li>
+    <div class="jp-note">私の妹はダンスが好きで、毎日練習しています。</div>
 
-  <div class="example-pair">
-    <span class="example-en">5. I don’t like loud music because it hurts my ears.</span><br>
-    大きな音楽は好きではありません。耳が痛くなるからです。
-  </div>
+    <li>I don't like loud music because it hurts my ears.</li>
+    <div class="jp-note">大きな音楽は好きではありません。耳が痛くなるからです。</div>
 
-  <div class="example-pair">
-    <span class="example-en">6. Last weekend Haru tried a new recipe and cooked with his family.</span><br>
-    先週末、はるは新しいレシピを試して家族と一緒に料理をしました。
-  </div>
+    <li>Last weekend Haru tried a new recipe and cooked with his family.</li>
+    <div class="jp-note">先週末、はるは新しいレシピを試して家族と一緒に料理をしました。</div>
+  </ul>
 </div>
 
 <div class="section-box">
@@ -203,68 +233,68 @@
 
   <ol>
     <li>
-      I ______ apples. ( like / don’t like )<br>
-      <button onclick="toggleAnswer('ea1')">Show Answer</button>
-      <div id="ea1" class="answer">I like apples.</div>
+      I ______ apples. ( like / don't like )
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">I like apples.</div>
     </li>
 
     <li>
-      You ______ soccer. ( like / don’t like )<br>
-      <button onclick="toggleAnswer('ea2')">Show Answer</button>
-      <div id="ea2" class="answer">You like soccer.</div>
+      You ______ soccer. ( like / don't like )
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">You like soccer.</div>
     </li>
 
     <li>
-      I ______ milk. ( like / don’t like )<br>
-      <button onclick="toggleAnswer('ea3')">Show Answer</button>
-      <div id="ea3" class="answer">I don’t like milk.</div>
+      I ______ milk. ( like / don't like )
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">I don't like milk.</div>
     </li>
 
     <li>
-      I like pizza ______ it is delicious. ( because / and )<br>
-      <button onclick="toggleAnswer('ea4')">Show Answer</button>
-      <div id="ea4" class="answer">because</div>
+      I like pizza ______ it is delicious. ( because / and )
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">because</div>
     </li>
 
     <li>
-      You don’t like math ______ it is difficult. ( because / but )<br>
-      <button onclick="toggleAnswer('ea5')">Show Answer</button>
-      <div id="ea5" class="answer">because</div>
+      You don't like math ______ it is difficult. ( because / but )
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">because</div>
     </li>
   </ol>
 
   <h3>Exercise B – Complete the sentence（文を完成させましょう）</h3>
-  <p class="jp-note">like / don’t like / because を使って文を完成させましょう。</p>
+  <p class="jp-note">like / don't like / because を使って文を完成させましょう。</p>
 
   <ol>
     <li>
-      I ______ chocolate.<br>
-      <button onclick="toggleAnswer('eb1')">Show Answer</button>
-      <div id="eb1" class="answer">I like chocolate.</div>
+      I ______ chocolate.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">I like chocolate.</div>
     </li>
 
     <li>
-      I don’t like fish ______ it is smelly.<br>
-      <button onclick="toggleAnswer('eb2')">Show Answer</button>
-      <div id="eb2" class="answer">because it is smelly.</div>
+      I don't like fish ______ it is smelly.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">because it is smelly.</div>
     </li>
 
     <li>
-      You ______ music.<br>
-      <button onclick="toggleAnswer('eb3')">Show Answer</button>
-      <div id="eb3" class="answer">You like music.</div>
+      You ______ music.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">You like music.</div>
     </li>
 
     <li>
-      I like running ______ it is fun.<br>
-      <button onclick="toggleAnswer('eb4')">Show Answer</button>
-      <div id="eb4" class="answer">because it is fun.</div>
+      I like running ______ it is fun.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">because it is fun.</div>
     </li>
 
     <li>
-      I ______ spiders.<br>
-      <button onclick="toggleAnswer('eb5')">Show Answer</button>
-      <div id="eb5" class="answer">I don’t like spiders.</div>
+      I ______ spiders.
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">I don't like spiders.</div>
     </li>
   </ol>
 
@@ -274,8 +304,8 @@
     <li>Write 2–3 sentences: What is your favorite food and why?</li>
     <li>Write 2–3 sentences: Do you prefer reading or watching TV? Explain.</li>
   </ol>
-  <button onclick="toggleAnswer('pc1')">Show Sample</button>
-  <div id="pc1" class="answer">
+  <button onclick="toggleAnswer(this)">Show Sample</button>
+  <div class="answer">
     <strong>Sample:</strong><br>
     My favorite food is pizza because it is tasty and easy to share. I prefer reading to watching TV because reading helps me relax.
   </div>
@@ -289,8 +319,8 @@
   <p>
     My name is Haru, and I am twelve years old. I like many things. I like apples because they are sweet.
     I also like drawing pictures after school. It is fun and relaxing.
-    I don’t like carrots because they taste strange to me.
-    My friend Yuna likes soccer, but I don’t like it because I am not good at running.
+    I don't like carrots because they taste strange to me.
+    My friend Yuna likes soccer, but I don't like it because I am not good at running.
     We have different likes and dislikes, but we are still good friends.
     Last weekend Haru tried a new recipe and cooked with his family. He also showed his drawings to Yuna yesterday and she liked them.
   </p>
@@ -313,44 +343,44 @@
   <ol>
     <li>
       What food does Haru like?<br>
-      はるは何の食べ物が好きですか？<br>
-      <button onclick="toggleAnswer('rq1')">Show Answer</button>
-      <div id="rq1" class="answer">Haru likes apples.</div>
+      はるは何の食べ物が好きですか？
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">Haru likes apples.</div>
     </li>
 
     <li>
-      Why doesn’t Haru like carrots?<br>
-      はるはなぜにんじんが好きではありませんか？<br>
-      <button onclick="toggleAnswer('rq2')">Show Answer</button>
-      <div id="rq2" class="answer">Because they taste strange to him.</div>
+      Why doesn't Haru like carrots?<br>
+      はるはなぜにんじんが好きではありませんか？
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">Because they taste strange to him.</div>
     </li>
 
     <li>
       What hobby does Haru like?<br>
-      はるはどんな趣味が好きですか？<br>
-      <button onclick="toggleAnswer('rq3')">Show Answer</button>
-      <div id="rq3" class="answer">Haru likes drawing pictures.</div>
+      はるはどんな趣味が好きですか？
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">Haru likes drawing pictures.</div>
     </li>
 
     <li>
-      Why doesn’t Haru like soccer?<br>
-      はるはなぜサッカーが好きではありませんか？<br>
-      <button onclick="toggleAnswer('rq4')">Show Answer</button>
-      <div id="rq4" class="answer">Because Haru is not good at running.</div>
+      Why doesn't Haru like soccer?<br>
+      はるはなぜサッカーが好きではありませんか？
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">Because Haru is not good at running.</div>
     </li>
 
     <li>
       Are Haru and Yuna still good friends?<br>
-      はるとゆなは今も仲良しですか？<br>
-      <button onclick="toggleAnswer('rq5')">Show Answer</button>
-      <div id="rq5" class="answer">Yes, they are.</div>
+      はるとゆなは今も仲良しですか？
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">Yes, they are.</div>
     </li>
 
     <li>
       Why are Haru and Yuna still friends even though they like different things?<br>
-      好きなものが違っても、なぜはるとゆなは仲良しなのでしょうか？<br>
-      <button onclick="toggleAnswer('rq6')">Show Answer</button>
-      <div id="rq6" class="answer">Because they respect each other's differences and still enjoy spending time together.</div>
+      好きなものが違っても、なぜはるとゆなは仲良しなのでしょうか？
+      <button onclick="toggleAnswer(this)">Show Answer</button>
+      <div class="answer">Because they respect each other's differences and still enjoy spending time together.</div>
     </li>
   </ol>
 </div>
@@ -359,22 +389,17 @@
   <h2>🎯 Summary（まとめ）</h2>
 
   <ul>
-    <li>
-      Use <strong>like</strong> and <strong>don’t like</strong> to talk about preferences.<br>
-      <span class="jp-note">好き・きらいを言うときに like / don’t like を使います。</span>
-    </li>
-    <li>
-      You can talk about food, hobbies, and activities.<br>
-      <span class="jp-note">食べ物や趣味について話せます。</span>
-    </li>
-    <li>
-      Use <strong>because</strong> to give simple reasons.<br>
-      <span class="jp-note">because で理由を言えます。</span>
-    </li>
-    <li>
-      Everyone has different likes and dislikes.<br>
-      <span class="jp-note">人によって好き・きらいはちがいます。</span>
-    </li>
+    <li>Use <strong>like</strong> and <strong>don't like</strong> to talk about preferences.</li>
+    <div class="jp-note">好き・きらいを言うときに <strong>like / don't like</strong> を使います。</div>
+
+    <li>You can talk about <strong>food, hobbies, and activities</strong>.</li>
+    <div class="jp-note"><strong>食べ物や趣味</strong>について話せます。</div>
+
+    <li>Use <strong>because</strong> to give simple reasons.</li>
+    <div class="jp-note"><strong>because</strong> で理由を言えます。</div>
+
+    <li>Everyone has different <strong>likes and dislikes</strong>.</li>
+    <div class="jp-note">人によって<strong>好き・きらい</strong>はちがいます。</div>
   </ul>
 </div>
 
@@ -383,9 +408,11 @@
 </div>
 
 <script>
-function toggleAnswer(id) {
-  const el = document.getElementById(id);
-  el.style.display = el.style.display === "none" || el.style.display === "" ? "block" : "none";
+function toggleAnswer(button) {
+  const answer = button.nextElementSibling;
+  if (!answer || !answer.classList.contains('answer')) return;
+  const current = window.getComputedStyle(answer).display;
+  answer.style.display = current === "none" ? "block" : "none";
 }
 </script>
 
