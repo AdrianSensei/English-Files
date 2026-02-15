@@ -16,8 +16,8 @@
     }
 
     h1 { text-align: center; margin-bottom: 10px; }
-    h2 { margin-top: 40px; color: #222; }
-    h3 { margin-top: 25px; color: #444; }
+    h2 { margin-top: 40px; color: #2a4d69; }
+    h3 { margin-top: 25px; color: #2a4d69; }
 
     .section-box {
         background: #ffffff;
@@ -39,24 +39,34 @@
     }
 
     button {
-        margin-top: 5px;
         padding: 6px 10px;
         cursor: pointer;
         background: #e0e0e0;
         color: #333;
         border: 1px solid #c8c8c8;
         border-radius: 6px;
+        display: block;
+        margin-bottom: 18px;
     }
 
     button:hover { background: #d5d5d5; }
+
+    .jp-note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
 
     ul { margin-left: 20px; }
 </style>
 
 <script>
-function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
+function toggleAnswer(button) {
+  const answer = button.nextElementSibling;
+  if (!answer || !answer.classList.contains('answer')) return;
+  const current = window.getComputedStyle(answer).display;
+  answer.style.display = current === "none" ? "block" : "none";
 }
 </script>
 
@@ -94,11 +104,22 @@ These shifts often contain the key to the correct answer.
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>Some people worry about the misuse of personal data. → 個人情報の悪用を心配する人もいます。</li>
-<li>However, others argue that technology increases safety. → しかし、技術が安全性を高めると主張する人もいます。</li>
-<li>As a result, governments must create clear rules. → その結果、政府は明確なルールを作る必要があります。</li>
-<li>Experts warn that convenience can reduce privacy. → 専門家は、便利さがプライバシーを減らす可能性があると警告します。</li>
-<li>In contrast, some companies promote transparency. → 対照的に、企業の中には透明性を推進するところもあります。</li>
+
+<li>Some people worry about the misuse of personal data.</li>
+<div class="jp-note">個人情報の悪用を心配する人もいます。</div>
+
+<li>However, others argue that technology increases safety.</li>
+<div class="jp-note">しかし、技術が安全性を高めると主張する人もいます。</div>
+
+<li>As a result, governments must create clear rules.</li>
+<div class="jp-note">その結果、政府は明確なルールを作る必要があります。</div>
+
+<li>Experts warn that convenience can reduce privacy.</li>
+<div class="jp-note">専門家は、便利さがプライバシーを減らす可能性があると警告します。</div>
+
+<li>In contrast, some companies promote transparency.</li>
+<div class="jp-note">対照的に、企業の中には透明性を推進するところもあります。</div>
+
 </ul>
 </div>
 
@@ -106,14 +127,16 @@ These shifts often contain the key to the correct answer.
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>Although new technologies make daily life more convenient, they also raise concerns about how personal information is collected and used.  
-→ 新しい技術は生活を便利にする一方で、個人情報の収集や利用に関する懸念も生じさせます。</li>
 
-<li>Some researchers believe that strict regulations are necessary to protect users, while others argue that too many rules may slow innovation.  
-→ 研究者の中には、ユーザーを守るために厳しい規制が必要だと考える人もいれば、規制が多すぎると革新が遅れると主張する人もいます。</li>
+<li>Although new technologies make daily life more convenient, they also raise concerns about how personal information is collected and used.</li>
+<div class="jp-note">新しい技術は生活を便利にする一方で、個人情報の収集や利用に関する懸念も生じさせます。</div>
 
-<li>Nevertheless, most experts agree that companies should clearly explain how data is handled.  
-→ それでも、多くの専門家は企業がデータの扱いを明確に説明すべきだという点では一致しています。</li>
+<li>Some researchers believe that strict regulations are necessary to protect users, while others argue that too many rules may slow innovation.</li>
+<div class="jp-note">研究者の中には、ユーザーを守るために厳しい規制が必要だと考える人もいれば、規制が多すぎると革新が遅れると主張する人もいます。</div>
+
+<li>Nevertheless, most experts agree that companies should clearly explain how data is handled.</li>
+<div class="jp-note">それでも、多くの専門家は企業がデータの扱いを明確に説明すべきだという点では一致しています。</div>
+
 </ul>
 </div>
 
@@ -124,35 +147,35 @@ These shifts often contain the key to the correct answer.
 <h3>Exercise A – Logic & Inference（論理・推測）</h3>
 
 <div class="exercise-item">
-1. What can we infer if experts warn about convenience?  
-<button onclick="toggleAnswer('ea1')">Show Answer</button>
-<div id="ea1" class="answer">Convenience may come with hidden risks.</div>
+1. What can we infer if experts warn about convenience?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Convenience may come with hidden risks.</div>
 </div>
 
 <div class="exercise-item">
-2. Why might too many rules be a problem?  
-<button onclick="toggleAnswer('ea2')">Show Answer</button>
-<div id="ea2" class="answer">They could slow technological innovation.</div>
+2. Why might too many rules be a problem?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">They could slow technological innovation.</div>
 </div>
 
 <div class="exercise-item">
-3. What is the main contrast in the examples?  
-<button onclick="toggleAnswer('ea3')">Show Answer</button>
-<div id="ea3" class="answer">Privacy concerns vs. technological benefits.</div>
+3. What is the main contrast in the examples?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Privacy concerns vs. technological benefits.</div>
 </div>
 
 <h3>Exercise B – Vocabulary in Context（文脈語彙）</h3>
 
 <div class="exercise-item">
-4. “Transparency” most likely means…  
-<button onclick="toggleAnswer('eb1')">Show Answer</button>
-<div id="eb1" class="answer">Being open about how information is used.</div>
+4. “Transparency” most likely means…
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Being open about how information is used.</div>
 </div>
 
 <div class="exercise-item">
-5. “Regulations” refers to…  
-<button onclick="toggleAnswer('eb2')">Show Answer</button>
-<div id="eb2" class="answer">Official rules created by authorities.</div>
+5. “Regulations” refers to…
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Official rules created by authorities.</div>
 </div>
 
 </div>
@@ -161,7 +184,6 @@ These shifts often contain the key to the correct answer.
 <h2>📖 5. Reading Text</h2>
 <div class="section-box">
 
-<!-- Added English title -->
 <h3 style="margin-top: 0;">Data Privacy and Modern Technology</h3>
 
 <p>
@@ -172,7 +194,6 @@ As digital technology becomes more common in daily life, many people are beginni
 On the other hand, supporters of data collection claim that it allows companies to create safer and more efficient systems. For example, analyzing user behavior can help detect fraud or prevent accidents. Nevertheless, experts warn that relying too heavily on data may reduce individual privacy. They argue that clear regulations are necessary to balance innovation with protection. In contrast, some technology companies believe that self‑regulation is enough and that government involvement may slow progress. Despite these disagreements, most specialists agree that transparency is essential. Without it, trust between users and companies will continue to decline.
 </p>
 
-<!-- Japanese translation with translated title -->
 <div style="margin-top: 28px;">
   <h3>データプライバシーと現代テクノロジー</h3>
 
@@ -192,33 +213,33 @@ On the other hand, supporters of data collection claim that it allows companies 
 <div class="section-box">
 
 <div class="exercise-item">
-1. Why do critics worry about data collection?  
-<button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">Users may not understand what information is being stored.</div>
+1. Why do critics worry about data collection?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Users may not understand what information is being stored.</div>
 </div>
 
 <div class="exercise-item">
-2. What benefit do supporters mention?  
-<button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">Data can help create safer and more efficient systems.</div>
+2. What benefit do supporters mention?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Data can help create safer and more efficient systems.</div>
 </div>
 
 <div class="exercise-item">
-3. Why do experts warn about relying too heavily on data?  
-<button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">It may reduce individual privacy.</div>
+3. Why do experts warn about relying too heavily on data?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">It may reduce individual privacy.</div>
 </div>
 
 <div class="exercise-item">
-4. What disagreement exists between specialists and some companies?  
-<button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">Whether government regulations are necessary.</div>
+4. What disagreement exists between specialists and some companies?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Whether government regulations are necessary.</div>
 </div>
 
 <div class="exercise-item">
-5. What can we infer about transparency?  
-<button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">It is essential for maintaining user trust.</div>
+5. What can we infer about transparency?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">It is essential for maintaining user trust.</div>
 </div>
 
 </div>
@@ -228,25 +249,17 @@ On the other hand, supporters of data collection claim that it allows companies 
 <div class="section-box">
 <ul>
 
-<li>
-  B2 readings require evaluating <strong>evidence</strong> and the <strong>author’s purpose</strong>.<br>
-  B2 の読解では、<strong>根拠（evidence）</strong> と <strong>筆者の目的（author’s purpose）</strong> を評価する必要があります。
-</li>
+<li><strong>Evidence</strong> and <strong>author’s purpose</strong> are essential in B2 readings.</li>
+<div class="jp-note">B2 の読解では<strong>根拠（evidence）</strong>と<strong>筆者の目的（author’s purpose）</strong>の評価が必要です。</div>
 
-<li>
-  <strong>Technology topics</strong> often include <strong>ethical concerns</strong> and contrasting opinions.<br>
-  <strong>テクノロジー関連の話題</strong>には、<strong>倫理的な問題</strong>や対立する意見がよく含まれます。
-</li>
+<li><strong>Technology topics</strong> often include <strong>ethical concerns</strong> and contrasting opinions.</li>
+<div class="jp-note"><strong>テクノロジー関連の話題</strong>には<strong>倫理的な問題</strong>や対立する意見が含まれます。</div>
 
-<li>
-  <strong>Inference</strong> is key: answers are rarely stated directly.<br>
-  <strong>推論（inference）</strong>が重要で、答えが直接書かれていることはほとんどありません。
-</li>
+<li><strong>Inference</strong> is key because answers are rarely stated directly.</li>
+<div class="jp-note"><strong>推論（inference）</strong>が重要で、答えが直接書かれていることはほとんどありません。</div>
 
-<li>
-  <strong>Transparency</strong> and <strong>regulation</strong> are central themes in modern tech debates.<br>
-  現代のテクノロジーに関する議論では、<strong>透明性（transparency）</strong> と <strong>規制（regulation）</strong> が中心的なテーマです。
-</li>
+<li><strong>Transparency</strong> and <strong>regulation</strong> are central themes in modern tech debates.</li>
+<div class="jp-note">現代のテクノロジー議論では<strong>透明性（transparency）</strong>と<strong>規制（regulation）</strong>が中心的なテーマです。</div>
 
 </ul>
 </div>

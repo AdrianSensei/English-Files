@@ -16,8 +16,8 @@
     }
 
     h1 { text-align: center; margin-bottom: 10px; }
-    h2 { margin-top: 40px; color: #222; }
-    h3 { margin-top: 25px; color: #444; }
+    h2 { margin-top: 40px; color: #2a4d69; }
+    h3 { margin-top: 25px; color: #2a4d69; }
 
     .section-box {
         background: #ffffff;
@@ -39,24 +39,34 @@
     }
 
     button {
-        margin-top: 5px;
         padding: 6px 10px;
         cursor: pointer;
         background: #e0e0e0;
         color: #333;
         border: 1px solid #c8c8c8;
         border-radius: 6px;
+        display: block;
+        margin-bottom: 18px;
     }
 
     button:hover { background: #d5d5d5; }
+
+    .jp-note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
 
     ul { margin-left: 20px; }
 </style>
 
 <script>
-function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
+function toggleAnswer(button) {
+  const answer = button.nextElementSibling;
+  if (!answer || !answer.classList.contains('answer')) return;
+  const current = window.getComputedStyle(answer).display;
+  answer.style.display = current === "none" ? "block" : "none";
 }
 </script>
 
@@ -94,11 +104,22 @@ Read carefully and check the purpose of each paragraph.
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>Many cities are developing new policies to reduce waste. → 多くの都市がごみ削減の新しい政策を進めています。</li>
-<li>However, these policies are not always effective. → しかし、これらの政策が常に効果的とは限りません。</li>
-<li>As a result, communities must find alternative solutions. → その結果、地域は別の解決策を見つける必要があります。</li>
-<li>Some experts argue that education is the key. → 一部の専門家は教育が鍵だと主張します。</li>
-<li>In contrast, others believe technology will solve the problem. → 対照的に、他の人は技術が問題を解決すると考えています。</li>
+
+<li>Many cities are developing new policies to reduce waste.</li>
+<div class="jp-note">多くの都市がごみ削減の新しい政策を進めています。</div>
+
+<li>However, these policies are not always effective.</li>
+<div class="jp-note">しかし、これらの政策が常に効果的とは限りません。</div>
+
+<li>As a result, communities must find alternative solutions.</li>
+<div class="jp-note">その結果、地域は別の解決策を見つける必要があります。</div>
+
+<li>Some experts argue that education is the key.</li>
+<div class="jp-note">一部の専門家は教育が鍵だと主張します。</div>
+
+<li>In contrast, others believe technology will solve the problem.</li>
+<div class="jp-note">対照的に、他の人は技術が問題を解決すると考えています。</div>
+
 </ul>
 </div>
 
@@ -106,14 +127,16 @@ Read carefully and check the purpose of each paragraph.
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>Although many governments promote recycling programs, participation rates remain low in some regions, suggesting that awareness alone is not enough.  
-→ 多くの政府がリサイクルを推進しているにもかかわらず、地域によって参加率が低く、意識だけでは不十分であることを示しています。</li>
 
-<li>Some researchers claim that small lifestyle changes, such as reducing plastic use, can have a significant long-term impact on the environment.  
-→ 研究者の中には、プラスチック使用を減らすなどの小さな生活習慣の変化が長期的に大きな影響を与えると主張する人もいます。</li>
+<li>Although many governments promote recycling programs, participation rates remain low in some regions, suggesting that awareness alone is not enough.</li>
+<div class="jp-note">多くの政府がリサイクルを推進しているにもかかわらず、地域によって参加率が低く、意識だけでは不十分であることを示しています。</div>
 
-<li>However, critics argue that individual actions are not enough unless industries also take responsibility for reducing emissions.  
-→ しかし批評家は、産業が排出削減の責任を負わない限り、個人の行動だけでは不十分だと主張します。</li>
+<li>Some researchers claim that small lifestyle changes, such as reducing plastic use, can have a significant long-term impact on the environment.</li>
+<div class="jp-note">研究者の中には、プラスチック使用を減らすなどの小さな生活習慣の変化が長期的に大きな影響を与えると主張する人もいます。</div>
+
+<li>However, critics argue that individual actions are not enough unless industries also take responsibility for reducing emissions.</li>
+<div class="jp-note">しかし批評家は、産業が排出削減の責任を負わない限り、個人の行動だけでは不十分だと主張します。</div>
+
 </ul>
 </div>
 
@@ -124,35 +147,35 @@ Read carefully and check the purpose of each paragraph.
 <h3>Exercise A – Logic & Inference（論理・推測）</h3>
 
 <div class="exercise-item">
-1. If participation in recycling is low, what can we infer?  
-<button onclick="toggleAnswer('ea1')">Show Answer</button>
-<div id="ea1" class="answer">Awareness alone is not enough to change behavior.</div>
+1. If participation in recycling is low, what can we infer?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Awareness alone is not enough to change behavior.</div>
 </div>
 
 <div class="exercise-item">
-2. What do critics believe about individual actions?  
-<button onclick="toggleAnswer('ea2')">Show Answer</button>
-<div id="ea2" class="answer">They are insufficient without industrial responsibility.</div>
+2. What do critics believe about individual actions?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">They are insufficient without industrial responsibility.</div>
 </div>
 
 <div class="exercise-item">
-3. What is the contrast in the examples?  
-<button onclick="toggleAnswer('ea3')">Show Answer</button>
-<div id="ea3" class="answer">Education vs. technology as solutions.</div>
+3. What is the contrast in the examples?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Education vs. technology as solutions.</div>
 </div>
 
 <h3>Exercise B – Vocabulary in Context（文脈語彙）</h3>
 
 <div class="exercise-item">
-4. “Alternative solutions” most likely means…  
-<button onclick="toggleAnswer('eb1')">Show Answer</button>
-<div id="eb1" class="answer">Different methods to solve the problem.</div>
+4. “Alternative solutions” most likely means…
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Different methods to solve the problem.</div>
 </div>
 
 <div class="exercise-item">
-5. “Critics” refers to…  
-<button onclick="toggleAnswer('eb2')">Show Answer</button>
-<div id="eb2" class="answer">People who disagree or question an idea.</div>
+5. “Critics” refers to…
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">People who disagree or question an idea.</div>
 </div>
 
 </div>
@@ -161,7 +184,6 @@ Read carefully and check the purpose of each paragraph.
 <h2>📖 5. Reading Text </h2>
 <div class="section-box">
 
-<!-- Added English title -->
 <h3 style="margin-top: 0;">Recycling Challenges in Modern Cities</h3>
 
 <p>
@@ -172,7 +194,6 @@ Many cities around the world are facing serious environmental challenges, especi
 Some researchers argue that technological solutions, such as smart waste‑sorting machines, could make recycling easier and more efficient. These machines can automatically separate materials, reducing the need for human effort. In contrast, critics believe that relying too much on technology may create new problems, such as high maintenance costs. As a result, many specialists suggest combining education, technology, and community involvement. They claim that long‑term success requires cooperation between individuals, local governments, and industries. Without this cooperation, environmental problems will continue to grow.
 </p>
 
-<!-- Japanese translation with translated title -->
 <div style="margin-top: 28px;">
   <h3>現代都市におけるリサイクルの課題</h3>
 
@@ -192,33 +213,33 @@ Some researchers argue that technological solutions, such as smart waste‑sorti
 <div class="section-box">
 
 <div class="exercise-item">
-1. What is one reason recycling participation differs between communities?  
-<button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">Different levels of education about recycling.</div>
+1. What is one reason recycling participation differs between communities?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Different levels of education about recycling.</div>
 </div>
 
 <div class="exercise-item">
-2. What advantage do smart waste‑sorting machines offer?  
-<button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">They make recycling easier and more efficient.</div>
+2. What advantage do smart waste‑sorting machines offer?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">They make recycling easier and more efficient.</div>
 </div>
 
 <div class="exercise-item">
-3. Why do critics worry about technology?  
-<button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">It may create new problems, such as high maintenance costs.</div>
+3. Why do critics worry about technology?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">It may create new problems, such as high maintenance costs.</div>
 </div>
 
 <div class="exercise-item">
-4. What solution do specialists recommend?  
-<button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">Combining education, technology, and community involvement.</div>
+4. What solution do specialists recommend?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Combining education, technology, and community involvement.</div>
 </div>
 
 <div class="exercise-item">
-5. What can we infer about long‑term success?  
-<button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">It requires cooperation between individuals, governments, and industries.</div>
+5. What can we infer about long‑term success?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">It requires cooperation between individuals, governments, and industries.</div>
 </div>
 
 </div>
@@ -228,25 +249,17 @@ Some researchers argue that technological solutions, such as smart waste‑sorti
 <div class="section-box">
 <ul>
 
-<li>
-  B2 readings require understanding <strong>logic</strong> and <strong>cohesion</strong>.<br>
-  B2 の読解では、文章の<strong>論理</strong>と<strong>つながり</strong>を理解する必要があります。
-</li>
+<li><strong>Logic</strong> and <strong>cohesion</strong> are essential in B2 readings.</li>
+<div class="jp-note">B2 の読解では<strong>論理</strong>と<strong>つながり</strong>の理解が必要です。</div>
 
-<li>
-  <strong>Inference</strong> is essential: answers are not always direct.<br>
-  <strong>推論</strong>が重要で、答えが直接書かれていないこともあります。
-</li>
+<li><strong>Inference</strong> is required because answers are not always direct.</li>
+<div class="jp-note"><strong>推論</strong>が必要で、答えが直接書かれていないこともあります。</div>
 
-<li>
-  <strong>Distractors</strong> often contain partial truths.<br>
-  <strong>ひっかけ選択肢</strong>には部分的な正しさが含まれていることが多いです。
-</li>
+<li><strong>Distractors</strong> often include partial truths.</li>
+<div class="jp-note"><strong>ひっかけ選択肢</strong>には部分的な正しさが含まれることがあります。</div>
 
-<li>
-  <strong>Environmental topics</strong> are common in EIKEN Pre-1.<br>
-  EIKEN 準1級では<strong>環境問題</strong>がよく出題されます。
-</li>
+<li><strong>Environmental topics</strong> frequently appear in EIKEN Pre‑1.</li>
+<div class="jp-note">EIKEN 準1級では<strong>環境問題</strong>がよく出題されます。</div>
 
 </ul>
 </div>

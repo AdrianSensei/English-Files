@@ -16,8 +16,8 @@
     }
 
     h1 { text-align: center; margin-bottom: 10px; }
-    h2 { margin-top: 40px; color: #222; }
-    h3 { margin-top: 25px; color: #444; }
+    h2 { margin-top: 40px; color: #2a4d69; }
+    h3 { margin-top: 25px; color: #2a4d69; }
 
     .section-box {
         background: #ffffff;
@@ -60,24 +60,34 @@
     }
 
     button {
-        margin-top: 5px;
         padding: 6px 10px;
         cursor: pointer;
         background: #e0e0e0;
         color: #333;
         border: 1px solid #c8c8c8;
         border-radius: 6px;
+        display: block;
+        margin-bottom: 18px;
     }
 
     button:hover { background: #d5d5d5; }
+
+    .jp-note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
 
     ul { margin-left: 20px; }
 </style>
 
 <script>
-function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
+function toggleAnswer(button) {
+  const answer = button.nextElementSibling;
+  if (!answer || !answer.classList.contains('answer')) return;
+  const current = window.getComputedStyle(answer).display;
+  answer.style.display = current === "none" ? "block" : "none";
 }
 </script>
 
@@ -139,13 +149,28 @@ function toggleAnswer(id) {
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>Could you tell me the exact date of the event? → イベントの日付を教えていただけますか。</li>
-<li>I would like to join because I want to improve my skills. → スキルを伸ばしたいので参加したいです。</li>
-<li>In my opinion, students should join community activities. → 私の意見では、学生は地域活動に参加すべきです。</li>
-<li>This is because they can learn responsibility. → 責任感を学べるからです。</li>
-<li>For example, volunteering teaches teamwork. → 例えば、ボランティアは協力を学ばせます。</li>
-<li>However, some people prefer to study alone. → しかし、一人で勉強する方が好きな人もいます。</li>
-<li>As a result, each student should choose what suits them. → その結果、学生は自分に合う方法を選ぶべきです。</li>
+
+<li>Could you tell me the exact date of the event?</li>
+<div class="jp-note">イベントの日付を教えていただけますか。</div>
+
+<li>I would like to join because I want to improve my skills.</li>
+<div class="jp-note">スキルを伸ばしたいので参加したいです。</div>
+
+<li>In my opinion, students should join community activities.</li>
+<div class="jp-note">私の意見では、学生は地域活動に参加すべきです。</div>
+
+<li>This is because they can learn responsibility.</li>
+<div class="jp-note">責任感を学べるからです。</div>
+
+<li>For example, volunteering teaches teamwork.</li>
+<div class="jp-note">例えば、ボランティアは協力を学ばせます。</div>
+
+<li>However, some people prefer to study alone.</li>
+<div class="jp-note">しかし、一人で勉強する方が好きな人もいます。</div>
+
+<li>As a result, each student should choose what suits them.</li>
+<div class="jp-note">その結果、学生は自分に合う方法を選ぶべきです。</div>
+
 </ul>
 </div>
 
@@ -153,20 +178,22 @@ function toggleAnswer(id) {
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>Could you send me the full schedule for the workshop? I need to know the starting time because I have another appointment in the afternoon.  
-→ ワークショップの全スケジュールを送っていただけますか。午後に別の予定があるので開始時間を知りたいです。</li>
 
-<li>In my opinion, students should participate in local events because they can learn practical skills. For example, helping at festivals teaches communication and teamwork.  
-→ 私の意見では、学生は地域イベントに参加すべきです。実践的なスキルを学べるからです。例えば、祭りの手伝いはコミュニケーションや協力を学ばせます。</li>
+<li>Could you send me the full schedule for the workshop? I need to know the starting time because I have another appointment in the afternoon.</li>
+<div class="jp-note">ワークショップの全スケジュールを送っていただけますか。午後に別の予定があるので開始時間を知りたいです。</div>
 
-<li>Although online classes are convenient, face-to-face lessons allow students to ask questions more easily.  
-→ オンライン授業は便利ですが、対面授業の方が質問しやすいです。</li>
+<li>In my opinion, students should participate in local events because they can learn practical skills. For example, helping at festivals teaches communication and teamwork.</li>
+<div class="jp-note">私の意見では、学生は地域イベントに参加すべきです。実践的なスキルを学べるからです。例えば、祭りの手伝いはコミュニケーションや協力を学ばせます。</div>
 
-<li>In addition, meeting teachers directly helps students stay motivated.  
-→ さらに、先生に直接会うことでやる気を保ちやすくなります。</li>
+<li>Although online classes are convenient, face-to-face lessons allow students to ask questions more easily.</li>
+<div class="jp-note">オンライン授業は便利ですが、対面授業の方が質問しやすいです。</div>
 
-<li>As a result, a combination of online and in-person learning may be the most effective.  
-→ その結果、オンラインと対面の組み合わせが最も効果的かもしれません。</li>
+<li>In addition, meeting teachers directly helps students stay motivated.</li>
+<div class="jp-note">さらに、先生に直接会うことでやる気を保ちやすくなります。</div>
+
+<li>As a result, a combination of online and in-person learning may be the most effective.</li>
+<div class="jp-note">その結果、オンラインと対面の組み合わせが最も効果的かもしれません。</div>
+
 </ul>
 </div>
 
@@ -178,9 +205,9 @@ function toggleAnswer(id) {
 <p>Write 40–60 words.（40〜60語で書きましょう）</p>
 
 <div class="exercise-item">
-You want to join a photography workshop. Ask for information and explain why you are interested.  
-<button onclick="toggleAnswer('ea1')">Show Model Answer</button>
-<div id="ea1" class="answer">
+You want to join a photography workshop. Ask for information and explain why you are interested.
+<button onclick="toggleAnswer(this)">Show Model Answer</button>
+<div class="answer">
 Could you send me more information about the photography workshop? I would like to know the schedule because I am free only on weekends. I want to join because I have been interested in photography for a long time and would like to improve my skills.
 </div>
 </div>
@@ -189,9 +216,9 @@ Could you send me more information about the photography workshop? I would like 
 <p>Write 40–60 words.（40〜60語で書きましょう）</p>
 
 <div class="exercise-item">
-Do you think students should have part-time jobs?  
-<button onclick="toggleAnswer('eb1')">Show Model Answer</button>
-<div id="eb1" class="answer">
+Do you think students should have part-time jobs?
+<button onclick="toggleAnswer(this)">Show Model Answer</button>
+<div class="answer">
 In my opinion, students should have part-time jobs because they can learn responsibility. For example, working in a shop teaches them how to communicate with customers. However, they must manage their time well so their studies are not affected.
 </div>
 </div>
@@ -202,7 +229,6 @@ In my opinion, students should have part-time jobs because they can learn respon
 <h2>📖 5. Short Reading Text </h2>
 <div class="section-box">
 
-<!-- Added English title -->
 <h3 style="margin-top: 0;">Community Involvement in Schools</h3>
 
 <p>
@@ -213,7 +239,6 @@ Many schools encourage students to join community activities because these exper
 Email communication is also used to support these activities. Students receive updates about schedules, tasks, and upcoming events. When they have questions, they can reply and ask for more details. This system makes it easier for students to participate actively, and it helps schools stay connected with their communities.
 </p>
 
-<!-- Replaced Japanese Translation line with Japanese title -->
 <h3>学校における地域参加の重要性</h3>
 
 <p>
@@ -225,38 +250,39 @@ Email communication is also used to support these activities. Students receive u
 </p>
 
 </div>
+
 <!-- ❓ 6. READING COMPREHENSION QUESTIONS -->
 <h2>❓ 6. Reading Comprehension Questions（読解問題）</h2>
 <div class="section-box">
 
 <div class="exercise-item">
-1. Why do schools encourage students to join community activities?  
-<button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">Because these activities help students develop important skills.</div>
+1. Why do schools encourage students to join community activities?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Because these activities help students develop important skills.</div>
 </div>
 
 <div class="exercise-item">
-2. What do students learn by volunteering at events?  
-<button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">They learn how to communicate with different people.</div>
+2. What do students learn by volunteering at events?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">They learn how to communicate with different people.</div>
 </div>
 
 <div class="exercise-item">
-3. How do students receive updates about activities?  
-<button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">They receive updates by email.</div>
+3. How do students receive updates about activities?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">They receive updates by email.</div>
 </div>
 
 <div class="exercise-item">
-4. What can students do if they have questions?  
-<button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">They can reply to the email and ask for more details.</div>
+4. What can students do if they have questions?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">They can reply to the email and ask for more details.</div>
 </div>
 
 <div class="exercise-item">
-5. What is one benefit of the email system?  
-<button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">It helps students participate actively and stay informed.</div>
+5. What is one benefit of the email system?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">It helps students participate actively and stay informed.</div>
 </div>
 
 </div>
@@ -265,10 +291,19 @@ Email communication is also used to support these activities. Students receive u
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li>Email tasks require request → reason → detail. → メールは依頼→理由→詳細。</li>
-<li>Opinion writing needs opinion → reason → example → closing. → 意見→理由→例→まとめ。</li>
-<li>Use B1 linking words for logical writing. → 論理的にするため B1 接続詞を使う。</li>
-<li>40–60 words is the required length. → 40〜60語が必要。</li>
+
+<li><strong>Email tasks</strong> require request → reason → detail.</li>
+<div class="jp-note"><strong>メール課題</strong>は「依頼→理由→詳細」の流れが必要です。</div>
+
+<li><strong>Opinion writing</strong> needs opinion → reason → example → closing.</li>
+<div class="jp-note"><strong>意見文</strong>は「意見→理由→例→まとめ」の構成が必要です。</div>
+
+<li>Use <strong>B1 linking words</strong> for logical writing.</li>
+<div class="jp-note">論理的な文章にするために<strong>B1 レベルの接続詞</strong>を使います。</div>
+
+<li><strong>40–60 words</strong> is the required length.</li>
+<div class="jp-note">必要な語数は<strong>40〜60語</strong>です。</div>
+
 </ul>
 </div>
 

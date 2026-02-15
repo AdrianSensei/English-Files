@@ -16,8 +16,8 @@
     }
 
     h1 { text-align: center; margin-bottom: 10px; }
-    h2 { margin-top: 40px; color: #222; }
-    h3 { margin-top: 25px; color: #444; }
+    h2 { margin-top: 40px; color: #2a4d69; }
+    h3 { margin-top: 25px; color: #2a4d69; }
 
     .section-box {
         background: #ffffff;
@@ -60,24 +60,34 @@
     }
 
     button {
-        margin-top: 5px;
         padding: 6px 10px;
         cursor: pointer;
         background: #e0e0e0;
         color: #333;
         border: 1px solid #c8c8c8;
         border-radius: 6px;
+        display: block;
+        margin-bottom: 18px;
     }
 
     button:hover { background: #d5d5d5; }
+
+    .jp-note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
 
     ul { margin-left: 20px; }
 </style>
 
 <script>
-function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
+function toggleAnswer(button) {
+  const answer = button.nextElementSibling;
+  if (!answer || !answer.classList.contains('answer')) return;
+  const current = window.getComputedStyle(answer).display;
+  answer.style.display = current === "none" ? "block" : "none";
 }
 </script>
 
@@ -137,13 +147,28 @@ function toggleAnswer(id) {
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>The event is held twice a year. → イベントは年に2回開催されます。</li>
-<li>New activities are being added this month. → 今月新しい活動が追加されています。</li>
-<li>The festival has been supported by local groups. → 祭りは地域団体に支えられています。</li>
-<li>Although it rained, many people joined. → 雨だったが、多くの人が参加しました。</li>
-<li>In addition, volunteers prepared food stands. → さらに、ボランティアが屋台を準備しました。</li>
-<li>As a result, the event became very popular. → その結果、イベントはとても人気になりました。</li>
-<li>Local events help people feel connected. → 地域イベントは人々のつながりを強めます。</li>
+
+<li>The event is held twice a year.</li>
+<div class="jp-note">イベントは年に2回開催されます。</div>
+
+<li>New activities are being added this month.</li>
+<div class="jp-note">今月新しい活動が追加されています。</div>
+
+<li>The festival has been supported by local groups.</li>
+<div class="jp-note">祭りは地域団体に支えられています。</div>
+
+<li>Although it rained, many people joined.</li>
+<div class="jp-note">雨だったが、多くの人が参加しました。</div>
+
+<li>In addition, volunteers prepared food stands.</li>
+<div class="jp-note">さらに、ボランティアが屋台を準備しました。</div>
+
+<li>As a result, the event became very popular.</li>
+<div class="jp-note">その結果、イベントはとても人気になりました。</div>
+
+<li>Local events help people feel connected.</li>
+<div class="jp-note">地域イベントは人々のつながりを強めます。</div>
+
 </ul>
 </div>
 
@@ -151,20 +176,22 @@ function toggleAnswer(id) {
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>Community events are held throughout the year, and many of them are organized by volunteers who want to support their town.  
-→ 地域イベントは一年を通して開催され、多くは町を支えたいボランティアによって運営されています。</li>
 
-<li>Although some events require a lot of preparation, people enjoy joining because they can meet new neighbors and learn about local activities.  
-→ 準備に時間がかかるイベントもありますが、新しい近所の人と出会い地域活動を知ることができるため、多くの人が参加を楽しみます。</li>
+<li>Community events are held throughout the year, and many of them are organized by volunteers who want to support their town.</li>
+<div class="jp-note">地域イベントは一年を通して開催され、多くは町を支えたいボランティアによって運営されています。</div>
 
-<li>In addition, local festivals often include performances, food stands, and workshops that teach useful skills.  
-→ さらに、地域の祭りにはパフォーマンスや屋台、役立つスキルを学べるワークショップが含まれることが多いです。</li>
+<li>Although some events require a lot of preparation, people enjoy joining because they can meet new neighbors and learn about local activities.</li>
+<div class="jp-note">準備に時間がかかるイベントもありますが、新しい近所の人と出会い地域活動を知ることができるため、多くの人が参加を楽しみます。</div>
 
-<li>As a result, these events help create a stronger sense of community and encourage people to participate more actively.  
-→ その結果、これらのイベントは地域意識を高め、人々の積極的な参加を促します。</li>
+<li>In addition, local festivals often include performances, food stands, and workshops that teach useful skills.</li>
+<div class="jp-note">さらに、地域の祭りにはパフォーマンスや屋台、役立つスキルを学べるワークショップが含まれることが多いです。</div>
 
-<li>However, organizers must plan carefully to ensure safety, especially when many families with children attend.  
-→ しかし、特に子ども連れの家族が多く参加する場合、安全を確保するために主催者は慎重に計画しなければなりません。</li>
+<li>As a result, these events help create a stronger sense of community and encourage people to participate more actively.</li>
+<div class="jp-note">その結果、これらのイベントは地域意識を高め、人々の積極的な参加を促します。</div>
+
+<li>However, organizers must plan carefully to ensure safety, especially when many families with children attend.</li>
+<div class="jp-note">しかし、特に子ども連れの家族が多く参加する場合、安全を確保するために主催者は慎重に計画しなければなりません。</div>
+
 </ul>
 </div>
 
@@ -175,65 +202,65 @@ function toggleAnswer(id) {
 <h3>Exercise A – True / False（正誤問題）</h3>
 
 <div class="exercise-item">
-1. Many community events are organized by volunteers.  
-<button onclick="toggleAnswer('ea1')">Show Answer</button>
-<div id="ea1" class="answer">True</div>
+1. Many community events are organized by volunteers.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">True</div>
 </div>
 
 <div class="exercise-item">
-2. Local festivals rarely include workshops.  
-<button onclick="toggleAnswer('ea2')">Show Answer</button>
-<div id="ea2" class="answer">False</div>
+2. Local festivals rarely include workshops.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">False</div>
 </div>
 
 <div class="exercise-item">
-3. Events help people feel more connected to their community.  
-<button onclick="toggleAnswer('ea3')">Show Answer</button>
-<div id="ea3" class="answer">True</div>
+3. Events help people feel more connected to their community.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">True</div>
 </div>
 
 <div class="exercise-item">
-4. Organizers do not need to think about safety.  
-<button onclick="toggleAnswer('ea4')">Show Answer</button>
-<div id="ea4" class="answer">False</div>
+4. Organizers do not need to think about safety.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">False</div>
 </div>
 
 <div class="exercise-item">
-5. Some events require a lot of preparation.  
-<button onclick="toggleAnswer('ea5')">Show Answer</button>
-<div id="ea5" class="answer">True</div>
+5. Some events require a lot of preparation.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">True</div>
 </div>
 
 <h3>Exercise B – Vocabulary in Context（文脈から語彙を理解）</h3>
 
 <div class="exercise-item">
-1. “Organized” most likely means…  
-<button onclick="toggleAnswer('eb1')">Show Answer</button>
-<div id="eb1" class="answer">planned and prepared</div>
+1. “Organized” most likely means…
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">planned and prepared</div>
 </div>
 
 <div class="exercise-item">
-2. “Support their town” means…  
-<button onclick="toggleAnswer('eb2')">Show Answer</button>
-<div id="eb2" class="answer">help improve the community</div>
+2. “Support their town” means…
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">help improve the community</div>
 </div>
 
 <div class="exercise-item">
-3. “Sense of community” refers to…  
-<button onclick="toggleAnswer('eb3')">Show Answer</button>
-<div id="eb3" class="answer">feeling connected to others</div>
+3. “Sense of community” refers to…
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">feeling connected to others</div>
 </div>
 
 <div class="exercise-item">
-4. “Encourage people to participate” means…  
-<button onclick="toggleAnswer('eb4')">Show Answer</button>
-<div id="eb4" class="answer">motivate people to join</div>
+4. “Encourage people to participate” means…
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">motivate people to join</div>
 </div>
 
 <div class="exercise-item">
-5. “Require preparation” means…  
-<button onclick="toggleAnswer('eb5')">Show Answer</button>
-<div id="eb5" class="answer">need planning and work</div>
+5. “Require preparation” means…
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">need planning and work</div>
 </div>
 
 </div>
@@ -242,7 +269,6 @@ function toggleAnswer(id) {
 <h2>📖 5. Short Reading Text </h2>
 <div class="section-box">
 
-<!-- Added English title -->
 <h3 style="margin-top: 0;">Community Festival and Clean-Up Activities</h3>
 
 <p>
@@ -253,7 +279,6 @@ Last month, our town held a large community festival in the central park. Many l
 The community center also organized a clean-up event the following weekend. Participants collected trash along the river and separated recyclables. In addition, staff members explained how to reduce waste at home. Many people said they wanted to join again because the activities helped them feel more connected to their neighbors and more aware of environmental issues.
 </p>
 
-<!-- Replaced Japanese Translation line with Japanese title -->
 <h3>地域フェスティバルと清掃活動</h3>
 
 <p>
@@ -271,33 +296,33 @@ The community center also organized a clean-up event the following weekend. Part
 <div class="section-box">
 
 <div class="exercise-item">
-1. Why did the festival become successful?  
-<button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">Because many groups prepared activities and many families attended.</div>
+1. Why did the festival become successful?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Because many groups prepared activities and many families attended.</div>
 </div>
 
 <div class="exercise-item">
-2. What skills were taught at the workshops?  
-<button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">Skills such as first aid and cooking.</div>
+2. What skills were taught at the workshops?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Skills such as first aid and cooking.</div>
 </div>
 
 <div class="exercise-item">
-3. What did participants do during the clean-up event?  
-<button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">They collected trash and separated recyclables.</div>
+3. What did participants do during the clean-up event?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">They collected trash and separated recyclables.</div>
 </div>
 
 <div class="exercise-item">
-4. Why did many people want to join again?  
-<button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">Because they felt more connected to neighbors and more aware of environmental issues.</div>
+4. Why did many people want to join again?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Because they felt more connected to neighbors and more aware of environmental issues.</div>
 </div>
 
 <div class="exercise-item">
-5. What can we infer about the community?  
-<button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">The community values cooperation and enjoys participating in local activities.</div>
+5. What can we infer about the community?
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">The community values cooperation and enjoys participating in local activities.</div>
 </div>
 
 </div>
@@ -306,10 +331,19 @@ The community center also organized a clean-up event the following weekend. Part
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li>Passive voice is common in community topics. → 地域の話題では受動態がよく使われます。</li>
-<li>Use linking words like although, however, and as a result. → although / however / as a result を使う。</li>
-<li>Local events help build a strong sense of community. → 地域イベントはつながりを強めます。</li>
-<li>Inference is important for deeper reading. → 推測は深い読解に必要です。</li>
+
+<li><strong>Passive voice</strong> is common in community topics.</li>
+<div class="jp-note"><strong>受動態</strong>は地域の話題でよく使われます。</div>
+
+<li>Use linking words like <strong>although</strong>, <strong>however</strong>, and <strong>as a result</strong>.</li>
+<div class="jp-note"><strong>although / however / as a result</strong> などの接続詞を使います。</div>
+
+<li>Local events help build a strong <strong>sense of community</strong>.</li>
+<div class="jp-note">地域イベントは<strong>コミュニティ意識</strong>を強めます。</div>
+
+<li><strong>Inference</strong> is important for deeper reading.</li>
+<div class="jp-note"><strong>推測</strong>は深い読解に必要です。</div>
+
 </ul>
 </div>
 
