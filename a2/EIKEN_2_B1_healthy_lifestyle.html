@@ -15,6 +15,10 @@
         background: #f5f7fa;
     }
 
+    h1, h2, h3 {
+        color: #2a4d69;
+    }
+
     h1 {
         text-align: center;
         margin-bottom: 10px;
@@ -22,12 +26,10 @@
 
     h2 {
         margin-top: 40px;
-        color: #222;
     }
 
     h3 {
         margin-top: 25px;
-        color: #444;
     }
 
     .section-box {
@@ -60,6 +62,13 @@
         border-bottom: 1px solid #e5e5e5;
     }
 
+    .jp-note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
+
     .exercise-item {
         margin-bottom: 15px;
     }
@@ -73,13 +82,14 @@
     }
 
     button {
-        margin-top: 5px;
         padding: 6px 10px;
         cursor: pointer;
         background: #e0e0e0;
         color: #333;
         border: 1px solid #c8c8c8;
         border-radius: 6px;
+        display: block;
+        margin-bottom: 18px;
     }
 
     button:hover {
@@ -89,14 +99,11 @@
     ul {
         margin-left: 20px;
     }
-</style>
 
-<script>
-function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
-}
-</script>
+    li {
+        margin-bottom: 4px;
+    }
+</style>
 
 </head>
 
@@ -148,7 +155,7 @@ function toggleAnswer(id) {
 <tr>
   <td>although</td>
   <td>〜だけれども</td>
-  <td>Although I’m busy, I cook at home.（忙しいけれど家で料理します。）</td>
+  <td>Although I'm busy, I cook at home.（忙しいけれど家で料理します。）</td>
 </tr>
 <tr>
   <td>however</td>
@@ -168,13 +175,26 @@ function toggleAnswer(id) {
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>You ought to drink more water every day. → 毎日もっと水を飲むべきです。</li>
-<li>I have been walking for 30 minutes every morning. → 毎朝30分歩き続けています。</li>
-<li>Although it’s cold, many people jog outside. → 寒いけれど、多くの人が外でジョギングします。</li>
-<li>You had better avoid eating too much fast food. → ファストフードを食べすぎない方がいいです。</li>
-<li>She has been studying nutrition recently. → 彼女は最近栄養学を勉強し続けています。</li>
-<li>He wants to lose weight; however, he rarely exercises. → 彼は痩せたいが、ほとんど運動しません。</li>
-<li>As a result of poor sleep, she felt sick. → 睡眠不足の結果、彼女は気分が悪くなりました。</li>
+<li>You ought to drink more water every day.</li>
+<div class="jp-note">毎日もっと水を飲むべきです。</div>
+
+<li>I have been walking for 30 minutes every morning.</li>
+<div class="jp-note">毎朝30分歩き続けています。</div>
+
+<li>Although it's cold, many people jog outside.</li>
+<div class="jp-note">寒いけれど、多くの人が外でジョギングします。</div>
+
+<li>You had better avoid eating too much fast food.</li>
+<div class="jp-note">ファストフードを食べすぎない方がいいです。</div>
+
+<li>She has been studying nutrition recently.</li>
+<div class="jp-note">彼女は最近栄養学を勉強し続けています。</div>
+
+<li>He wants to lose weight; however, he rarely exercises.</li>
+<div class="jp-note">彼は痩せたいが、ほとんど運動しません。</div>
+
+<li>As a result of poor sleep, she felt sick.</li>
+<div class="jp-note">睡眠不足の結果、彼女は気分が悪くなりました。</div>
 </ul>
 </div>
 
@@ -182,20 +202,20 @@ function toggleAnswer(id) {
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>Many people have been trying to improve their lifestyle by exercising more and eating balanced meals.  
-→ 多くの人が運動量を増やし、バランスの良い食事をとることで生活を改善しようとしています。</li>
+<li>Many people have been trying to improve their lifestyle by exercising more and eating balanced meals.</li>
+<div class="jp-note">多くの人が運動量を増やし、バランスの良い食事をとることで生活を改善しようとしています。</div>
 
-<li>You ought to choose activities that you enjoy, because enjoyable habits are easier to continue.  
-→ 楽しめる活動を選ぶべきです。楽しい習慣の方が続けやすいからです。</li>
+<li>You ought to choose activities that you enjoy, because enjoyable habits are easier to continue.</li>
+<div class="jp-note">楽しめる活動を選ぶべきです。楽しい習慣の方が続けやすいからです。</div>
 
-<li>Although modern life is stressful, taking short breaks during the day can help reduce tension.  
-→ 現代生活はストレスが多いですが、日中に短い休憩を取ることで緊張を和らげることができます。</li>
+<li>Although modern life is stressful, taking short breaks during the day can help reduce tension.</li>
+<div class="jp-note">現代生活はストレスが多いですが、日中に短い休憩を取ることで緊張を和らげることができます。</div>
 
-<li>He has been avoiding sugary drinks for several months, and as a result, he feels more energetic.  
-→ 彼は数か月間甘い飲み物を避けていて、その結果、より元気に感じています。</li>
+<li>He has been avoiding sugary drinks for several months, and as a result, he feels more energetic.</li>
+<div class="jp-note">彼は数か月間甘い飲み物を避けていて、その結果、より元気に感じています。</div>
 
-<li>Some people try extreme diets; however, experts warn that such methods can be dangerous.  
-→ 極端なダイエットをする人もいますが、専門家はそのような方法が危険になり得ると警告しています。</li>
+<li>Some people try extreme diets; however, experts warn that such methods can be dangerous.</li>
+<div class="jp-note">極端なダイエットをする人もいますが、専門家はそのような方法が危険になり得ると警告しています。</div>
 </ul>
 </div>
 
@@ -206,66 +226,66 @@ function toggleAnswer(id) {
 <h3>Exercise A – Choose the correct option（正しい答えを選びましょう）</h3>
 
 <div class="exercise-item">
-1. You ________ start sleeping earlier. (should / however)  
-<button onclick="toggleAnswer('ea1')">Show Answer</button>
-<div id="ea1" class="answer">should</div>
+1. You ________ start sleeping earlier. (should / however)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">should</div>
 </div>
 
 <div class="exercise-item">
-2. She has been ________ every morning. (exercise / exercising)  
-<button onclick="toggleAnswer('ea2')">Show Answer</button>
-<div id="ea2" class="answer">exercising</div>
+2. She has been ________ every morning. (exercise / exercising)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">exercising</div>
 </div>
 
 <div class="exercise-item">
-3. ________ he is busy, he cooks at home. (Although / As a result)  
-<button onclick="toggleAnswer('ea3')">Show Answer</button>
-<div id="ea3" class="answer">Although</div>
+3. ________ he is busy, he cooks at home. (Although / As a result)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Although</div>
 </div>
 
 <div class="exercise-item">
-4. He didn’t sleep well; ________, he felt tired all day. (however / as a result)  
-<button onclick="toggleAnswer('ea4')">Show Answer</button>
-<div id="ea4" class="answer">as a result</div>
+4. He didn't sleep well; ________, he felt tired all day. (however / as a result)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">as a result</div>
 </div>
 
 <div class="exercise-item">
-5. You ________ to reduce your sugar intake. (ought / ought to)  
-<button onclick="toggleAnswer('ea5')">Show Answer</button>
-<div id="ea5" class="answer">ought to</div>
+5. You ________ to reduce your sugar intake. (ought / ought to)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">ought to</div>
 </div>
 
 <h3>Exercise B – Complete the sentence（文を完成させましょう）</h3>
 <p>ヒント：助動詞・現在完了進行形・接続詞を使いましょう。</p>
 
 <div class="exercise-item">
-1. You had better ________ (avoid) heavy meals at night.  
-<button onclick="toggleAnswer('eb1')">Show Answer</button>
-<div id="eb1" class="answer">avoid</div>
+1. You had better ________ (avoid) heavy meals at night.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">avoid</div>
 </div>
 
 <div class="exercise-item">
-2. I have been ________ (try) to exercise more.  
-<button onclick="toggleAnswer('eb2')">Show Answer</button>
-<div id="eb2" class="answer">trying</div>
+2. I have been ________ (try) to exercise more.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">trying</div>
 </div>
 
 <div class="exercise-item">
-3. ________ I’m tired, I take a short walk.  
-<button onclick="toggleAnswer('eb3')">Show Answer</button>
-<div id="eb3" class="answer">Although</div>
+3. ________ I'm tired, I take a short walk.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Although</div>
 </div>
 
 <div class="exercise-item">
-4. She didn’t rest enough; ________, she got sick.  
-<button onclick="toggleAnswer('eb4')">Show Answer</button>
-<div id="eb4" class="answer">as a result</div>
+4. She didn't rest enough; ________, she got sick.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">as a result</div>
 </div>
 
 <div class="exercise-item">
-5. He has been ________ (study) healthy cooking recently.  
-<button onclick="toggleAnswer('eb5')">Show Answer</button>
-<div id="eb5" class="answer">studying</div>
+5. He has been ________ (study) healthy cooking recently.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">studying</div>
 </div>
 
 </div>
@@ -303,38 +323,38 @@ Another important part of a healthy lifestyle is mental well-being. Many individ
 <div class="section-box">
 
 <div class="exercise-item">
-1. Why do some people use fitness apps?  
-→ なぜフィットネスアプリを使う人がいるのですか？  
-<button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">Because tracking their progress helps them stay motivated.</div>
+1. Why do some people use fitness apps?<br>
+→ なぜフィットネスアプリを使う人がいるのですか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Because tracking their progress helps them stay motivated.</div>
 </div>
 
 <div class="exercise-item">
-2. What warning do experts give about extreme diets?  
-→ 専門家は極端なダイエットについてどんな警告をしていますか？  
-<button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">They warn that extreme diets can be harmful.</div>
+2. What warning do experts give about extreme diets?<br>
+→ 専門家は極端なダイエットについてどんな警告をしていますか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">They warn that extreme diets can be harmful.</div>
 </div>
 
 <div class="exercise-item">
-3. What have many people been practicing to reduce stress?  
-→ 多くの人はストレスを減らすために何を実践していますか？  
-<button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">They have been practicing mindfulness or meditation.</div>
+3. What have many people been practicing to reduce stress?<br>
+→ 多くの人はストレスを減らすために何を実践していますか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">They have been practicing mindfulness or meditation.</div>
 </div>
 
 <div class="exercise-item">
-4. How can spending time outdoors help people?  
-→ 外で過ごすことはどのように役立ちますか？  
-<button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">It can improve mood and energy levels.</div>
+4. How can spending time outdoors help people?<br>
+→ 外で過ごすことはどのように役立ちますか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">It can improve mood and energy levels.</div>
 </div>
 
 <div class="exercise-item">
-5. What is the main idea of the passage?  
-→ この文章の主なポイントは何ですか？  
-<button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">A healthy lifestyle is built through small, sustainable habits that support both physical and mental well-being.</div>
+5. What is the main idea of the passage?<br>
+→ この文章の主なポイントは何ですか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">A healthy lifestyle is built through small, sustainable habits that support both physical and mental well-being.</div>
 </div>
 
 </div>
@@ -343,16 +363,32 @@ Another important part of a healthy lifestyle is mental well-being. Many individ
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li>Use modals like should, ought to, and had better to give advice. → 助言には should / ought to / had better を使います。</li>
-<li>Use the present perfect continuous for actions that started in the past and continue now. → 過去に始まり今も続く行動には現在完了進行形を使います。</li>
-<li>Use linking words such as although, however, and as a result to connect ideas logically. → although / however / as a result で論理的につなぎます。</li>
-<li>A healthy lifestyle includes both physical habits and mental well-being. → 健康的な生活は身体と心の両方を含みます。</li>
+<li>Use <strong>modals</strong> like should, ought to, and had better to give advice.</li>
+<div class="jp-note">助言には should / ought to / had better などの<strong>助動詞</strong>を使います。</div>
+
+<li>Use the <strong>present perfect continuous</strong> for actions that started in the past and continue now.</li>
+<div class="jp-note">過去に始まり今も続く行動には<strong>現在完了進行形</strong>を使います。</div>
+
+<li>Use <strong>linking words</strong> such as although, however, and as a result to connect ideas logically.</li>
+<div class="jp-note">although / however / as a result などの<strong>接続詞</strong>で論理的につなぎます。</div>
+
+<li>A <strong>healthy lifestyle</strong> includes both physical habits and mental well-being.</li>
+<div class="jp-note"><strong>健康的な生活</strong>は身体と心の両方を含みます。</div>
 </ul>
 </div>
 
 <div style="text-align:center; margin-top:30px;">
     <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Back to Index</a>
 </div>
+
+<script>
+function toggleAnswer(button) {
+  const answer = button.nextElementSibling;
+  if (!answer || !answer.classList.contains('answer')) return;
+  const current = window.getComputedStyle(answer).display;
+  answer.style.display = current === "none" ? "block" : "none";
+}
+</script>
 
 </body>
 </html>

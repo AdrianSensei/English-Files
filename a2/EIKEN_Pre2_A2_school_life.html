@@ -15,6 +15,10 @@
         background: #f5f7fa;
     }
 
+    h1, h2, h3 {
+        color: #2a4d69;
+    }
+
     h1 {
         text-align: center;
         margin-bottom: 10px;
@@ -22,12 +26,10 @@
 
     h2 {
         margin-top: 40px;
-        color: #222;
     }
 
     h3 {
         margin-top: 25px;
-        color: #444;
     }
 
     .section-box {
@@ -60,6 +62,13 @@
         border-bottom: 1px solid #e5e5e5;
     }
 
+    .jp-note {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
+
     .exercise-item {
         margin-bottom: 15px;
     }
@@ -73,13 +82,14 @@
     }
 
     button {
-        margin-top: 5px;
         padding: 6px 10px;
         cursor: pointer;
         background: #e0e0e0;
         color: #333;
         border: 1px solid #c8c8c8;
         border-radius: 6px;
+        display: block;
+        margin-bottom: 18px;
     }
 
     button:hover {
@@ -89,14 +99,11 @@
     ul {
         margin-left: 20px;
     }
-</style>
 
-<script>
-function toggleAnswer(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "none" ? "block" : "none";
-}
-</script>
+    li {
+        margin-bottom: 4px;
+    }
+</style>
 
 </head>
 
@@ -173,13 +180,26 @@ function toggleAnswer(id) {
 <h2>✏️ 2. Short Example Sentences（短い例文）</h2>
 <div class="section-box">
 <ul>
-<li>I have studied English since my first year of junior high school. → 私は中学1年生のときから英語を勉強しています。</li>
-<li>Our school festival was held last week. → 私たちの学校祭は先週開かれました。</li>
-<li>The gym is used for club activities after school. → 体育館は放課後、部活動に使われます。</li>
-<li>She is the student who always helps new classmates. → 彼女はいつも新しいクラスメートを助ける生徒です。</li>
-<li>This is the club that I have wanted to join for a long time. → ここは、私がずっと入りたかったクラブです。</li>
-<li>Many books are borrowed from the library every month. → 図書館からは毎月たくさんの本が借りられます。</li>
-<li>We have had many tests this term. → 私たちは今学期、たくさんのテストを受けてきました。</li>
+<li>I have studied English since my first year of junior high school.</li>
+<div class="jp-note">私は中学1年生のときから英語を勉強しています。</div>
+
+<li>Our school festival was held last week.</li>
+<div class="jp-note">私たちの学校祭は先週開かれました。</div>
+
+<li>The gym is used for club activities after school.</li>
+<div class="jp-note">体育館は放課後、部活動に使われます。</div>
+
+<li>She is the student who always helps new classmates.</li>
+<div class="jp-note">彼女はいつも新しいクラスメートを助ける生徒です。</div>
+
+<li>This is the club that I have wanted to join for a long time.</li>
+<div class="jp-note">ここは、私がずっと入りたかったクラブです。</div>
+
+<li>Many books are borrowed from the library every month.</li>
+<div class="jp-note">図書館からは毎月たくさんの本が借りられます。</div>
+
+<li>We have had many tests this term.</li>
+<div class="jp-note">私たちは今学期、たくさんのテストを受けてきました。</div>
 </ul>
 </div>
 
@@ -187,20 +207,20 @@ function toggleAnswer(id) {
 <h2>📝 3. Longer Example Sentences（長い例文）</h2>
 <div class="section-box">
 <ul>
-<li>I have been in the tennis club for two years, and I practice after school three times a week.  
-→ 私は2年間テニス部に入っていて、週に3回放課後に練習しています。</li>
+<li>I have been in the tennis club for two years, and I practice after school three times a week.</li>
+<div class="jp-note">私は2年間テニス部に入っていて、週に3回放課後に練習しています。</div>
 
-<li>A school trip to Kyoto was held last year, and many students visited famous temples and shrines.  
-→ 昨年、京都への修学旅行が行われ、多くの生徒が有名な寺や神社を訪れました。</li>
+<li>A school trip to Kyoto was held last year, and many students visited famous temples and shrines.</li>
+<div class="jp-note">昨年、京都への修学旅行が行われ、多くの生徒が有名な寺や神社を訪れました。</div>
 
-<li>This is the teacher who has taught us science since our first year, so we know her very well.  
-→ この先生は1年生のときから私たちに理科を教えてくれているので、私たちは彼女のことをよく知っています。</li>
+<li>This is the teacher who has taught us science since our first year, so we know her very well.</li>
+<div class="jp-note">この先生は1年生のときから私たちに理科を教えてくれているので、私たちは彼女のことをよく知っています。</div>
 
-<li>The classroom that is used for music lessons is on the third floor of the school building.  
-→ 音楽の授業で使われる教室は、校舎の3階にあります。</li>
+<li>The classroom that is used for music lessons is on the third floor of the school building.</li>
+<div class="jp-note">音楽の授業で使われる教室は、校舎の3階にあります。</div>
 
-<li>Many club activities are held after school, which makes our school life busy but enjoyable.  
-→ 放課後には多くの部活動が行われるので、学校生活は忙しいですが楽しいです。</li>
+<li>Many club activities are held after school, which makes our school life busy but enjoyable.</li>
+<div class="jp-note">放課後には多くの部活動が行われるので、学校生活は忙しいですが楽しいです。</div>
 </ul>
 </div>
 
@@ -211,66 +231,66 @@ function toggleAnswer(id) {
 <h3>Exercise A – Choose the correct option（正しい答えを選びましょう）</h3>
 
 <div class="exercise-item">
-1. I ________ studied English for three years. (have / has)  
-<button onclick="toggleAnswer('ea1')">Show Answer</button>
-<div id="ea1" class="answer">have</div>
+1. I ________ studied English for three years. (have / has)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">have</div>
 </div>
 
 <div class="exercise-item">
-2. A school festival was ________ last month. (hold / held)  
-<button onclick="toggleAnswer('ea2')">Show Answer</button>
-<div id="ea2" class="answer">held</div>
+2. A school festival was ________ last month. (hold / held)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">held</div>
 </div>
 
 <div class="exercise-item">
-3. This is the teacher ________ teaches math. (who / which)  
-<button onclick="toggleAnswer('ea3')">Show Answer</button>
-<div id="ea3" class="answer">who</div>
+3. This is the teacher ________ teaches math. (who / which)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">who</div>
 </div>
 
 <div class="exercise-item">
-4. Many books are ________ from the library every week. (borrow / borrowed)  
-<button onclick="toggleAnswer('ea4')">Show Answer</button>
-<div id="ea4" class="answer">borrowed</div>
+4. Many books are ________ from the library every week. (borrow / borrowed)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">borrowed</div>
 </div>
 
 <div class="exercise-item">
-5. She has ________ in the art club since last spring. (be / been)  
-<button onclick="toggleAnswer('ea5')">Show Answer</button>
-<div id="ea5" class="answer">been</div>
+5. She has ________ in the art club since last spring. (be / been)
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">been</div>
 </div>
 
 <h3>Exercise B – Complete the sentence（文を完成させましょう）</h3>
 <p>ヒント：現在完了・受動態・関係代名詞を使って、自然な文にしましょう。</p>
 
 <div class="exercise-item">
-1. I ________ ________ (study) science since last year.  
-<button onclick="toggleAnswer('eb1')">Show Answer</button>
-<div id="eb1" class="answer">have studied</div>
+1. I ________ ________ (study) science since last year.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">have studied</div>
 </div>
 
 <div class="exercise-item">
-2. The classroom is ________ ________ (clean) by students after school.  
-<button onclick="toggleAnswer('eb2')">Show Answer</button>
-<div id="eb2" class="answer">cleaned</div>
+2. The classroom is ________ ________ (clean) by students after school.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">cleaned</div>
 </div>
 
 <div class="exercise-item">
-3. This is the club ________ I want to join.  
-<button onclick="toggleAnswer('eb3')">Show Answer</button>
-<div id="eb3" class="answer">that / which</div>
+3. This is the club ________ I want to join.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">that / which</div>
 </div>
 
 <div class="exercise-item">
-4. A speech contest ________ ________ (hold) at our school every year.  
-<button onclick="toggleAnswer('eb4')">Show Answer</button>
-<div id="eb4" class="answer">is held</div>
+4. A speech contest ________ ________ (hold) at our school every year.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">is held</div>
 </div>
 
 <div class="exercise-item">
-5. She ________ ________ (be) a member of the music club for two years.  
-<button onclick="toggleAnswer('eb5')">Show Answer</button>
-<div id="eb5" class="answer">has been</div>
+5. She ________ ________ (be) a member of the music club for two years.
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">has been</div>
 </div>
 
 </div>
@@ -280,7 +300,7 @@ function toggleAnswer(id) {
 <div class="section-box">
 
 <!-- Added English title -->
-<h3 style="margin-top: 0;">Haruka’s Busy and Meaningful School Life</h3>
+<h3 style="margin-top: 0;">Haruka's Busy and Meaningful School Life</h3>
 
 <p>
 My name is Haruka, and I am a second-year junior high school student. I have studied at this school for almost two years, and my school life has been very busy but interesting. I have joined the English club, where we practice speaking and prepare for speech contests. Many events are held at our school every year, such as the sports day and the school festival. These events are planned by teachers and students together, so we can learn how to work as a team.
@@ -308,38 +328,38 @@ The library is one of my favorite places in the school. Many books are borrowed 
 <div class="section-box">
 
 <div class="exercise-item">
-1. How long has Haruka studied at her school?  
-→ ハルカはどのくらいの期間、この学校で勉強してきましたか？  
-<button onclick="toggleAnswer('rq1')">Show Answer</button>
-<div id="rq1" class="answer">She has studied at the school for almost two years.</div>
+1. How long has Haruka studied at her school?<br>
+→ ハルカはどのくらいの期間、この学校で勉強してきましたか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">She has studied at the school for almost two years.</div>
 </div>
 
 <div class="exercise-item">
-2. What club has Haruka joined?  
-→ ハルカはどのクラブに入っていますか？  
-<button onclick="toggleAnswer('rq2')">Show Answer</button>
-<div id="rq2" class="answer">She has joined the English club.</div>
+2. What club has Haruka joined?<br>
+→ ハルカはどのクラブに入っていますか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">She has joined the English club.</div>
 </div>
 
 <div class="exercise-item">
-3. Who plans the school events such as the sports day and the school festival?  
-→ 運動会や文化祭などの学校行事はだれが計画しますか？  
-<button onclick="toggleAnswer('rq3')">Show Answer</button>
-<div id="rq3" class="answer">They are planned by teachers and students together.</div>
+3. Who plans the school events such as the sports day and the school festival?<br>
+→ 運動会や文化祭などの学校行事はだれが計画しますか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">They are planned by teachers and students together.</div>
 </div>
 
 <div class="exercise-item">
-4. Why does Haruka like the library?  
-→ なぜハルカは図書館が好きですか？  
-<button onclick="toggleAnswer('rq4')">Show Answer</button>
-<div id="rq4" class="answer">Because she can borrow many books and reading simple English books helps her improve her vocabulary.</div>
+4. Why does Haruka like the library?<br>
+→ なぜハルカは図書館が好きですか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">Because she can borrow many books and reading simple English books helps her improve her vocabulary.</div>
 </div>
 
 <div class="exercise-item">
-5. What does the English teacher always tell the students?  
-→ 英語の先生はいつも生徒たちに何と言いますか？  
-<button onclick="toggleAnswer('rq5')">Show Answer</button>
-<div id="rq5" class="answer">The teacher tells them to keep trying even when the homework is difficult.</div>
+5. What does the English teacher always tell the students?<br>
+→ 英語の先生はいつも生徒たちに何と言いますか？
+<button onclick="toggleAnswer(this)">Show Answer</button>
+<div class="answer">The teacher tells them to keep trying even when the homework is difficult.</div>
 </div>
 
 </div>
@@ -348,16 +368,32 @@ The library is one of my favorite places in the school. Many books are borrowed 
 <h2>🎯 7. Summary（まとめ）</h2>
 <div class="section-box">
 <ul>
-<li>Use the present perfect to talk about school experiences and things that started in the past and continue now. → 学校での経験や、過去に始まって今も続いていることを話すときは現在完了形を使います。</li>
-<li>Use the passive voice to focus on what is done in school, such as events and activities. → 行事や活動など、学校で「何がされるか」を強調したいときは受動態を使います。</li>
-<li>Use relative clauses with who/which/that to add information about people, places, and events in school life. → 学校生活の人・場所・行事について説明を付け足すときは who・which・that を使った関係代名詞を使います。</li>
-<li>Combining these grammar points helps you describe your school life in a more detailed and natural way. → これらの文法を組み合わせると、自分の学校生活をより詳しく自然に説明できるようになります。</li>
+<li><strong>Present perfect</strong> is used to talk about school experiences and things that started in the past and continue now.</li>
+<div class="jp-note"><strong>現在完了形</strong>は、学校での経験や、過去に始まって今も続いていることを話すときに使います。</div>
+
+<li><strong>Passive voice</strong> is used to focus on what is done in school, such as events and activities.</li>
+<div class="jp-note"><strong>受動態</strong>は、行事や活動など、学校で「何がされるか」を強調したいときに使います。</div>
+
+<li><strong>Relative clauses</strong> with who/which/that are used to add information about people, places, and events in school life.</li>
+<div class="jp-note"><strong>関係代名詞</strong>（who・which・that）は、学校生活の人・場所・行事について説明を付け足すときに使います。</div>
+
+<li>Combining these <strong>grammar points</strong> helps you describe your school life in a more detailed and natural way.</li>
+<div class="jp-note">これらの<strong>文法項目</strong>を組み合わせると、自分の学校生活をより詳しく自然に説明できるようになります。</div>
 </ul>
 </div>
 
 <div style="text-align:center; margin-top:30px;">
     <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Back to Index</a>
 </div>
+
+<script>
+function toggleAnswer(button) {
+  const answer = button.nextElementSibling;
+  if (!answer || !answer.classList.contains('answer')) return;
+  const current = window.getComputedStyle(answer).display;
+  answer.style.display = current === "none" ? "block" : "none";
+}
+</script>
 
 </body>
 </html>
