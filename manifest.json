@@ -6,7 +6,7 @@
   "display": "standalone",
   "background_color": "#e3eef3",
   "theme_color": "#e3eef3",
-  "orientation": "portrait-primary",
+  "orientation": "any",
   "dir": "ltr",
   "id": "com.adriansensei.english",
   "description": "Clear, structured grammar sheets for independent English learners.",
