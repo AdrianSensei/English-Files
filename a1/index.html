@@ -76,15 +76,25 @@
     .home:hover {
       background: #357ac8;
     }
-h2 {
+
+    h2 {
       margin-top: 60px;
       color: #333;
-}
+    }
 
-/* 🔥 ESTA ES LA LÍNEA QUE TE CENTRA TODO */
-h1, h2, .subtitle, .section-title {
+    h1, h2, .subtitle, .section-title {
       text-align: center;
-}
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      body { font-size: 18px; padding: 20px; }
+      h1 { font-size: 26px; }
+      .subtitle { font-size: 1em; }
+      table { font-size: 18px; }
+      td, th { padding: 14px; }
+      .home { font-size: 1.1em; padding: 14px 28px; }
+    }
 
   </style>
 </head>
